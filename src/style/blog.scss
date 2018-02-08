@@ -1,0 +1,25 @@
+@import 'constants';
+
+.blog-post-card {
+  margin: 4rem 0;
+}
+
+.blog-post-card:first-of-type {
+  margin-top: 0;
+}
+
+.blog-post-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-post-card h3 {
+  margin: 0.8rem 0;
+}
+
+.blog-post-card p {
+  margin: 1.6rem 0;
+}
+
+.date {
+  color: $lightBlue;
+}

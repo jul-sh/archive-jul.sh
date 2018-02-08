@@ -1,0 +1,34 @@
+@import 'constants';
+
+.project-thumbnail .description {
+  font-size: smaller;
+  margin: 0;
+}
+
+.project-thumbnail .title {
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+.project-thumbnail a::after {
+  content: '';
+}
+
+.projects {
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.project-thumbnail {
+  margin: 0 0 2em;
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+}
+
+@media (max-width: $breakpoint) {
+  .projects {
+    column-count: 1;
+    column-gap: 0;
+  }
+}

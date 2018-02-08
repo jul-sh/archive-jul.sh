@@ -1,0 +1,37 @@
+//fonts
+$monospaced: Juliette, 'Fira Code', monospace;
+
+//colors
+$primarycolor: #44b284;
+$backgroundcolor: #000615;
+
+$white: #fff;
+$black: #000;
+
+$lightGrey: #cecece;
+$grey: #999;
+$darkGrey: #3b3b3b;
+
+$lightBlue: #68dedd;
+$blue: #42a9d6;
+$darkBlue: RGB(124, 167, 216);
+
+$orange: #fca44e;
+$yellow: #fde287;
+
+$turquoise: #50ccb1;
+
+$lightGreen: #47bc8b;
+$translucentLightGreen: rgba(68, 178, 132, 0.7);
+$translucentGreen: rgba(68, 178, 132, 0.3);
+
+$pink: #fdbabb;
+$translucentPink: RGBA(253, 186, 187, 0.3);
+$bronze: #d69d8f;
+
+$translucentWhite: #fffffff5;
+
+//sizing
+$breakpoint: 700px;
+$expandedPadding: 3rem;
+$compactPadding: 1.3rem;

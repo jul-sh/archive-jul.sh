@@ -1,0 +1,210 @@
+@import 'constants';
+
+.navbar,
+.navbar-item-content,
+.navbar-item,
+.navbar-item::before {
+  transition: all 250ms ease-in-out;
+}
+
+.navbar-wrapper {
+  background-color: rgb(19, 19, 22);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+  padding: 0 $expandedPadding;
+}
+
+.navbar,
+.appHeader {
+  max-width: 30em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 0.1rem;
+}
+
+.navbar-item {
+  position: relative;
+  overflow: hidden;
+  width: 9%;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  color: $lightGrey;
+  font-size: 95%;
+  line-height: 1;
+  border-radius: 0.5em;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem 0.4rem 1.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  will-change: background-size;
+  background-size: 0%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='500px' height='500px' viewBox='0 0 500 500' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3c/defs%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0.1'%3e%3ccircle id='Oval' fill='%23FFFFFF' cx='250' cy='250' r='250'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e");
+}
+
+/*
+
+.navbar-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='500px' height='500px' viewBox='0 0 500 500' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3c/defs%3e%3cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0.1'%3e%3ccircle id='Oval' fill='%23FFFFFF' cx='250' cy='250' r='250'%3e%3c/circle%3e%3c/g%3e%3c/svg%3e");
+  transform: scale(0);
+}
+
+.active.navbar-item::before {
+  transform: scale(2);
+}
+*/
+
+.navbar-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar .nav-icon {
+  display: block;
+  opacity: 0.8;
+  width: 1.3em;
+  height: 1.3em;
+  filter: saturate(95%) opacity(95%);
+}
+
+.navbar .navbar-item:hover .nav-icon {
+  filter: none;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .navbar-item.active {
+  background-size: 120%;
+  color: $white;
+}
+
+.navbar .active .nav-icon {
+  filter: saturate(100%) opacity(100%);
+}
+
+.navbar .active .navbar-item-content {
+  transform: scale(1.06) translateY(-3%);
+}
+
+.navbar .nav-caption {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.appHeader-wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4rem;
+  padding: 0 1.3rem;
+  background-color: rgb(20, 20, 21);
+  z-index: 2;
+}
+
+.appHeader {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 1.3rem;
+  background-color: rgb(20, 20, 21);
+  z-index: 2;
+}
+
+.appHeader .back {
+  position: absolute;
+  color: $lightGrey;
+  line-height: 4rem;
+  text-decoration: none;
+  font-size: 90%;
+}
+
+.appHeader .back::after {
+  content: '';
+}
+
+.appHeader .headerTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  line-height: 4rem;
+  color: #fdbabb;
+  padding: 0 4rem;
+}
+
+@media (max-width: $breakpoint) {
+  .navbar-wrapper {
+    border-top: 1px rgba(255, 255, 255, 0.1) solid;
+    background-color: rgb(20, 20, 21);
+    padding: 0 $compactPadding;
+  }
+
+  .navbar .active .navbar-item-content {
+    transform: scale(1.04) translateY(-2%);
+  }
+
+  .navbar a {
+    padding: 0.4rem 1.5rem 0.2rem 1.5rem;
+    margin: 0.3rem 0;
+  }
+}
+
+@supports ((-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))) {
+  /*  .navbar-wrapper,
+  .appHeader {
+    background-color: rgba(17, 17, 21, 0.9);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+
+  .navbar-wrapper {
+    border-top: 1px rgba(255, 255, 255, 0.05) solid;
+  }
+
+  .appHeader {
+    border-bottom: 1px rgba(255, 255, 255, 0.05) solid;
+  }
+*/
+}
+
+@media print {
+  .navbar-wrapper {
+    display: none !important;
+  }
+}

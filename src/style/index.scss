@@ -1,0 +1,241 @@
+@import 'normalize';
+@import 'constants';
+@import 'fontface';
+@import 'prism';
+
+body,
+html,
+#___gatsby {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $backgroundcolor;
+  color: $primarycolor;
+  font-family: $monospaced;
+  font-feature-settings: 'calt' 1;
+  font-variant-ligatures: contextual;
+  font-size: 24px;
+  line-height: 1.4;
+  display: table;
+}
+
+#___gatsby {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+main {
+  max-height: 100%;
+  margin: 0 auto;
+  padding: $expandedPadding;
+  margin-bottom: 3rem;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 32.5em;
+}
+
+.page.large {
+  max-width: 40em;
+}
+
+.article {
+  padding-top: 1rem;
+}
+
+.page > h1:first-child,
+.page > h2:first-child,
+.page > h3:first-child,
+.page > h4:first-child,
+main > h1:first-child,
+main > h2:first-child,
+main > h3:first-child,
+main > h4:first-child {
+  margin-top: 0;
+}
+
+i,
+em {
+  color: $lightBlue;
+  font-style: normal;
+}
+
+b,
+strong {
+  color: $blue;
+  font-weight: normal;
+}
+
+strong em,
+em strong,
+b i,
+i b {
+  color: $orange;
+  font-style: normal;
+  font-weight: normal;
+}
+
+code {
+  font-family: $monospaced;
+  white-space: normal;
+}
+
+a {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main a {
+  color: $lightGreen;
+  text-decoration: $translucentGreen underline;
+}
+
+main a:hover,
+.title:hover,
+.grey:hover {
+  transition: all 200ms;
+}
+
+main a:hover {
+  text-decoration: $lightGreen underline;
+}
+
+.turquoise {
+  color: $turquoise;
+}
+
+.title:hover {
+  text-decoration: $pink underline;
+}
+
+.grey a:hover {
+  text-decoration: $grey underline;
+}
+
+main a::after {
+  content: '°';
+}
+
+h1,
+h1 a {
+  color: $pink;
+}
+
+h2,
+h2 a {
+  color: $yellow;
+}
+
+h3,
+h3 a {
+  color: $darkBlue;
+}
+
+h4,
+h4 a {
+  color: $orange;
+}
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: $orange;
+}
+
+.title1 {
+  font-size: 3rem;
+  color: $pink;
+  margin: 2rem 0;
+}
+
+.button-parent {
+  display: flex;
+  margin: 2.5rem 0;
+}
+
+.button {
+  padding: 0.8em 1em;
+  color: $black;
+  background-color: $translucentWhite;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 90%;
+  transition: all 200ms;
+}
+
+.button:hover {
+  box-shadow: 0 7px 12px $translucentLightGreen;
+  transform: translateY(-4px);
+  text-decoration: none;
+}
+
+.long-quote {
+  font-size: 85%;
+  color: $bronze;
+}
+
+.title {
+  color: $pink;
+  text-decoration: $translucentPink underline;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+main .title::after {
+  content: '';
+}
+
+.grey,
+.grey a {
+  color: $grey;
+}
+
+.grey a {
+  text-decoration: underline $darkGrey;
+}
+
+@media (max-width: $breakpoint) {
+  body {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  main {
+    padding: 2.3rem $compactPadding;
+    margin-bottom: 3rem;
+  }
+
+  h1,
+  h1 a {
+    font-size: 1.75em;
+  }
+
+  .button {
+    box-shadow: 0 7px 12px $translucentLightGreen;
+  }
+
+  .button:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  body {
+    background: none;
+    color: $black;
+    font-family: $monospaced;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  main {
+    max-width: 100%;
+  }
+}
