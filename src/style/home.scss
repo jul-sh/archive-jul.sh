@@ -1,0 +1,52 @@
+@import 'constants';
+
+.index.page {
+  display: flex;
+  align-items: center;
+  max-width: 40em;
+}
+
+.index-me-wrapper {
+  max-width: 30%;
+  margin-right: 1.5em;
+}
+
+.index-me {
+  max-width: 100%;
+}
+
+@media (max-width: $largeBreakpoint) {
+  .index.page {
+    display: block;
+  }
+
+  .index-me-wrapper {
+    float: left;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .index.page {
+    display: block;
+  }
+
+  .index-me-wrapper {
+    position: relative;
+    max-width: none;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 80%;
+    margin-bottom: 1em;
+  }
+
+  .index-me {
+    object-fit: cover;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}

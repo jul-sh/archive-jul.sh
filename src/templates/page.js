@@ -8,8 +8,15 @@ const Page = props => {
 
   return (
     <div style={transition && transition.style} className={style + ' page'}>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      {style === 'index' && (
+        <div className="index-me-wrapper">
+          <img className="index-me" src="/assets/me.jpg" />
+        </div>
+      )}
+      <div>
+        <h1>{post.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </div>
   )
 }

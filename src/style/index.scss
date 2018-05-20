@@ -1,6 +1,7 @@
 @import 'normalize';
 @import 'constants';
 @import 'fontface';
+@import 'home';
 @import 'prism';
 
 body,
@@ -124,16 +125,19 @@ main a::after {
 h1,
 h1 a {
   color: $pink;
+  margin: 0.4em 0 0.67em 0;
 }
 
 h2,
 h2 a {
   color: $yellow;
+  margin: 0.4em 0 0.67em 0;
 }
 
 h3,
 h3 a {
   color: $darkBlue;
+  margin: 0.4em 0 0.67em 0;
 }
 
 h4,

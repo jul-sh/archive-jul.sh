@@ -9,6 +9,8 @@ const TemplateWrapper = ({ children }) => (
   <Fragment>
     <Helmet>
       <title>Juliette Pretot</title>
+      <link rel="manifest" href="/manifest.json"/>
+      <meta name="theme-color" content="#000615"/>
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta
         name="apple-mobile-web-app-status-bar-style"

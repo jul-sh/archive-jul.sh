@@ -91,37 +91,12 @@ module.exports = {
     },
     'gatsby-plugin-catch-links',
     {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Juliette Pretot',
-        short_name: 'Juliette',
-        description: `Juliette's Portfolio`,
-        start_url: '/',
-        background_color: '#000615',
-        theme_color: '#000615',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicons/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/favicons/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
-    },
-    {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
         postCssPlugins: [autoprefixer()]
       }
     },
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,

@@ -2,6 +2,7 @@
 templateKey: page
 path: /
 title: Nice to meet you 🤗
+style: index
 ---
 
 My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX** background. You can find me in _NYC_, _San Francisco_ + _Berlin_.
