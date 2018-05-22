@@ -20,7 +20,7 @@ const IndexPage = props => {
                   <Img
                     sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
                   />
-                  <h3 class="title">{post.frontmatter.title}</h3>
+                  <h3 className="title">{post.frontmatter.title}</h3>
                 </Link>
                 <p class="description">{post.frontmatter.intro}</p>
               </div>

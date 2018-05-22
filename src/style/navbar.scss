@@ -7,6 +7,10 @@
   transition: all 250ms ease-in-out;
 }
 
+.nav-icon {
+  transition: all 100ms ease-in-out;
+}
+
 .navbar-wrapper {
   background-color: rgb(19, 19, 22);
   position: fixed;
@@ -96,10 +100,6 @@
   filter: saturate(95%) opacity(95%);
 }
 
-.navbar .navbar-item:hover .nav-icon {
-  filter: none;
-}
-
 .navbar a {
   text-decoration: none;
 }
@@ -113,8 +113,18 @@
   filter: saturate(100%) opacity(100%);
 }
 
-.navbar .active .navbar-item-content {
+.navbar-item:hover .navbar-item-content {
+  transform: scale(1.03) translateY(-1.5%);
+  color: $white;
+}
+
+.navbar .navbar-item.active .navbar-item-content {
   transform: scale(1.06) translateY(-3%);
+}
+
+.navbar-item.active:hover .nav-icon {
+  filter: none;
+  transform: none;
 }
 
 .navbar .nav-caption {
