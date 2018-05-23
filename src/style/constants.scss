@@ -10,6 +10,9 @@ $black: #000;
 
 $lightGrey: #cecece;
 $grey: #999;
+$translucentLightGray: rgba(153, 153, 153, 0.7);
+$translucentGray: rgba(153, 153, 153, 0.3);
+$lowTranslucentGray: rgba(153, 153, 153, 0.15);
 $darkGrey: #3b3b3b;
 
 $lightBlue: #68dedd;
@@ -24,6 +27,7 @@ $turquoise: #50ccb1;
 $lightGreen: #47bc8b;
 $translucentLightGreen: rgba(68, 178, 132, 0.7);
 $translucentGreen: rgba(68, 178, 132, 0.3);
+$lowTranslucentGreen: rgba(68, 178, 132, 0.15);
 
 $pink: #fdbabb;
 $translucentPink: RGBA(253, 186, 187, 0.3);

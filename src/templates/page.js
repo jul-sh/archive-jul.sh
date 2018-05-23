@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import parseEmoji from 'helpers/emoji'
 
 const Page = props => {
   const { data } = props
@@ -14,7 +15,7 @@ const Page = props => {
         </div>
       )}
       <div>
-        <h1>{post.frontmatter.title}</h1>
+        <h1>{parseEmoji(post.frontmatter.title)}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </div>

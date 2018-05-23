@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'components/Link'
 import Helmet from 'react-helmet'
+import parseEmoji from 'helpers/emoji'
 import 'style/blog.scss'
 
 const IndexPage = props => {
@@ -18,12 +19,12 @@ const IndexPage = props => {
                 <div>
                   <h3>
                     <Link className="title" to={post.frontmatter.path}>
-                      {post.frontmatter.title}
+                      {parseEmoji(post.frontmatter.title)}
                     </Link>
                   </h3>
                   <small className="date">{post.frontmatter.date}</small>
                 </div>
-                <p>{post.frontmatter.intro}</p>
+                <p>{parseEmoji(post.frontmatter.intro)}</p>
               </div>
             )
           })}

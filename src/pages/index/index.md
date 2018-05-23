@@ -5,7 +5,7 @@ title: Nice to meet you 🤗
 style: index
 ---
 
-My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX** background. You can find me in _NYC_, _San Francisco_ + _Berlin_.
+My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX background**. Presently based in _Berlin_, but you can find me _all around the world_. 🌎
 
 ```javascript
 const juliette = opportunity => ... solution

@@ -52,6 +52,12 @@ module.exports = {
             options: {
               classPrefix: 'language-'
             }
+          },
+          {
+            resolve: `gatsby-remark-notomoji`,
+            options: {
+              base: '/assets/emoji/'
+            }
           }
         ]
       }

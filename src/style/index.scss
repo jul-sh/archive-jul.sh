@@ -93,7 +93,22 @@ a {
 
 main a {
   color: $lightGreen;
-  text-decoration: $translucentGreen underline;
+  transition-duration: 300ms;
+  text-decoration: $translucentLightGreen underline;
+}
+
+main p a,
+main li a {
+  color: $lightGreen;
+  text-decoration: $translucentLightGreen underline;
+  background-color: $lowTranslucentGreen;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+main p a:hover,
+main li a:hover {
+  background-color: $translucentGreen;
 }
 
 main a:hover,
@@ -104,6 +119,7 @@ main a:hover,
 
 main a:hover {
   text-decoration: $lightGreen underline;
+  transform: scale(1.05);
 }
 
 .turquoise {
@@ -116,6 +132,7 @@ main a:hover {
 
 .grey a:hover {
   text-decoration: $grey underline;
+  background-color: $translucentGray;
 }
 
 main a::after {
@@ -202,7 +219,16 @@ main .title::after {
 }
 
 .grey a {
-  text-decoration: underline $darkGrey;
+  text-decoration: underline $translucentLightGray;
+}
+
+p .grey a {
+  background-color: $lowTranslucentGray;
+}
+
+ul,
+ol {
+  line-height: 1.5;
 }
 
 @media (max-width: $breakpoint) {
@@ -228,6 +254,13 @@ main .title::after {
   .button:hover {
     transform: none;
   }
+}
+
+img.emoji {
+  height: 1em !important; //overwrite inline styles
+  width: 1em !important; //overwrite inline styles
+  margin: 0 !important; //overwrite inline styles
+  vertical-align: -0.07em !important; //overwrite inline styles
 }
 
 @media print {

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import AppHeader from 'components/AppHeader'
+import parseEmoji from 'helpers/emoji'
 
 const ProjectPage = props => {
   const { markdownRemark: post } = props.data
@@ -12,9 +13,11 @@ const ProjectPage = props => {
       <AppHeader title={post.frontmatter.title} />
       <div style={transition && transition.style}>
         <div className="page article">
-          <h1 className="title1 under-back">{post.frontmatter.title}</h1>
+          <h1 className="title1 under-back">
+            {parseEmoji(post.frontmatter.title)}
+          </h1>
           {post.frontmatter.intro && (
-            <span class="intro">{post.frontmatter.intro}</span>
+            <span className="intro">{parseEmoji(post.frontmatter.intro)}</span>
           )}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
