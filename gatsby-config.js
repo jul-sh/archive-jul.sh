@@ -54,9 +54,15 @@ module.exports = {
             }
           },
           {
-            resolve: `gatsby-remark-notomoji`,
+            resolve: `gatsby-remark-twemoji`,
             options: {
-              base: '/assets/emoji/'
+              base: '/assets/emoji/',
+              folder: 'svg',
+              ext: '.svg',
+              attributes: () => ({
+                style:
+                  'height: 1em; width: 1em; margin: 0; vertical-align: -0.07em;'
+              })
             }
           }
         ]
