@@ -53,7 +53,7 @@ export const projectQuery = graphql`
             link
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 1000) {
+                sizes(maxWidth: 500) {
                   ...GatsbyImageSharpSizes_withWebp
                 }
               }

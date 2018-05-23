@@ -2,6 +2,7 @@
 templateKey: page
 path: /
 title: Nice to meet you 🤗
+featuredImage: ./me.jpg
 style: index
 ---
 

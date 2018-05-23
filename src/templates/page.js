@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Img from 'gatsby-image'
 import parseEmoji from 'helpers/emoji'
 
 const Page = props => {
@@ -11,7 +12,12 @@ const Page = props => {
     <div style={transition && transition.style} className={style + ' page'}>
       {style === 'index' && (
         <div className="index-me-wrapper">
-          <img className="index-me" src="/assets/me.jpg" />
+          {!!post.frontmatter.featuredImage && (
+            <Img
+              outerWrapperClassName="index-me"
+              sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+            />
+          )}
         </div>
       )}
       <div>
@@ -32,6 +38,13 @@ export const PageQuery = graphql`
         path
         title
         style
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 500) {
+              ...GatsbyImageSharpSizes_withWebp
+            }
+          }
+        }
       }
     }
   }

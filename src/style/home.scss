@@ -7,7 +7,8 @@
 }
 
 .index-me-wrapper {
-  max-width: 30%;
+  width: 30%;
+  flex: none;
   margin-right: 1.5em;
 }
 
@@ -22,7 +23,7 @@
 
   .index-me-wrapper {
     float: left;
-    max-width: 40%;
+    width: 40%;
   }
 }
 
@@ -33,20 +34,12 @@
 
   .index-me-wrapper {
     position: relative;
-    max-width: none;
     overflow: hidden;
     width: 100%;
-    padding-bottom: 100%;
-    margin-bottom: 1em;
+    margin: 0 0 2rem 0;
   }
 
   .index-me {
-    object-fit: cover;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateY(-50%);
+    margin: -3rem 0 -4rem 0;
   }
 }
