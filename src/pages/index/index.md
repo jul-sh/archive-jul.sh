@@ -6,7 +6,7 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX background**. Presently based in _Berlin_, but you can find me _all around the world_. 🌎
+My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX background**. Presently based in _Berlin_, but found _all around the world_. 🌎
 
 ```javascript
 const juliette = opportunity => ... solution
