@@ -6,10 +6,10 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name is **_Juliette Pretot_**, I'm a **frontend engineer** with a **UX background**. Presently based in _Berlin_, but found _all around the world_. 🌎
+My name's **_Juliette Pretot_**. I'm a **frontend engineer** with a **product background**.
 
-```javascript
-const juliette = opportunity => ... solution
-```
+At [N26](https://n26.com) I'm working on an isomorphic React app built with CssInJs, GraphQL && Express.
 
-[N26](https://n26.com) <span class="grey">via</span> LanguageAcademy<span class="grey">,</span> [Clue](http://helloclue.com/)<span class="grey">.</span> <span class="grey">(View my [CV](/about/cv))</span>
+Based in _Berlin_, but at home _all around the world_. 🌎
+
+<span class="grey">[Resumé](/about/cv)</span>
