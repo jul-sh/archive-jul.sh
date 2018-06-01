@@ -36,9 +36,17 @@ main {
   margin-bottom: 3rem;
 }
 
+@supports (padding: max(0px)) {
+  main {
+    padding-top: unquote('max(#{$expandedPadding}, env(safe-area-inset-left))');
+  }
+}
+
 .page {
   margin: 0 auto;
   max-width: 32.5em;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 .page.large {

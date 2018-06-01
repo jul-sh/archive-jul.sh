@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NotFoundPage = ({ transition }) => (
-  <div style={transition && transition.style}>
+  <section className="page" style={transition && transition.style}>
     <h1>NOT FOUND 😱</h1>
     <p>Something bad happened. But I still love you.</p>
     <div className="button-parent">
@@ -9,7 +9,7 @@ const NotFoundPage = ({ transition }) => (
         Return to the homepage
       </a>
     </div>
-  </div>
+  </section>
 )
 
 export default NotFoundPage
