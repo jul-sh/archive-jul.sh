@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Link from 'components/Link'
-import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 import 'style/blog.scss'
 
@@ -9,7 +8,7 @@ const IndexPage = props => {
   const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <Layout>
+    <Fragment>
       <section className="page" style={transition && transition.style}>
         <div className="containexr">
           {posts
@@ -31,7 +30,7 @@ const IndexPage = props => {
             })}
         </div>
       </section>
-    </Layout>
+    </Fragment>
   )
 }
 

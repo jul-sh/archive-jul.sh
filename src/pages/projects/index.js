@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
-import Layout from 'components/Layout'
 import Link from 'components/Link'
 import parseEmoji from 'helpers/emoji'
 import 'style/projects.scss'
@@ -10,7 +9,7 @@ const IndexPage = props => {
   const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <Layout>
+    <Fragment>
       <section className="page" style={transition && transition.style}>
         <div className="container projects">
           {posts
@@ -36,7 +35,7 @@ const IndexPage = props => {
             })}
         </div>
       </section>
-    </Layout>
+    </Fragment>
   )
 }
 

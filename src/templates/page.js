@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
-import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 
 const Page = props => {
@@ -10,7 +9,7 @@ const Page = props => {
   const style = post.frontmatter.style || ''
 
   return (
-    <Layout>
+    <Fragment>
       <div style={transition && transition.style} className={style + ' page'}>
         {style === 'index' && (
           <div className="index-me-wrapper">
@@ -27,7 +26,7 @@ const Page = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </Layout>
+    </Fragment>
   )
 }
 
