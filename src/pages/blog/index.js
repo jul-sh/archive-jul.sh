@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'components/Link'
-import Helmet from 'react-helmet'
+import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 import 'style/blog.scss'
 
@@ -9,27 +9,29 @@ const IndexPage = props => {
   const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <section className="page" style={transition && transition.style}>
-      <div className="containexr">
-        {posts
-          .filter(post => post.node.frontmatter.path.includes('/blog/'))
-          .map(({ node: post }) => {
-            return (
-              <div className="blog-post-card" key={post.id}>
-                <div>
-                  <h3>
-                    <Link className="title" to={post.frontmatter.path}>
-                      {parseEmoji(post.frontmatter.title)}
-                    </Link>
-                  </h3>
-                  <small className="date">{post.frontmatter.date}</small>
+    <Layout>
+      <section className="page" style={transition && transition.style}>
+        <div className="containexr">
+          {posts
+            .filter(post => post.node.frontmatter.path.includes('/blog/'))
+            .map(({ node: post }) => {
+              return (
+                <div className="blog-post-card" key={post.id}>
+                  <div>
+                    <h3>
+                      <Link className="title" to={post.frontmatter.path}>
+                        {parseEmoji(post.frontmatter.title)}
+                      </Link>
+                    </h3>
+                    <small className="date">{post.frontmatter.date}</small>
+                  </div>
+                  <p>{parseEmoji(post.frontmatter.intro)}</p>
                 </div>
-                <p>{parseEmoji(post.frontmatter.intro)}</p>
-              </div>
-            )
-          })}
-      </div>
-    </section>
+              )
+            })}
+        </div>
+      </section>
+    </Layout>
   )
 }
 

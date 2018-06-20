@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Img from 'gatsby-image'
+import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 
 const Page = props => {
@@ -9,22 +10,24 @@ const Page = props => {
   const style = post.frontmatter.style || ''
 
   return (
-    <div style={transition && transition.style} className={style + ' page'}>
-      {style === 'index' && (
-        <div className="index-me-wrapper">
-          {!!post.frontmatter.featuredImage && (
-            <Img
-              outerWrapperClassName="index-me"
-              sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-            />
-          )}
+    <Layout>
+      <div style={transition && transition.style} className={style + ' page'}>
+        {style === 'index' && (
+          <div className="index-me-wrapper">
+            {!!post.frontmatter.featuredImage && (
+              <Img
+                outerWrapperClassName="index-me"
+                sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+              />
+            )}
+          </div>
+        )}
+        <div>
+          <h1>{parseEmoji(post.frontmatter.title)}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-      )}
-      <div>
-        <h1>{parseEmoji(post.frontmatter.title)}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-    </div>
+    </Layout>
   )
 }
 

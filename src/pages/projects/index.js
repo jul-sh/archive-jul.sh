@@ -1,6 +1,6 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import Layout from 'components/Layout'
 import Link from 'components/Link'
 import parseEmoji from 'helpers/emoji'
 import 'style/projects.scss'
@@ -10,29 +10,33 @@ const IndexPage = props => {
   const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <section className="page" style={transition && transition.style}>
-      <div className="container projects">
-        {posts
-          .filter(post => post.node.frontmatter.path.includes('/projects/'))
-          .map(({ node: post }) => {
-            return (
-              <div className="project-thumbnail" key={post.id}>
-                <Link to={post.frontmatter.link || post.frontmatter.path}>
-                  <Img
-                    sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-                  />
-                  <h3 className="title">
-                    {parseEmoji(post.frontmatter.title)}
-                  </h3>
-                </Link>
-                <p className="description">
-                  {parseEmoji(post.frontmatter.intro)}
-                </p>
-              </div>
-            )
-          })}
-      </div>
-    </section>
+    <Layout>
+      <section className="page" style={transition && transition.style}>
+        <div className="container projects">
+          {posts
+            .filter(post => post.node.frontmatter.path.includes('/projects/'))
+            .map(({ node: post }) => {
+              return (
+                <div className="project-thumbnail" key={post.id}>
+                  <Link to={post.frontmatter.link || post.frontmatter.path}>
+                    <Img
+                      sizes={
+                        post.frontmatter.featuredImage.childImageSharp.sizes
+                      }
+                    />
+                    <h3 className="title">
+                      {parseEmoji(post.frontmatter.title)}
+                    </h3>
+                  </Link>
+                  <p className="description">
+                    {parseEmoji(post.frontmatter.intro)}
+                  </p>
+                </div>
+              )
+            })}
+        </div>
+      </section>
+    </Layout>
   )
 }
 

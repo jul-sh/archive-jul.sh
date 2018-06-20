@@ -1,16 +1,14 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
-import AppHeader from 'components/AppHeader'
+import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 
 const ProjectPage = props => {
   const { markdownRemark: post } = props.data
-  const { data } = props
   const { transition } = props
   return (
-    <Fragment>
+    <Layout>
       <Helmet title={`${post.frontmatter.title}`} />
-      <AppHeader title={post.frontmatter.title} />
       <div style={transition && transition.style}>
         <div className="page article">
           <h1 className="title1 under-back">
@@ -22,7 +20,7 @@ const ProjectPage = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </Fragment>
+    </Layout>
   )
 }
 

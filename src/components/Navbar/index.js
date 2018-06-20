@@ -1,5 +1,4 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
 import meImg from 'img/me.png'
 import workImg from 'img/work.png'
 import blogImg from 'img/blog.png'

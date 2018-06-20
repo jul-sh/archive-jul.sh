@@ -1,4 +1,5 @@
 const autoprefixer = require('autoprefixer')
+const path = require('path')
 
 module.exports = {
   siteMetadata: {
@@ -8,6 +9,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-catch-links`,
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        root: path.join(__dirname, 'src')
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,15 +39,6 @@ module.exports = {
             resolve: 'gatsby-remark-responsive-iframe'
           },
           'gatsby-remark-copy-linked-files',
-          {
-            resolve: 'gatsby-remark-custom-blocks',
-            options: {
-              blocks: {
-                danger: 'custom-block-danger',
-                info: 'custom-block-info'
-              }
-            }
-          },
           {
             resolve: 'gatsby-remark-smartypants',
             options: {
@@ -69,18 +67,24 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: `UA-114992563-1`
-      }
-    },
-    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
         color: `#44B284`,
         // Disable the loading spinner.
         showSpinner: false
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Juliette Pretot',
+        short_name: 'Juliette',
+        start_url: '/',
+        background_color: '#000615',
+        theme_color: '#000615',
+        display: 'standalone',
+        icon: 'src/style/logo.png'
       }
     },
     {
@@ -102,18 +106,10 @@ module.exports = {
       }
     },
     'gatsby-plugin-catch-links',
-    {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [autoprefixer()]
-      }
-    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-resolve-src',
     `gatsby-plugin-offline`
   ]
 }
