@@ -108,6 +108,7 @@ module.exports = {
     'gatsby-plugin-catch-links',
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cache`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`
