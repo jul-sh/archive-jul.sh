@@ -109,6 +109,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
+    `gatsby-transformer-sqip`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`

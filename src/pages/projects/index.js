@@ -19,9 +19,13 @@ const IndexPage = props => {
                 <div className="project-thumbnail" key={post.id}>
                   <Link to={post.frontmatter.link || post.frontmatter.path}>
                     <Img
-                      sizes={
-                        post.frontmatter.featuredImage.childImageSharp.sizes
-                      }
+                      fadeIn={false}
+                      sizes={{
+                        ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                        base64:
+                          post.frontmatter.featuredImage.childImageSharp.sqip
+                            .dataURI
+                      }}
                     />
                     <h3 className="title">
                       {parseEmoji(post.frontmatter.title)}
@@ -56,8 +60,12 @@ export const projectQuery = graphql`
             link
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 500) {
-                  ...GatsbyImageSharpSizes_withWebp
+                sqip(numberOfPrimitives: 24, blur: 0, width: 256) {
+                  dataURI
+                  svg
+                }
+                sizes(maxWidth: 600) {
+                  ...GatsbyImageSharpSizes_withWebp_noBase64
                 }
               }
             }

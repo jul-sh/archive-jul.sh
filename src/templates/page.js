@@ -15,8 +15,13 @@ const Page = props => {
           <div className="index-me-wrapper">
             {!!post.frontmatter.featuredImage && (
               <Img
+                fadeIn={false}
                 outerWrapperClassName="index-me"
-                sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+                sizes={{
+                  ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                  base64:
+                    post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
+                }}
               />
             )}
           </div>
@@ -42,8 +47,12 @@ export const PageQuery = graphql`
         style
         featuredImage {
           childImageSharp {
-            sizes(maxWidth: 500) {
-              ...GatsbyImageSharpSizes_withWebp
+            sqip(numberOfPrimitives: 50, blur: 0, width: 400) {
+              dataURI
+              svg
+            }
+            sizes(maxWidth: 600) {
+              ...GatsbyImageSharpSizes_withWebp_noBase64
             }
           }
         }
