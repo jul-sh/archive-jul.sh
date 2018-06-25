@@ -112,6 +112,7 @@ module.exports = {
     `gatsby-transformer-sqip`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-preact`,
     `gatsby-plugin-offline`
   ]
 }
