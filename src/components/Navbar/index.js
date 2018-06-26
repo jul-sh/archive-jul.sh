@@ -1,8 +1,8 @@
 import React from 'react'
-import meImg from 'img/me.png'
-import workImg from 'img/work.png'
-import blogImg from 'img/blog.png'
-import mailImg from 'img/mail.png'
+import meImg from 'img/me.svg'
+import workImg from 'img/work.svg'
+import blogImg from 'img/blog.svg'
+import mailImg from 'img/mail.svg'
 import Link from 'components/Link'
 import 'style/navbar.scss'
 
