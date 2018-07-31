@@ -3,10 +3,10 @@ import Navbar from 'components/Navbar'
 import 'style/index.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <Fragment>
+  <div>
     <Navbar />
     <main className="main">{children()}</main>
-  </Fragment>
+  </div>
 )
 
 export default TemplateWrapper

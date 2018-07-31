@@ -17,7 +17,7 @@ const IndexPage = props => {
             .map(({ node: post }) => {
               return (
                 <div className="project-thumbnail" key={post.id}>
-                  <Link to={post.frontmatter.link || post.frontmatter.path}>
+                  <div className="link-overflow-limit">
                     <Img
                       fadeIn={false}
                       sizes={{
@@ -27,10 +27,15 @@ const IndexPage = props => {
                             .dataURI
                       }}
                     />
-                    <h3 className="title">
-                      {parseEmoji(post.frontmatter.title)}
+                    <h3>
+                      <Link
+                        className="title project-link"
+                        to={post.frontmatter.link || post.frontmatter.path}
+                      >
+                        {parseEmoji(post.frontmatter.title)}
+                      </Link>
                     </h3>
-                  </Link>
+                  </div>
                   <p className="description">
                     {parseEmoji(post.frontmatter.intro)}
                   </p>
