@@ -34,12 +34,12 @@ const Navbar = props => {
             <span className="nav-caption">Projects</span>
           </div>
         </Link>
-        <Link className="navbar-item" activeClassName="active" to="/blog">
+        {/* <Link className="navbar-item" activeClassName="active" to="/blog">
           <div className="navbar-item-content">
             <img className="nav-icon" alt="Notebook Emoji" src={blogImg} />
             <span className="nav-caption">Blog</span>
           </div>
-        </Link>
+        </Link> */}
         <Link className="navbar-item" activeClassName="active" to="/contact">
           <div className="navbar-item-content">
             <img className="nav-icon" alt="Mailbox Emoji" src={mailImg} />
