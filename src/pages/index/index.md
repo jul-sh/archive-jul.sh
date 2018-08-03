@@ -12,7 +12,7 @@ At [N26](https://n26.com) I develop and maintain our design system within a Reac
 
 <span class="compact">
 
-<span class="grey">👩🏻‍💻 [Resumé](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.</span>
+<span class="grey">👩🏻‍💻 [CV](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.</span>
 
 <span class="grey">📌 Global citizen in Berlin.</span>
 </span>

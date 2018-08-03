@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.project-thumbnail .title {
+.project-thumbnail h3 {
   margin: 0.5em 0;
   display: inline-block;
 }
@@ -24,6 +24,20 @@
   break-inside: avoid;
   display: inline-block;
   width: 100%;
+}
+
+.link-overflow-limit {
+  position: relative;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 @media (max-width: $breakpoint) {

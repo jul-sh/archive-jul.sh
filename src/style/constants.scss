@@ -1,9 +1,9 @@
 //fonts
-$monospaced: Juliette, 'Fira Code', monospace;
+$monospaced: Juliette, 'Roboto Mono', 'Segoe UI Mono', 'Monaco', monospace;
 
 //colors
 $primarycolor: #44b284;
-$backgroundcolor: #000615;
+$backgroundcolor: #030a1f;
 
 $white: #fff;
 $black: #000;
@@ -11,32 +11,38 @@ $black: #000;
 $lightGrey: #cecece;
 $grey: #999;
 $translucentLightGray: rgba(153, 153, 153, 0.7);
-$translucentGray: rgba(153, 153, 153, 0.3);
-$lowTranslucentGray: rgba(153, 153, 153, 0.15);
+$translucentGray: rgba(153, 153, 153, 0.6);
+$lowTranslucentGray: rgba(153, 153, 153, 0.2);
 $darkGrey: #3b3b3b;
 
 $lightBlue: #68dedd;
 $blue: #42a9d6;
 $darkBlue: RGB(124, 167, 216);
 
-$orange: #fca44e;
+$orange: rgba(252, 164, 78, 1);
+$translucentOrange: rgba(252, 164, 78, 0.6);
+$lowTranslucentOrange: rgba(252, 164, 78, 0.2);
+
 $yellow: #fde287;
 
 $turquoise: #50ccb1;
 
 $lightGreen: #47bc8b;
 $translucentLightGreen: rgba(68, 178, 132, 0.7);
-$translucentGreen: rgba(68, 178, 132, 0.3);
-$lowTranslucentGreen: rgba(68, 178, 132, 0.15);
+$translucentGreen: rgba(68, 178, 132, 0.6);
+$lowTranslucentGreen: rgba(68, 178, 132, 0.2);
 
 $pink: #fdbabb;
-$translucentPink: RGBA(253, 186, 187, 0.3);
-$bronze: #d69d8f;
+$translucentPink: RGBA(253, 186, 187, 0.6);
+$lowTranslucentPink: rgba(253, 186, 187, 0.2);
+$bronze: #252322;
 
 $translucentWhite: rgba(255, 255, 255, 0.5);
 
 //sizing
+$tinyBreakpoint: 370px;
 $breakpoint: 700px;
 $largeBreakpoint: 900px;
 $expandedPadding: 3rem;
 $compactPadding: 1.3rem;
+$tinyPadding: 0.7rem;

@@ -8,7 +8,6 @@ html,
 #___gatsby {
   width: 100%;
   height: 100%;
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -21,6 +20,7 @@ body {
   font-feature-settings: 'calt' 1;
   font-variant-ligatures: contextual;
   font-size: 24px;
+  word-spacing: -0.25ch;
   line-height: 1.4;
   display: table;
 }
@@ -98,54 +98,75 @@ code {
 a {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
 }
 
 main a {
   color: $lightGreen;
   transition-duration: 300ms;
-  text-decoration: $translucentLightGreen underline;
+  border-bottom: $translucentGreen 2px solid;
 }
 
 main p a,
-main li a {
+main li a,
+.title {
   color: $lightGreen;
-  text-decoration: $translucentLightGreen underline;
-  background-color: $lowTranslucentGreen;
-  padding: 3px 6px;
-  border-radius: 4px;
-}
-
-main p a:hover,
-main li a:hover {
-  background-color: $translucentGreen;
-}
-
-main a:hover,
-.title:hover,
-.grey:hover {
-  transition: all 200ms;
+  border-bottom: $translucentGreen 2px solid;
 }
 
 main a:hover {
-  text-decoration: $lightGreen underline;
-  transform: scale(1.05);
+  border-bottom: $lightGreen 2px solid;
+}
+
+.grey a {
+  border-bottom: $translucentGray 2px solid;
+}
+
+.grey a:hover {
+  border-bottom: $grey 2px solid;
+}
+
+h4,
+h4 a {
+  color: $orange;
+}
+
+h4,
+h4 a {
+  color: $orange;
+}
+
+h4 a {
+  color: $orange;
+  border-bottom: $translucentOrange 2px solid;
+}
+
+h4:hover a {
+  border-bottom: $orange 2px solid;
+}
+
+.title {
+  color: $pink;
+  border-bottom: none;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.title:hover {
+  border-bottom: none;
+}
+
+.grey,
+.grey a {
+  color: $grey;
+}
+
+.grey a {
+  border-bottom: 2px solid $translucentGray;
 }
 
 .turquoise {
   color: $turquoise;
-}
-
-.title:hover {
-  text-decoration: $pink underline;
-}
-
-.grey a:hover {
-  text-decoration: $grey underline;
-  background-color: $translucentGray;
-}
-
-main a::after {
-  content: '°';
 }
 
 h1,
@@ -166,15 +187,18 @@ h3 a {
   margin: 0.4em 0 0.67em 0;
 }
 
-h4,
-h4 a {
-  color: $orange;
+h1, h2, h3, .title, .title1 {
+  word-spacing: -0.3ch;
 }
 
 blockquote {
   font-size: 1.5em;
   line-height: 1.5;
   color: $orange;
+}
+
+span.compact p {
+  margin: 13px 0;
 }
 
 .title1 {
@@ -191,48 +215,27 @@ blockquote {
 .button {
   padding: 0.8em 1em;
   color: $black;
-  background-color: $white;
+  background-color: rgb(250, 250, 250);
   border-radius: 0.3rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 90%;
-  transition: all 200ms;
+  transition: all 300ms;
+  border-bottom: none;
 }
 
 .button:hover {
-  box-shadow: 0 7px 12px $translucentLightGreen;
-  transform: translateY(-4px);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 12px -2px $translucentLightGreen;
+  transform: translateY(-2px) scale(1.01);
   text-decoration: none;
+  border-bottom: none;
 }
 
 .long-quote {
   font-size: 85%;
   color: $bronze;
-}
-
-.title {
-  color: $pink;
-  text-decoration: $translucentPink underline;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
-main .title::after {
-  content: '';
-}
-
-.grey,
-.grey a {
-  color: $grey;
-}
-
-.grey a {
-  text-decoration: underline $translucentLightGray;
-}
-
-p .grey a {
-  background-color: $lowTranslucentGray;
 }
 
 ul,
@@ -248,6 +251,7 @@ ol {
 
   main {
     padding: 2.3rem $compactPadding;
+    font-size: 21px;
     margin-bottom: 3rem;
   }
 
@@ -262,6 +266,13 @@ ol {
 
   .button:hover {
     transform: none;
+  }
+}
+
+@media (max-width: $tinyBreakpoint) {
+  main {
+    padding: 2.3rem $tinyPadding;
+    margin-bottom: 3rem;
   }
 }
 
