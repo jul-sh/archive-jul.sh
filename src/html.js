@@ -56,7 +56,7 @@ class HTML extends React.Component {
           />
           <link rel="preload" href={regularFont} as="font" />
           <link rel="preload" href={boldFont} as="font" />
-          <meta name="theme-color" content="#000615" />
+          <meta name="theme-color" content="#030a1f" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -74,14 +74,13 @@ class HTML extends React.Component {
             href="/favicons/favicon-32x32.png"
           />
           <link rel="shortcut icon" href="/favicons/favicon.ico" />
-          <meta
-            name="msapplication-TileImage"
-            content="/favicons/mstile-144x144.png"
-          />
-          <meta
-            name="msapplication-config"
-            content="/favicons/browserconfig.xml"
-          />
+          <link href="/assets/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+          <link href="/assets/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
           <style
             dangerouslySetInnerHTML={{
               __html: webFonts
