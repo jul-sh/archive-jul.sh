@@ -18,18 +18,18 @@
   justify-content: flex-start;
   align-items: center;
   z-index: 10;
-  padding: 0 $expandedPadding 0;
-
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: var(--responsive-padding);
+  padding-right: var(--responsive-padding);
+  padding-bottom: var(--safe-area-inset-bottom);
 }
 
 @supports (padding: max(0px)) {
   .navbar-wrapper {
     padding-left: unquote(
-      'max(#{$expandedPadding}, env(safe-area-inset-left))'
+      'max(#{var(--responsive-padding)}, env(safe-area-inset-left))'
     );
     padding-right: unquote(
-      'max(#{$expandedPadding}, env(safe-area-inset-right))'
+      'max(#{var(--responsive-padding)}, env(safe-area-inset-right))'
     );
   }
 }
@@ -123,10 +123,8 @@
 
 @media (max-width: $breakpoint) {
   .navbar-wrapper {
-    padding: 0 $tinyPadding;
-  }
-
-  .navbar .active .navbar-item-content {
+    padding: 0 var(--responsive-padding);
+    padding-bottom: var(--safe-area-inset-bottom);
   }
 
   .navbar a {
