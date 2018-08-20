@@ -239,6 +239,20 @@ ol {
   line-height: 1.5;
 }
 
+.back {
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  border: 1px solid $translucentOrange;
+  color: $orange;
+  background-color: $lowTranslucentOrange;
+  transition-duration: 200ms;
+
+  &:hover {
+        border: 1px solid $orange;
+    }
+}
+
 @media (max-width: $breakpoint) {
   body {
     font-size: 20px;

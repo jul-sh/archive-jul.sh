@@ -1,16 +1,20 @@
 import React, { Fragment } from 'react'
 import Img from 'gatsby-image'
+import BackToPrevious from 'components/BackToPrevious'
 import parseEmoji from 'helpers/emoji'
 
 const Page = props => {
   const { data } = props
   const { transition } = props
   const { markdownRemark: post } = data
+  const { backTo, backLabel } = post.frontmatter
   const style = post.frontmatter.style || ''
 
   return (
-    <Fragment>
-      <div style={transition && transition.style} className={style + ' page'}>
+    <div style={transition && transition.style}>
+      <div className={style + ' page'}>
+        {!!backTo &&
+          backLabel && <BackToPrevious to={backTo} label={backLabel} />}
         {style === 'index' && (
           <div className="index-me-wrapper">
             {!!post.frontmatter.featuredImage && (
@@ -31,7 +35,7 @@ const Page = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </Fragment>
+    </div>
   )
 }
 
