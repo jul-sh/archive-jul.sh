@@ -238,6 +238,15 @@ ol {
   line-height: 1.5;
 }
 
+li p {
+  margin: 0;
+}
+
+ul li ul {
+  margin-bottom: 0.25rem;
+  margin-top: 0.15rem;
+}
+
 .back {
   padding: 0.2em 0.5em;
   border-radius: 4px;
