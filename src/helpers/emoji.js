@@ -2,7 +2,7 @@ import emoji from 'react-easy-emoji'
 
 export default input =>
   emoji(input, {
-    baseUrl: '/assets/emoji/svg',
+    baseUrl: '/emoji',
     ext: '.svg',
     size: '',
     protocol: '',

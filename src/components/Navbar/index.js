@@ -1,8 +1,8 @@
 import React from 'react'
 import NavbarLink from 'components/NavbarLink'
-import meImg from 'img/me.svg'
-import workImg from 'img/work.svg'
-import mailImg from 'img/mail.svg'
+import meImg from './me.svg'
+import workImg from './work.svg'
+import mailImg from './mail.svg'
 import 'style/navbar.css'
 
 const Navbar = props => (

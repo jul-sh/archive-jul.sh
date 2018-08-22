@@ -48,8 +48,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-twemoji',
             options: {
-              base: '/assets/emoji/',
-              folder: 'svg',
+              base: '/',
+              folder: 'emoji',
               ext: '.svg',
               attributes: () => ({
                 style:
