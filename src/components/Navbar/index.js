@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarLink from 'components/NavbarLink'
 import meImg from './me.svg'
-import workImg from './work.svg'
+import workImg from './work.png'
 import mailImg from './mail.svg'
 import 'style/navbar.css'
 
