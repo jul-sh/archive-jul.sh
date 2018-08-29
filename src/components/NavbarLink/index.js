@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 const NavbarLink = props => {
   const isActive = props.activeName === props.name
+
   return (
     <Link className={`navbar-item ${isActive ? 'active' : ''}`} to={props.to}>
       <div className="navbar-item-content">

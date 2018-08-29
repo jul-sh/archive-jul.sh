@@ -1,12 +1,10 @@
-const autoprefixer = require('autoprefixer')
-const path = require('path')
-
 module.exports = {
   siteMetadata: {
     title: 'Juliette Pretot',
     siteUrl: 'juliette.sh'
   },
   plugins: [
+    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {

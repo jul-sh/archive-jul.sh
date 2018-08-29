@@ -22,6 +22,7 @@
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",
     "gatsby-transformer-sqip": "0.0.11",
+    "prettier": "^1.14.2",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
@@ -37,10 +38,36 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write 'src/**/*.js'",
+    "precommit": "lint-staged",
+    "prerewrite": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{graphql,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "gatsby-plugin-eslint": "^2.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2"
   }
 }
