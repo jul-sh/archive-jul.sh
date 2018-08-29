@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import BackToPrevious from 'components/BackToPrevious'
-import parseEmoji from 'helpers/emoji'
 import 'style/page.css'
 
 const Page = props => {
@@ -34,7 +33,7 @@ const Page = props => {
           </div>
         )}
         <div>
-          <h1>{parseEmoji(post.frontmatter.title)}</h1>
+          <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>

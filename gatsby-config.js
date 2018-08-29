@@ -44,17 +44,6 @@ module.exports = {
             options: {
               classPrefix: 'language-'
             }
-          },
-          {
-            resolve: 'gatsby-remark-twemoji',
-            options: {
-              base: '/',
-              folder: 'emoji',
-              ext: '.svg',
-              attributes: () => ({
-                class: 'emoji'
-              })
-            }
           }
         ]
       }

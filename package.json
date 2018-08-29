@@ -18,7 +18,6 @@
     "gatsby-remark-prismjs": "next",
     "gatsby-remark-responsive-iframe": "^1.4.20",
     "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-remark-twemoji": "0.0.2",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",
@@ -27,7 +26,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-easy-emoji": "^1.2.0",
     "react-helmet": "^5.2.0",
     "react-transition-group": "^2.4.0"
   },

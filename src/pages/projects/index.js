@@ -3,13 +3,13 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import Link from 'components/Link'
-import parseEmoji from 'helpers/emoji'
 import 'style/projects.css'
 
 const IndexPage = props => {
   const { data } = props
   const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
+
   return (
     <Layout activeName={'PROJECTS'}>
       <section className="page" style={transition && transition.style}>
@@ -34,13 +34,11 @@ const IndexPage = props => {
                         className="title project-link"
                         to={post.frontmatter.link || post.frontmatter.path}
                       >
-                        {parseEmoji(post.frontmatter.title)}
+                        {post.frontmatter.title}
                       </Link>
                     </h3>
                   </div>
-                  <p className="description">
-                    {parseEmoji(post.frontmatter.intro)}
-                  </p>
+                  <p className="description">{post.frontmatter.intro}</p>
                 </div>
               )
             })}

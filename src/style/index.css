@@ -261,13 +261,6 @@ ul li ul {
   border: 1px solid var(--orange);
 }
 
-.emoji {
-  height: 1em;
-  width: 1em;
-  margin: 0;
-  vertical-align: -0.07em;
-}
-
 @media (max-width: 700px) {
   body {
     font-size: 20px;
@@ -299,13 +292,6 @@ ul li ul {
   .button:hover {
     transform: none;
   }
-}
-
-img.emoji {
-  height: 1em !important; /* overwrite inline styles */
-  width: 1em !important; /* overwrite inline styles */
-  margin: 0 !important; /* overwrite inline styles */
-  vertical-align: -0.07em !important; /* overwrite inline styles */
 }
 
 @media print {

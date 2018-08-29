@@ -5742,7 +5742,7 @@ internal-ip@1.2.0:
   dependencies:
     meow "^3.3.0"
 
-invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
+invariant@^2.2.0, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -6543,10 +6543,6 @@ lodash._root@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/lodash._root/-/lodash._root-3.0.1.tgz#fba1c4524c19ee9a5f8136b4609f017cf4ded692"
 
-lodash.assign@^4.0.8:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
-
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -6572,10 +6568,6 @@ lodash.escape@^3.0.0:
 lodash.escaperegexp@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.escaperegexp/-/lodash.escaperegexp-4.1.2.tgz#64762c48618082518ac3df4ccf5d5886dae20347"
-
-lodash.flatten@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
 
 lodash.isarguments@^3.0.0:
   version "3.1.0"
@@ -8519,13 +8511,6 @@ react-dom@^16.4.2:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-easy-emoji@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-easy-emoji/-/react-easy-emoji-1.2.0.tgz#6114502c79f22f9c053469fa727ae1292877a000"
-  dependencies:
-    lodash.assign "^4.0.8"
-    string-replace-to-array "^1.0.1"
-
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
@@ -9713,14 +9698,6 @@ stream-to-buffer@^0.1.0:
 stream-to@~0.2.0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/stream-to/-/stream-to-0.2.2.tgz#84306098d85fdb990b9fa300b1b3ccf55e8ef01d"
-
-string-replace-to-array@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/string-replace-to-array/-/string-replace-to-array-1.0.3.tgz#c93eba999a5ee24d731aebbaf5aba36b5f18f7bf"
-  dependencies:
-    invariant "^2.2.1"
-    lodash.flatten "^4.2.0"
-    lodash.isstring "^4.0.1"
 
 string-similarity@^1.2.0:
   version "1.2.0"
