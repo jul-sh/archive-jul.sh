@@ -93,7 +93,7 @@ a {
 }
 
 main a {
-  color: var(--lightGreen);
+  color: var(--green);
   transition-duration: 300ms;
   border-bottom: var(--translucentGreen) 2px solid;
 }
@@ -101,12 +101,12 @@ main a {
 main p a,
 main li a,
 .title {
-  color: var(--lightGreen);
+  color: var(--green);
   border-bottom: var(--translucentGreen) 2px solid;
 }
 
 main a:hover {
-  border-bottom: var(--lightGreen) 2px solid;
+  border-bottom: var(--green) 2px solid;
 }
 
 .grey a {
@@ -156,10 +156,6 @@ h4:hover a {
   border-bottom: 2px solid var(--translucentGray);
 }
 
-.turquoise {
-  color: var(--turquoise);
-}
-
 h1,
 h1 a {
   color: var(--pink);
@@ -174,7 +170,7 @@ h2 a {
 
 h3,
 h3 a {
-  color: var(--darkBlue);
+  color: var(--blue);
   margin: 0.4em 0 0.67em 0;
 }
 
@@ -222,15 +218,10 @@ span.compact p {
 
 .button:hover {
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 5px 12px -2px var(--lightGreen);
+  box-shadow: 0 5px 12px -2px var(--green);
   transform: translateY(-2px) scale(1.005);
   text-decoration: none;
   border-bottom: none;
-}
-
-.long-quote {
-  font-size: 85%;
-  color: var(--bronze);
 }
 
 ul,
@@ -286,7 +277,7 @@ ul li ul {
   }
 
   .button {
-    box-shadow: 0 5px 12px -2px var(--lightGreen);
+    box-shadow: 0 5px 12px -2px var(--green);
   }
 
   .button:hover {
