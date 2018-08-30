@@ -15,30 +15,27 @@ const Page = props => {
 
   return (
     <Layout activeName={post.frontmatter.activeName}>
-      <div style={transition && transition.style}>
-        <div className={style + ' page'}>
-          {!!backTo &&
-            backLabel && <BackToPrevious to={backTo} label={backLabel} />}
-          {style === 'index' && (
-            <div className="index-me-wrapper">
-              {!!post.frontmatter.featuredImage && (
-                <Img
-                  fadeIn={false}
-                  outerWrapperClassName="index-me"
-                  sizes={{
-                    ...post.frontmatter.featuredImage.childImageSharp.sizes,
-                    base64:
-                      post.frontmatter.featuredImage.childImageSharp.sqip
-                        .dataURI
-                  }}
-                />
-              )}
-            </div>
-          )}
-          <div>
-            <h1>{parseEmoji(post.frontmatter.title)}</h1>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className={style + ' page'} style={transition && transition.style}>
+        {!!backTo &&
+          backLabel && <BackToPrevious to={backTo} label={backLabel} />}
+        {style === 'index' && (
+          <div className="index-me-wrapper">
+            {!!post.frontmatter.featuredImage && (
+              <Img
+                fadeIn={false}
+                outerWrapperClassName="index-me"
+                sizes={{
+                  ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                  base64:
+                    post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
+                }}
+              />
+            )}
           </div>
+        )}
+        <div>
+          <h1>{parseEmoji(post.frontmatter.title)}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
     </Layout>

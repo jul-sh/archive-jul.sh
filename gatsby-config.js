@@ -52,8 +52,7 @@ module.exports = {
               folder: 'emoji',
               ext: '.svg',
               attributes: () => ({
-                style:
-                  'height: 1em; width: 1em; margin: 0; vertical-align: -0.07em;'
+                class: 'emoji'
               })
             }
           }

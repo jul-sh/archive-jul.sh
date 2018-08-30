@@ -1,11 +1,16 @@
 body,
 html,
-#___gatsby {
+#___gatsby,
+/* target reach router focus wrapper,
+the defacto wrapper of all react content */
+#___gatsby > div[role='group'] {
   width: 100%;
-  height: 100%;
-  height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 body {
@@ -17,27 +22,22 @@ body {
   font-size: 24px;
   word-spacing: -0.25ch;
   line-height: 1.4;
-  display: table;
-}
-
-#___gatsby {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 main {
-  max-height: 100%;
-  margin: 0.25rem auto 3.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   padding-top: calc(var(--responsive-padding) + var(--safe-area-inset-top));
   padding-right: calc(var(--responsive-padding) + var(--safe-area-inset-right));
   padding-bottom: calc(
-    var(--responsive-padding) + var(--safe-area-inset-bottom)
+    4rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
   );
   padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
 }
 
 .page {
-  margin: 0 auto;
   max-width: 32.5em;
 }
 
@@ -259,6 +259,13 @@ ul li ul {
 
 .back:hover {
   border: 1px solid var(--orange);
+}
+
+.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0;
+  vertical-align: -0.07em;
 }
 
 @media (max-width: 700px) {

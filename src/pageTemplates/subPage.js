@@ -8,16 +8,14 @@ const SubPage = props => {
   const { transition } = props
   return (
     <Layout activeName={post.frontmatter.activeName}>
-      <div style={transition && transition.style}>
-        <div className="page article">
-          <h1 className="title1 under-back">
-            {parseEmoji(post.frontmatter.title)}
-          </h1>
-          {post.frontmatter.intro && (
-            <span className="intro">{parseEmoji(post.frontmatter.intro)}</span>
-          )}
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+      <div className="page article" style={transition && transition.style}>
+        <h1 className="title1 under-back">
+          {parseEmoji(post.frontmatter.title)}
+        </h1>
+        {post.frontmatter.intro && (
+          <span className="intro">{parseEmoji(post.frontmatter.intro)}</span>
+        )}
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )

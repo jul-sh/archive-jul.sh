@@ -8,16 +8,14 @@ const ProjectPage = props => {
   const { transition } = props
   return (
     <Layout activeName="PROJECTS">
-      <div style={transition && transition.style}>
-        <div className="page article">
-          <h1 className="title1 under-back">
-            {parseEmoji(post.frontmatter.title)}
-          </h1>
-          {post.frontmatter.intro && (
-            <span className="intro">{parseEmoji(post.frontmatter.intro)}</span>
-          )}
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+      <div style={transition && transition.style} className="page article">
+        <h1 className="title1 under-back">
+          {parseEmoji(post.frontmatter.title)}
+        </h1>
+        {post.frontmatter.intro && (
+          <span className="intro">{parseEmoji(post.frontmatter.intro)}</span>
+        )}
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )

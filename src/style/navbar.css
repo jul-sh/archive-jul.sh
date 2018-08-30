@@ -13,7 +13,8 @@
   right: 0;
   bottom: 0;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   z-index: 10;
   padding-left: var(--responsive-padding);
@@ -35,12 +36,11 @@
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
   height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 0.1rem;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 .navbar-item {
