@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-import Layout from 'components/Layout'
 import BackToPrevious from 'components/BackToPrevious'
 import 'style/page.css'
 
@@ -13,7 +12,7 @@ const Page = props => {
   const style = post.frontmatter.style || ''
 
   return (
-    <Layout>
+    <>
       <div className={style + ' page'} style={transition && transition.style}>
         {!!backTo &&
           backLabel && <BackToPrevious to={backTo} label={backLabel} />}
@@ -37,7 +36,7 @@ const Page = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </Layout>
+    </>
   )
 }
 

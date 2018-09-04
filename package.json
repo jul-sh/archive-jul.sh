@@ -7,6 +7,7 @@
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-catch-links": "next",
+    "gatsby-plugin-layout": "^1.0.0-rc.3",
     "gatsby-plugin-netlify-cache": "^0.1.0",
     "gatsby-plugin-nprogress": "next",
     "gatsby-plugin-offline": "^1.0.18",
