@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
+import './styles.css'
 
 const NavbarLink = props => (
   <Location>

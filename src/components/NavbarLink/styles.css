@@ -1,49 +1,9 @@
-.navbar * {
-  transition: all 150ms ease-in-out;
-}
-
 .nav-icon {
   transition: all 100ms ease-in-out;
 }
 
-.navbar-wrapper {
-  background-color: hsl(240, 18%, 13%);
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  padding-left: var(--responsive-padding);
-  padding-right: var(--responsive-padding);
-  padding-bottom: var(--safe-area-inset-bottom);
-}
-
-@supports (padding: max(0px)) {
-  .navbar-wrapper {
-    padding-left: max(var(--responsive-padding), env(safe-area-inset-left));
-    padding-right: max(var(--responsive-padding), env(safe-area-inset-right));
-  }
-}
-
-.navbar,
-.appHeader {
-  max-width: 30em;
-}
-
-.navbar {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: space-around;
-  justify-content: space-evenly;
-  flex-grow: 1;
-}
-
 .navbar-item {
+  transition: all 150ms ease-in-out;
   position: relative;
   width: 9%;
   user-select: none;
@@ -75,7 +35,7 @@
   align-items: center;
 }
 
-.navbar .nav-icon {
+.nav-icon {
   display: block;
   opacity: 0.8;
   width: 1.3em;
@@ -83,11 +43,11 @@
   filter: saturate(95%) opacity(95%);
 }
 
-.navbar a {
+.navbar-item a {
   text-decoration: none;
 }
 
-.navbar .active .nav-icon {
+.active .nav-icon {
   filter: saturate(100%) opacity(100%);
 }
 
@@ -99,7 +59,7 @@
   color: rgb(255, 255, 255);
 }
 
-.navbar .navbar-item.active .navbar-item-content {
+.navbar-item.active .navbar-item-content {
   color: rgb(255, 255, 255);
 }
 
@@ -108,7 +68,7 @@
   transform: none;
 }
 
-.navbar .nav-caption {
+.nav-caption {
   font-size: 0.9rem;
   text-transform: uppercase;
   display: block;
@@ -116,33 +76,8 @@
 }
 
 @media (max-width: 700px) {
-  .navbar-wrapper {
-    padding: 0 var(--responsive-padding);
-    padding-bottom: var(--safe-area-inset-bottom);
-  }
-
-  .navbar a {
+  .navbar-item a {
     padding: 0.35rem 1.5rem;
     margin: 0.3rem 0;
-  }
-}
-
-@supports (
-  (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
-) {
-  .navbar-wrapper {
-    background-color: rgba(28, 28, 39, 0.925);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-  }
-
-  .navbar-wrapper {
-    border-top: 1px rgba(255, 255, 255, 0.05) solid;
-  }
-}
-
-@media print {
-  .navbar-wrapper {
-    display: none !important;
   }
 }
