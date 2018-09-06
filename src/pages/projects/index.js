@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Link from 'components/Link'
-import 'style/projects.css'
+import './styles.css'
 
 const IndexPage = props => {
   const { data } = props

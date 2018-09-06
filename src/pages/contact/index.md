@@ -1,5 +1,5 @@
 ---
-templateKey: page
+templateKey: BasePage
 path: /contact
 title: I'm always happy to hear from you.
 ---

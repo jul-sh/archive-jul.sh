@@ -1,5 +1,5 @@
 ---
-templateKey: page
+templateKey: BasePage
 path: /
 title: Nice to meet you
 featuredImage: ./me.jpg

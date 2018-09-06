@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import 'style/navbar.css'
 
 const BackToPrevious = props => (
   <Link

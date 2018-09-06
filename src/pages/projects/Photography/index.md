@@ -1,5 +1,5 @@
 ---
-templateKey: 'project'
+templateKey: ProjectPage
 path: /projects/Photography
 title: Photography
 date: 2016-00-01

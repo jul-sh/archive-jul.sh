@@ -1,5 +1,5 @@
 ---
-templateKey: 'project'
+templateKey: ProjectPage
 path: /projects/clue
 title: Clue Connect
 date: 2017-00-03

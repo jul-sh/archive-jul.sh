@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import BackToPrevious from 'components/BackToPrevious'
-import 'style/page.css'
+import './styles.css'
 
 const Page = props => {
   const { data } = props
