@@ -22,6 +22,14 @@ body {
   font-size: 24px;
   word-spacing: -0.25ch;
   line-height: 1.4;
+
+  @media print {
+    background: none;
+    color: rgb(0, 0, 0);
+    font-family: var(--primaryFont);
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 main {
@@ -35,14 +43,14 @@ main {
     4rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
   );
   padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
+
+  @media print {
+    max-width: 100%;
+  }
 }
 
 .page {
   max-width: 32.5em;
-}
-
-.page.large {
-  max-width: 40em;
 }
 
 .article {
@@ -282,19 +290,5 @@ ul li ul {
 
   .button:hover {
     transform: none;
-  }
-}
-
-@media print {
-  body {
-    background: none;
-    color: rgb(0, 0, 0);
-    font-family: var(--primaryFont);
-    font-size: 14px;
-    line-height: 1.2;
-  }
-
-  main {
-    max-width: 100%;
   }
 }

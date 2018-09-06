@@ -1,27 +1,28 @@
-.project-thumbnail .description {
-  font-size: smaller;
-  margin: 0;
-}
-
-.project-thumbnail h3 {
-  margin: 0.5em 0;
-  display: inline-block;
-}
-
-.project-thumbnail a::after {
-  content: '';
-}
-
-.projects {
-  column-count: 2;
-  column-gap: 1em;
-}
-
 .project-thumbnail {
   margin: 0 0 2em;
   break-inside: avoid;
   display: inline-block;
   width: 100%;
+
+  & .description {
+    font-size: smaller;
+    margin: 0;
+  }
+
+  & h3 {
+    margin: 0.5em 0;
+    display: inline-block;
+  }
+}
+
+.projects {
+  column-count: 2;
+  column-gap: 1em;
+
+  @media (width <= 700px) {
+    column-count: 1;
+    column-gap: 0;
+  }
 }
 
 .link-overflow-limit {
@@ -36,11 +37,4 @@
   left: 0;
   right: 0;
   z-index: 3;
-}
-
-@media (max-width: 700px) {
-  .projects {
-    column-count: 1;
-    column-gap: 0;
-  }
 }

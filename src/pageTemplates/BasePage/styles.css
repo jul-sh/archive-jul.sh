@@ -2,35 +2,23 @@
   display: flex;
   align-items: center;
   max-width: 42.5em;
+
+  @media (width <= 900px) {
+    display: block;
+  }
 }
 
 .index-me-wrapper {
   width: 32.5%;
   flex: none;
   margin-right: 1.5em;
-}
 
-.index-me {
-  max-width: 100%;
-}
-
-@media (max-width: 900px) {
-  .index.page {
-    display: block;
-  }
-
-  .index-me-wrapper {
+  @media (width <= 900px) {
     float: left;
     width: 40%;
   }
-}
 
-@media (max-width: 550px) {
-  .index.page {
-    display: block;
-  }
-
-  .index-me-wrapper {
+  @media (width <= 550px) {
     position: relative;
     overflow: hidden;
     width: 90%;
@@ -38,8 +26,12 @@
     float: none;
     right: 0;
   }
+}
 
-  .index-me {
+.index-me {
+  max-width: 100%;
+
+  @media (width <= 550px) {
     margin: -1rem 0 -3rem 0;
   }
 }

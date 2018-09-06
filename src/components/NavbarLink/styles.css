@@ -1,7 +1,3 @@
-.nav-icon {
-  transition: all 100ms ease-in-out;
-}
-
 .navbar-item {
   transition: all 150ms ease-in-out;
   position: relative;
@@ -22,10 +18,20 @@
   border-radius: 10px;
   will-change: background-color;
   background-color: rgba(255, 255, 255, 0);
-}
 
-.navbar-item.active {
-  background-color: rgba(255, 255, 255, 0.1);
+  & :hover {
+    color: rgb(255, 255, 255);
+  }
+
+  &[data-styles~='isActive'] {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @media (width <= 700px) {
+    padding: 0.35rem 1.5rem;
+    margin: 0.3rem 0;
+  }
 }
 
 .navbar-item-content {
@@ -41,31 +47,15 @@
   width: 1.3em;
   height: 1.3em;
   filter: saturate(95%) opacity(95%);
-}
+  transition: all 100ms ease-in-out;
 
-.navbar-item a {
-  text-decoration: none;
-}
+  & :hover {
+    filter: saturate(100%) opacity(100%);
+  }
 
-.active .nav-icon {
-  filter: saturate(100%) opacity(100%);
-}
-
-.navbar-item:hover .nav-icon {
-  filter: saturate(100%) opacity(100%);
-}
-
-.navbar-item:hover .navbar-item-content {
-  color: rgb(255, 255, 255);
-}
-
-.navbar-item.active .navbar-item-content {
-  color: rgb(255, 255, 255);
-}
-
-.navbar-item.active:hover .nav-icon {
-  filter: saturate(100%) opacity(100%);
-  transform: none;
+  &[data-styles~='isActive'] {
+    filter: saturate(100%) opacity(100%);
+  }
 }
 
 .nav-caption {
@@ -73,11 +63,4 @@
   text-transform: uppercase;
   display: block;
   margin-top: 0.5em;
-}
-
-@media (max-width: 700px) {
-  .navbar-item a {
-    padding: 0.35rem 1.5rem;
-    margin: 0.3rem 0;
-  }
 }
