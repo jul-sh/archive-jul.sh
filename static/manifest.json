@@ -1,12 +1,11 @@
 {
   "name": "Juliette Pretot",
   "short_name": "Juliette Pretot",
-  "theme_color": "#000615",
-  "background_color": "#000615",
+  "theme_color": "#0c1021",
+  "background_color": "#0c1021",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "start_url": "./",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
