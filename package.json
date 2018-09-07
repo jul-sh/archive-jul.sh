@@ -37,7 +37,6 @@
     "gatsby"
   ],
   "license": "UNLICENSED",
-  "main": "src/App.js",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
