@@ -1,5 +1,5 @@
 ---
-templateKey: SubPage
+templateKey: BasePage
 path: /about/cv
 backTo: /
 backLabel: about
