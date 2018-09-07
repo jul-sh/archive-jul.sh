@@ -15,3 +15,9 @@ Styling is done using CSS stylehsheets processed with `postcss-preset-env` to ta
 ##### Linting & Formatting
 
 The code is formatted and linted with **[Prettier](https://github.com/prettier/prettier)** & **[ESLint](https://github.com/eslint/eslint)** using commit hooks.
+
+---
+
+## License 🔓
+
+MIT. :)
