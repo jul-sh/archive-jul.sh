@@ -1,13 +1,17 @@
-## Welcome to my personal website. ✨
+## Tech Stack 🥞
 
-## In simple words:
-This website uses modern web technologies to load super quickly & even work offline.
+##### Foundation
 
-## In technical terms:
-Using **[GatsbyJs](https://gatsbyjs.org)** the website's react code gets rendered into static HTML & CSS on deploy. If a client visits the page the JavaScript bundle loads asynchronously. The website precaches all links, meaning they'll load instantly.
+Using **[GatsbyJs](https://github.com/gatsbyjs/gatsby)** the website's **[React](https://github.com/facebook/react)** based JavaScript code gets rendered into static HTML at built time. Once a client visits the page the JavaScript bundle loads asynchronously.
 
-Aka it's an **offline** enabled **progressive web-app** and works **without javascript**.
+##### Data
 
-You might consider this a tad overengineered for a personal website, but I kinda like it.
+Content is stored in markdown files and queried using **GraphQL**.
 
-It's continuously built + deployed via netlify.
+##### Styling
+
+Styling is done using CSS stylehsheets processed with `postcss-preset-env` to take adavantage of new & proposed CSS standards.
+
+##### Linting & Formatting
+
+The code is formatted and linted with **[Prettier](https://github.com/prettier/prettier)** & **[ESLint](https://github.com/eslint/eslint)** using commit hooks.
