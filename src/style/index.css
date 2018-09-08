@@ -164,22 +164,32 @@ h4:hover a {
   border-bottom: 2px solid var(--translucentGray);
 }
 
+h1 {
+  font-size: 2em; /* normalize across browsers */
+  margin: 0.4em 0 0.67em 0;
+}
+
 h1,
 h1 a {
   color: var(--pink);
+}
+
+h2 {
   margin: 0.4em 0 0.67em 0;
 }
 
 h2,
 h2 a {
   color: var(--yellow);
+}
+
+h3 {
   margin: 0.4em 0 0.67em 0;
 }
 
 h3,
 h3 a {
   color: var(--blue);
-  margin: 0.4em 0 0.67em 0;
 }
 
 h1,

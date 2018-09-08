@@ -44,12 +44,6 @@ module.exports = {
             options: {
               dashes: 'oldschool'
             }
-          },
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              classPrefix: 'language-'
-            }
           }
         ]
       }

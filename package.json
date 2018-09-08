@@ -19,7 +19,6 @@
     "gatsby-plugin-sitemap": "next",
     "gatsby-remark-copy-linked-files": "^1.5.37",
     "gatsby-remark-images": "next",
-    "gatsby-remark-prismjs": "next",
     "gatsby-remark-responsive-iframe": "^1.4.20",
     "gatsby-remark-smartypants": "^1.4.12",
     "gatsby-source-filesystem": "next",

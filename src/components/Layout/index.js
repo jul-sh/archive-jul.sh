@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from 'components/Navbar'
-import 'style/normalize.css'
 import 'style/custom-properties.css'
 import 'style/index.css'
 
