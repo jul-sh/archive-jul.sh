@@ -1276,7 +1276,7 @@ atob@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
 
-autoprefixer@^8.6.5:
+autoprefixer@^8.0.0, autoprefixer@^8.6.5:
   version "8.6.5"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.5.tgz#343f3d193ed568b3208e00117a1b96eb691d4ee9"
   dependencies:
@@ -2910,6 +2910,17 @@ cssesc@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-1.0.1.tgz#ef7bd8d0229ed6a3a7051ff7771265fe7330e0a8"
 
+cssnano-preset-advanced@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cssnano-preset-advanced/-/cssnano-preset-advanced-4.0.0.tgz#3badd2d23bea418aa0af333e3cee3f778498b837"
+  dependencies:
+    autoprefixer "^8.0.0"
+    cssnano-preset-default "^4.0.0"
+    postcss-discard-unused "^4.0.0"
+    postcss-merge-idents "^4.0.0"
+    postcss-reduce-idents "^4.0.0"
+    postcss-zindex "^4.0.0"
+
 cssnano-preset-default@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/cssnano-preset-default/-/cssnano-preset-default-4.0.0.tgz#c334287b4f7d49fb2d170a92f9214655788e3b6b"
@@ -2963,7 +2974,7 @@ cssnano-util-same-parent@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/cssnano-util-same-parent/-/cssnano-util-same-parent-4.0.0.tgz#d2a3de1039aa98bc4ec25001fa050330c2a16dac"
 
-cssnano@^4.0.2:
+cssnano@^4.0.2, cssnano@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cssnano/-/cssnano-4.1.0.tgz#682c37b84b9b7df616450a5a8dc9269b9bd10734"
   dependencies:
@@ -8438,6 +8449,14 @@ postcss-discard-overridden@^4.0.0:
   dependencies:
     postcss "^6.0.0"
 
+postcss-discard-unused@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-discard-unused/-/postcss-discard-unused-4.0.0.tgz#602218e4acabf2dd3d180d967b5692246a08172b"
+  dependencies:
+    postcss "^6.0.0"
+    postcss-selector-parser "^3.0.0"
+    uniqs "^2.0.0"
+
 postcss-env-function@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/postcss-env-function/-/postcss-env-function-1.0.0.tgz#0d81b53b3d789d55d1cac8125ec64f89e916a2f7"
@@ -8530,6 +8549,15 @@ postcss-media-minmax@^3.0.0:
   resolved "https://registry.yarnpkg.com/postcss-media-minmax/-/postcss-media-minmax-3.0.0.tgz#675256037a43ef40bc4f0760bfd06d4dc69d48d2"
   dependencies:
     postcss "^6.0.1"
+
+postcss-merge-idents@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-merge-idents/-/postcss-merge-idents-4.0.0.tgz#bd20b925d927368302460aa67b305c7a393537e1"
+  dependencies:
+    cssnano-util-same-parent "^4.0.0"
+    has "^1.0.0"
+    postcss "^6.0.0"
+    postcss-value-parser "^3.0.0"
 
 postcss-merge-longhand@^4.0.0:
   version "4.0.5"
@@ -8766,6 +8794,13 @@ postcss-pseudo-class-any-link@^5.0.0:
     postcss "^6.0.22"
     postcss-selector-parser "^4.0.0"
 
+postcss-reduce-idents@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-reduce-idents/-/postcss-reduce-idents-4.0.0.tgz#c8a9875ceacb4c79ca9407c575c3fa4778fe0928"
+  dependencies:
+    postcss "^6.0.0"
+    postcss-value-parser "^3.0.0"
+
 postcss-reduce-initial@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-4.0.1.tgz#f2d58f50cea2b0c5dc1278d6ea5ed0ff5829c293"
@@ -8856,6 +8891,14 @@ postcss-values-parser@^1.5.0:
     flatten "^1.0.2"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
+
+postcss-zindex@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-zindex/-/postcss-zindex-4.0.0.tgz#61c60d19c5e4a8b6704af76a2c15ac8286d306d0"
+  dependencies:
+    has "^1.0.0"
+    postcss "^6.0.0"
+    uniqs "^2.0.0"
 
 postcss@^6.0, postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.14, postcss@^6.0.16, postcss@^6.0.18, postcss@^6.0.20, postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.23:
   version "6.0.23"
