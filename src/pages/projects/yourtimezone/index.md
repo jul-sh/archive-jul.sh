@@ -7,7 +7,7 @@ intro: "Designed + coded a react webapp which automatically translates the time 
 featuredImage: ./screenshot.png
 ---
 
-Featured on [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
+Featured on the frontpage of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
 
 <div class="button-parent">
 <a class="button" href="https://yourtime.zone/">Visit yourtime.zone</a>

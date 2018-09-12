@@ -1,14 +1,12 @@
 ---
 templateKey: page
 path: /contact
-title: Let's be friends 👯‍
+title: I'm always happy to hear from you.
 ---
-
-## I'm always happy to hear from you.
 
 ### 📮 hi@juliette.sh
 
-* [Twitter](https://twitter.com/juliettepretot)
-* [Instagram](http://instagram.com/juliettepretot)
-* [LinkedIn](https://www.linkedin.com/in/juliette-prétot-2a9530a5/)
-* [GitHub](https://github.com/juliettepretot)
+- [Twitter](https://twitter.com/juliettepretot)
+- [Instagram](http://instagram.com/juliettepretot)
+- [LinkedIn](https://www.linkedin.com/in/juliette-prétot-2a9530a5/)
+- [GitHub](https://github.com/juliettepretot)

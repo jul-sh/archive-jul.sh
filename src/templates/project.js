@@ -1,13 +1,10 @@
-import React, { Fragment } from 'react'
-import Helmet from 'react-helmet'
+import React from 'react'
 import parseEmoji from 'helpers/emoji'
 
 const ProjectPage = props => {
   const { markdownRemark: post } = props.data
   const { transition } = props
   return (
-    <Fragment>
-      <Helmet title={`${post.frontmatter.title}`} />
       <div style={transition && transition.style}>
         <div className="page article">
           <h1 className="title1 under-back">
@@ -19,7 +16,6 @@ const ProjectPage = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </Fragment>
   )
 }
 
