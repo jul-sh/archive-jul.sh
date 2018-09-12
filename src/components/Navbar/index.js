@@ -10,24 +10,21 @@ const Navbar = props => (
     <div className="navbar">
       <NavbarLink
         to="/"
+        match={new RegExp('^/$|^/about')}
         icon={meImg}
-        name="ABOUT"
         label="About"
-        activeName={props.activeName}
       />
       <NavbarLink
         to="/projects"
+        match={new RegExp('^/projects')}
         icon={workImg}
-        name="PROJECTS"
         label="Projects"
-        activeName={props.activeName}
       />
       <NavbarLink
         to="/contact"
+        match={new RegExp('^/contact')}
         icon={mailImg}
-        name="CONTACT"
         label="Contact"
-        activeName={props.activeName}
       />
     </div>
   </nav>

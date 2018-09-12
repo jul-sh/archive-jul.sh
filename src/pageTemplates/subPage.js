@@ -7,7 +7,7 @@ const SubPage = props => {
   const { transition } = props
 
   return (
-    <Layout activeName={post.frontmatter.activeName}>
+    <Layout>
       <div className="page article" style={transition && transition.style}>
         <h1 className="title1 under-back">{post.frontmatter.title}</h1>
         {post.frontmatter.intro && (
@@ -28,7 +28,6 @@ export const subPageQuery = graphql`
       frontmatter {
         intro
         path
-        activeName
         title
       }
     }

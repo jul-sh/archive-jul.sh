@@ -16,7 +16,7 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <Navbar activeName={this.props.activeName} />
+        <Navbar />
         <main className="main">{this.props.children}</main>
       </>
     )

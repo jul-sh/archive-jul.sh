@@ -7,7 +7,7 @@ const ProjectPage = props => {
   const { transition } = props
 
   return (
-    <Layout activeName="PROJECTS">
+    <Layout>
       <div style={transition && transition.style} className="page article">
         <h1 className="title1 under-back">{post.frontmatter.title}</h1>
         {post.frontmatter.intro && (

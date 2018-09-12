@@ -1,7 +1,6 @@
 ---
 templateKey: subPage
 path: /about/cv
-activeName: ABOUT
 backTo: /
 backLabel: about
 title: Juliette Pretot

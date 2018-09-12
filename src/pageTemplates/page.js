@@ -13,7 +13,7 @@ const Page = props => {
   const style = post.frontmatter.style || ''
 
   return (
-    <Layout activeName={post.frontmatter.activeName}>
+    <Layout>
       <div className={style + ' page'} style={transition && transition.style}>
         {!!backTo &&
           backLabel && <BackToPrevious to={backTo} label={backLabel} />}
@@ -50,7 +50,6 @@ export const PageQuery = graphql`
       frontmatter {
         path
         title
-        activeName
         style
         featuredImage {
           childImageSharp {

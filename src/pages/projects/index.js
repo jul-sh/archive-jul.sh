@@ -11,7 +11,7 @@ const IndexPage = props => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <Layout activeName={'PROJECTS'}>
+    <Layout>
       <section className="page" style={transition && transition.style}>
         <div className="container projects">
           {posts

@@ -1,7 +1,6 @@
 ---
 templateKey: page
 path: /
-activeName: ABOUT
 title: Nice to meet you
 featuredImage: ./me.jpg
 style: index
@@ -15,5 +14,4 @@ My team at [N26](https://n26.com) builds the web app. Our stack is isomorphic Re
 
 <span class="grey">[Ré­sumé](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.</span>
 
-<span class="grey">Global citizen in Berlin.</span>
-</span>
+<span class="grey">Global citizen in Berlin.</span> </span>
