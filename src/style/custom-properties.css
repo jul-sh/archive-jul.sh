@@ -3,19 +3,19 @@
   --primaryFont: Juliette, monospace;
 
   /* colors */
-  --background-color: rgb(3, 9, 32);
-  --pink: rgb(253, 186, 187);
-  --lightGray: rgb(206, 206, 206);
-  --gray: rgb(153, 153, 153);
-  --translucentGray: rgba(153, 153, 153, 0.6);
-  --yellow: rgb(253, 225, 134);
-  --orange: rgb(252, 165, 79);
-  --translucentOrange: rgba(252, 165, 79, 0.6);
-  --lowTranslucentOrange: rgba(252, 165, 79, 0.2);
-  --blue: rgb(105, 174, 219);
-  --lightBlue: rgb(104, 221, 219);
-  --green: rgb(67, 177, 131);
-  --translucentGreen: rgba(68, 178, 132, 0.6);
+  --background-color: hsl(229, 43%, 10%);
+  --pink: hsl(359, 94%, 86%);
+  --lightGray: hsl(0, 0%, 84%);
+  --gray: hsl(0, 0%, 62%);
+  --translucentGray: hsla(0, 0%, 62%, 0.6);
+  --yellow: hsl(46, 82%, 74%);
+  --orange: hsl(30, 89%, 70%);
+  --translucentOrange: hsla(30, 82%, 72%, 0.6);
+  --lowTranslucentOrange: hsla(30, 82%, 72%, 0.2);
+  --blue: hsl(204, 66%, 68%);
+  --lightBlue: hsl(179, 66%, 70%);
+  --green: hsl(155, 47%, 54%);
+  --translucentGreen: hsla(155, 45%, 60%, 0.6);
 
   /* sizing */
   --responsive-padding: 3rem;
