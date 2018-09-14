@@ -10,7 +10,7 @@ const IndexPage = props => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <section className="page" style={transition && transition.style}>
+    <section className="page" style={transition ? transition.style : undefined}>
       <div className="container projects">
         {posts
           .filter(post => post.node.frontmatter.path.includes('/projects/'))

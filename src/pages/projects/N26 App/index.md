@@ -1,5 +1,5 @@
 ---
-templateKey: ProjectPage
+templateKey: TemplateProject
 path: /projects/n26
 title: N26 App
 date: 2018-00-07

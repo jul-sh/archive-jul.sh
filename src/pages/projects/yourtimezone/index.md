@@ -1,5 +1,5 @@
 ---
-templateKey: ProjectPage
+templateKey: TemplateProject
 path: /projects/yourtimezone
 title: yourtime.zone
 date: 2018-00-01

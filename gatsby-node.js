@@ -19,14 +19,9 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 400)
-            html
-            id
             frontmatter {
               templateKey
               path
-              date
-              title
             }
           }
         }
@@ -43,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve(
           `src/pageTemplates/${String(node.frontmatter.templateKey)}/index.js`
         ),
-        context: {} // additional data can be passed via context
+        context: {}
       })
     })
   })
