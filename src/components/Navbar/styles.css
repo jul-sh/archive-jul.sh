@@ -1,5 +1,5 @@
 .navbar-wrapper {
-  background-color: hsl(240, 18%, 13%);
+  background-color: hsl(221, 25%, 13%);
   position: fixed;
   left: 0;
   right: 0;
@@ -43,7 +43,7 @@
   (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
 ) {
   .navbar-wrapper {
-    background-color: rgba(28, 28, 39, 0.925);
+    background-color: hsla(221, 25%, 13%, 0.94);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
   }
