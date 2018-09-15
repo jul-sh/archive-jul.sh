@@ -4759,12 +4759,6 @@ gatsby-plugin-eslint@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.1.tgz#88641be50b95a867416878c43b64458a2d6b9c21"
 
-gatsby-plugin-layout@next:
-  version "1.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.0-rc.4.tgz#456f874c74b60326d72fc1863aae87f6eda6ec7d"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-
 gatsby-plugin-netlify-cache@next:
   version "1.0.0-beta0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cache/-/gatsby-plugin-netlify-cache-1.0.0-beta0.tgz#e2b0cbb53c0b7c45a5c1e5e3134f3cf5dfe82709"

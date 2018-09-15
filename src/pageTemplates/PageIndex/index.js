@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import Layout from 'components/Layout'
 import './styles.css'
 
 const Page = props => {
@@ -8,25 +9,28 @@ const Page = props => {
   const { markdownRemark: post } = data
 
   return (
-    <div
-      className="page index"
-      style={transition ? transition.style : undefined}
-    >
-      <div className="index-me-wrapper">
-        <Img
-          fadeIn={false}
-          outerWrapperClassName="index-me"
-          sizes={{
-            ...post.frontmatter.featuredImage.childImageSharp.sizes,
-            base64: post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
-          }}
-        />
+    <Layout>
+      <div
+        className="page index"
+        style={transition ? transition.style : undefined}
+      >
+        <div className="index-me-wrapper">
+          <Img
+            fadeIn={false}
+            outerWrapperClassName="index-me"
+            sizes={{
+              ...post.frontmatter.featuredImage.childImageSharp.sizes,
+              base64:
+                post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
+            }}
+          />
+        </div>
+        <div>
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </div>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </div>
+    </Layout>
   )
 }
 

@@ -8,7 +8,6 @@
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-catch-links": "next",
-    "gatsby-plugin-layout": "next",
     "gatsby-plugin-netlify-cache": "next",
     "gatsby-plugin-nprogress": "next",
     "gatsby-plugin-offline": "next",

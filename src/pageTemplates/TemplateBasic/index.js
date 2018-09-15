@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import BackToPrevious from 'components/BackToPrevious'
+import Layout from 'components/Layout'
 import './styles.css'
 
 const TemplateBasic = props => {
@@ -9,14 +10,16 @@ const TemplateBasic = props => {
   const { backTo, backLabel } = post.frontmatter
 
   return (
-    <div className="page" style={transition ? transition.style : undefined}>
-      {!!backTo &&
-        backLabel && <BackToPrevious to={backTo} label={backLabel} />}
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <Layout>
+      <div className="page" style={transition ? transition.style : undefined}>
+        {!!backTo &&
+          backLabel && <BackToPrevious to={backTo} label={backLabel} />}
+        <div>
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
