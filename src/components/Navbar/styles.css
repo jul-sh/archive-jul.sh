@@ -43,12 +43,8 @@
   (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
 ) {
   .navbar-wrapper {
-    background-color: hsla(221, 25%, 13%, 0.94);
+    background-color: hsla(221, 20%, 15%, 0.925);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-  }
-
-  .navbar-wrapper {
-    border-top: 1px rgba(255, 255, 255, 0.05) solid;
   }
 }

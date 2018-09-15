@@ -1,5 +1,5 @@
 .navbar-item {
-  transition: all 150ms ease-in-out;
+  transition: all 25ms ease-in-out;
   position: relative;
   width: 9%;
   user-select: none;
