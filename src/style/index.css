@@ -23,6 +23,11 @@ body {
   word-spacing: -0.25ch;
   line-height: 1.4;
 
+  &[data-is-app='true'] {
+    /* force full height on iOS */
+    min-height: 100vh;
+  }
+
   @media print {
     background: none;
     color: rgb(0, 0, 0);
