@@ -1,5 +1,3 @@
-@import 'constants';
-
 .navbar * {
   transition: all 150ms ease-in-out;
 }
@@ -25,12 +23,8 @@
 
 @supports (padding: max(0px)) {
   .navbar-wrapper {
-    padding-left: unquote(
-      'max(#{var(--responsive-padding)}, env(safe-area-inset-left))'
-    );
-    padding-right: unquote(
-      'max(#{var(--responsive-padding)}, env(safe-area-inset-right))'
-    );
+    padding-left: max(var(--responsive-padding), env(safe-area-inset-left));
+    padding-right: max(var(--responsive-padding), env(safe-area-inset-right));
   }
 }
 
@@ -55,7 +49,7 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   text-align: center;
-  color: $lightGrey;
+  color: var(--lightGray);
   font-size: 95%;
   line-height: 1;
   text-decoration: none;
@@ -102,11 +96,11 @@
 }
 
 .navbar-item:hover .navbar-item-content {
-  color: $white;
+  color: rgb(255, 255, 255);
 }
 
 .navbar .navbar-item.active .navbar-item-content {
-  color: $white;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-item.active:hover .nav-icon {
@@ -121,7 +115,7 @@
   margin-top: 0.5em;
 }
 
-@media (max-width: $breakpoint) {
+@media (max-width: 700px) {
   .navbar-wrapper {
     padding: 0 var(--responsive-padding);
     padding-bottom: var(--safe-area-inset-bottom);

@@ -3,11 +3,11 @@ import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 
-const ProjectPage = props => {
+const SubPage = props => {
   const { markdownRemark: post } = props.data
   const { transition } = props
   return (
-    <Layout activeName="PROJECTS">
+    <Layout activeName={post.frontmatter.activeName}>
       <div style={transition && transition.style}>
         <div className="page article">
           <h1 className="title1 under-back">
@@ -23,15 +23,16 @@ const ProjectPage = props => {
   )
 }
 
-export default ProjectPage
+export default SubPage
 
-export const projectQuery = graphql`
-  query ProjectByPath($path: String!) {
+export const subPageQuery = graphql`
+  query SubPageQuery($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         intro
         path
+        activeName
         title
       }
     }

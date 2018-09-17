@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import Layout from 'components/Layout'
 import parseEmoji from 'helpers/emoji'
 
 const NotFoundPage = ({ transition }) => (
-  <Fragment>
+  <Layout>
     <section className="page" style={transition && transition.style}>
       <h1>{parseEmoji('NOT FOUND 😱')}</h1>
       <p>Something bad happened. But I still love you.</p>
@@ -12,7 +13,7 @@ const NotFoundPage = ({ transition }) => (
         </a>
       </div>
     </section>
-  </Fragment>
+  </Layout>
 )
 
 export default NotFoundPage

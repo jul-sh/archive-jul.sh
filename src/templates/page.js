@@ -1,7 +1,10 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
+import Layout from 'components/Layout'
 import BackToPrevious from 'components/BackToPrevious'
 import parseEmoji from 'helpers/emoji'
+import 'style/page.css'
 
 const Page = props => {
   const { data } = props
@@ -11,31 +14,34 @@ const Page = props => {
   const style = post.frontmatter.style || ''
 
   return (
-    <div style={transition && transition.style}>
-      <div className={style + ' page'}>
-        {!!backTo &&
-          backLabel && <BackToPrevious to={backTo} label={backLabel} />}
-        {style === 'index' && (
-          <div className="index-me-wrapper">
-            {!!post.frontmatter.featuredImage && (
-              <Img
-                fadeIn={false}
-                outerWrapperClassName="index-me"
-                sizes={{
-                  ...post.frontmatter.featuredImage.childImageSharp.sizes,
-                  base64:
-                    post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
-                }}
-              />
-            )}
+    <Layout activeName={post.frontmatter.activeName}>
+      <div style={transition && transition.style}>
+        <div className={style + ' page'}>
+          {!!backTo &&
+            backLabel && <BackToPrevious to={backTo} label={backLabel} />}
+          {style === 'index' && (
+            <div className="index-me-wrapper">
+              {!!post.frontmatter.featuredImage && (
+                <Img
+                  fadeIn={false}
+                  outerWrapperClassName="index-me"
+                  sizes={{
+                    ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                    base64:
+                      post.frontmatter.featuredImage.childImageSharp.sqip
+                        .dataURI
+                  }}
+                />
+              )}
+            </div>
+          )}
+          <div>
+            <h1>{parseEmoji(post.frontmatter.title)}</h1>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
-        )}
-        <div>
-          <h1>{parseEmoji(post.frontmatter.title)}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
@@ -48,6 +54,7 @@ export const PageQuery = graphql`
       frontmatter {
         path
         title
+        activeName
         style
         featuredImage {
           childImageSharp {

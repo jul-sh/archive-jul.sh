@@ -4,38 +4,32 @@
   "version": "0.1.0",
   "author": "Juliette Pretot",
   "dependencies": {
-    "gatsby": "^1.9.272",
-    "gatsby-image": "^1.0.54",
-    "gatsby-plugin-catch-links": "^1.0.24",
-    "gatsby-plugin-favicon": "^2.1.1",
-    "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-netlify": "^1.0.21",
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-plugin-catch-links": "next",
     "gatsby-plugin-netlify-cache": "^0.1.0",
-    "gatsby-plugin-nprogress": "^1.0.14",
+    "gatsby-plugin-nprogress": "next",
     "gatsby-plugin-offline": "^1.0.18",
-    "gatsby-plugin-preact": "^1.0.17",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-plugin-sharp": "^1.6.48",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-remark-copy-linked-files": "^1.5.27",
-    "gatsby-remark-images": "^1.5.67",
-    "gatsby-remark-prismjs": "^2.0.4",
-    "gatsby-remark-responsive-iframe": "^1.4.13",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-sitemap": "next",
+    "gatsby-remark-copy-linked-files": "^1.5.37",
+    "gatsby-remark-images": "next",
+    "gatsby-remark-prismjs": "next",
+    "gatsby-remark-responsive-iframe": "^1.4.20",
     "gatsby-remark-smartypants": "^1.4.12",
-    "gatsby-remark-twemoji": "^0.0.2",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "gatsby-transformer-sharp": "^1.6.27",
-    "gatsby-transformer-sqip": "^0.0.11",
-    "node-sass": "^4.9.0",
+    "gatsby-remark-twemoji": "0.0.2",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "gatsby-transformer-sqip": "0.0.11",
     "prismjs": "^1.15.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-easy-emoji": "^1.1.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-easy-emoji": "^1.2.0",
     "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.2.1"
+    "react-transition-group": "^2.4.0"
   },
   "keywords": [
     "gatsby"
@@ -49,7 +43,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-plugin-root-import": "^1.0.0",
-    "prettier": "^1.7.4"
+    "prettier": "^1.14.2"
   }
 }

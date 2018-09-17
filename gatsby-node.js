@@ -1,7 +1,15 @@
 const path = require('path')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    }
+  })
+}
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   return graphql(`
     {

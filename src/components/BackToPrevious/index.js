@@ -1,13 +1,14 @@
 import React from 'react'
-import Link from 'components/Link'
-import 'style/navbar.scss'
+import { Link } from 'gatsby'
+import 'style/navbar.css'
 
 const BackToPrevious = props => (
   <Link
     {...props}
     className="back"
-    aria-label={`Back to ${props.label}`}
-  >{`< Back to ${props.label}`}</Link>
+    aria-label={props.label ? `Back to ${props.label}` : 'Back'}
+    onClick={window.history.back}
+  >{`< Back ${props.label ? 'to' + props.label : ''}`}</Link>
 )
 
 export default BackToPrevious

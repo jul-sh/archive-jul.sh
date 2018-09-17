@@ -1,0 +1,63 @@
+:root {
+  /* fonts */
+  --primaryFont: Juliette, 'Roboto Mono', 'Segoe UI Mono', 'Monaco', monospace;
+
+  /* colors */
+  --background-color: rgb(3, 9, 32);
+
+  --pink: rgb(253, 186, 187);
+
+  --lightGray: rgb(206, 206, 206);
+  --gray: rgb(153, 153, 153);
+  --translucentLightGray: rgba(153, 153, 153, 0.7);
+  --translucentGray: rgba(153, 153, 153, 0.6);
+
+  --yellow: rgb(253, 225, 134);
+
+  --orange: rgb(252, 165, 79);
+  --translucentOrange: rgba(252, 165, 79, 0.6);
+  --lowTranslucentOrange: rgba(252, 165, 79, 0.2);
+
+  --lightBlue: rgb(104, 221, 219);
+  --blue: rgb(66, 169, 213);
+  --darkBlue: rgb(124, 167, 216);
+
+  --turquoise: rgb(81, 204, 177);
+
+  --green: rgb(67, 177, 131);
+  --lightGreen: rgb(71, 188, 139);
+  --translucentGreen: rgba(68, 178, 132, 0.6);
+  --lowTranslucentGreen: rgba(68, 178, 132, 0.2);
+
+  --bronze: rgb(37, 35, 34);
+
+  /* sizing */
+  --responsive-padding: 3rem;
+
+  --safe-area-inset-top: 0px;
+  --safe-area-inset-right: 0px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
+}
+
+@supports (padding: env(safe-area-inset-top)) and
+  (padding: env(safe-area-inset-right)) and
+  (padding: env(safe-area-inset-bottom)) and
+  (padding: env(safe-area-inset-left)) {
+  :root {
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-right: env(safe-area-inset-right);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-left: env(safe-area-inset-left);
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --responsive-padding: 1.3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  --responsive-padding: 0.7rem;
+}

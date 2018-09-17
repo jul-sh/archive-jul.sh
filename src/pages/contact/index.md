@@ -1,6 +1,7 @@
 ---
 templateKey: page
 path: /contact
+activeName: CONTACT
 title: I'm always happy to hear from you.
 ---
 

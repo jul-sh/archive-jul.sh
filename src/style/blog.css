@@ -1,5 +1,3 @@
-@import 'constants';
-
 .blog-post-card {
   margin: 4rem 0;
 }
@@ -21,5 +19,5 @@
 }
 
 .date {
-  color: $lightBlue;
+  color: var(--lightBlue);
 }
