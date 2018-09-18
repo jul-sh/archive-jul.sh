@@ -32,6 +32,8 @@ export const TemplateBasicQuery = graphql`
       frontmatter {
         path
         title
+        backTo
+        backLabel
         featuredImage {
           childImageSharp {
             sqip(numberOfPrimitives: 50, blur: 0, width: 400) {

@@ -261,20 +261,6 @@ ul li ul {
   margin-top: 0.15rem;
 }
 
-.back {
-  padding: 0.2em 0.5em;
-  border-radius: 4px;
-  font-size: 1.25rem;
-  border: 1px solid var(--translucentOrange);
-  color: var(--orange);
-  background-color: var(--lowTranslucentOrange);
-  transition-duration: 200ms;
-}
-
-.back:hover {
-  border: 1px solid var(--orange);
-}
-
 @media (max-width: 700px) {
   body {
     font-size: 20px;

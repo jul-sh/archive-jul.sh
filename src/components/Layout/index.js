@@ -5,10 +5,8 @@ import 'style/index.css'
 
 class Layout extends React.Component {
   componentDidMount() {
-    // iOS workaround: If run in fullscreen, force full height.
-    // see https://nicolas-hoizey.com/2015/02/viewport-height-is-taller-than-the-visible-part-of-the-document-in-some-mobile-browsers.html
     if ('standalone' in window.navigator && window.navigator.standalone) {
-      document.querySelector('body').style.minHeight = '100vh'
+      document.querySelector('body').setAttribute('data-is-app', 'true')
     }
   }
 
