@@ -45,11 +45,11 @@ export const PageQuery = graphql`
         title
         featuredImage {
           childImageSharp {
-            sqip(numberOfPrimitives: 50, blur: 0, width: 400) {
+            sqip(numberOfPrimitives: 75, blur: 0, width: 400) {
               dataURI
               svg
             }
-            sizes(maxWidth: 600) {
+            sizes(maxWidth: 1000, quality: 75) {
               ...GatsbyImageSharpSizes_withWebp_noBase64
             }
           }
