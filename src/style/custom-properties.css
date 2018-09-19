@@ -47,3 +47,9 @@
 @media (max-width: 370px) {
   --responsive-padding: 0.7rem;
 }
+
+@media print {
+  :root {
+    --primaryFont: Garamond, serif;
+  }
+}

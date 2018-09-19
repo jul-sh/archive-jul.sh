@@ -17,7 +17,7 @@ Engineer with a product background.<br>hi@juliette.sh
 - Entrepreneurship
 - Agile Methodology
 
-<br><br><br>
+<br><br>
 
 ## Work
 
