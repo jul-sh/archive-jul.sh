@@ -57,7 +57,7 @@ Building N26's web app from the ground up.
 - Identified & successfully pursued opportunities in the space
 - Organized the company's web workflow
 
-Product & Research:
+**Product & Research:**
 
 - Qualitative & quantitative design research
 - Sales page design, achieving up to 10% visitor to email subscriber conversion
