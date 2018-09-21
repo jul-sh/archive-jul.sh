@@ -38,7 +38,7 @@ class HTML extends React.Component {
           />
           <link rel="preload" href={regularFont} as="font" />
           <link rel="preload" href={boldFont} as="font" />
-          <meta name="theme-color" content="#000615" />
+          <meta name="theme-color" content="#101722" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
