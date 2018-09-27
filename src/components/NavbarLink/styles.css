@@ -6,7 +6,8 @@
   -webkit-tap-highlight-color: transparent;
   text-align: center;
   color: var(--gray);
-  font-size: 95%;
+  font-weight: bold;
+  font-size: 92.5%;
   line-height: 1;
   text-decoration: none;
   padding: 0.45rem 1.5rem;
