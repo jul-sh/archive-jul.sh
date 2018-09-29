@@ -2,7 +2,6 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Link from 'components/Link'
-import Layout from 'components/Layout'
 import './styles.css'
 
 const IndexPage = props => {
@@ -11,43 +10,38 @@ const IndexPage = props => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <Layout>
-      <section
-        className="page"
-        style={transition ? transition.style : undefined}
-      >
-        <div className="container projects">
-          {posts
-            .filter(post => post.node.frontmatter.path.includes('/projects/'))
-            .map(({ node: post }) => {
-              return (
-                <div className="project-thumbnail" key={post.id}>
-                  <div className="link-overflow-limit">
-                    <Img
-                      fadeIn={false}
-                      sizes={{
-                        ...post.frontmatter.featuredImage.childImageSharp.sizes,
-                        base64:
-                          post.frontmatter.featuredImage.childImageSharp.sqip
-                            .dataURI
-                      }}
-                    />
-                    <h3>
-                      <Link
-                        className="title project-link"
-                        to={post.frontmatter.link || post.frontmatter.path}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <p className="description">{post.frontmatter.intro}</p>
+    <section className="page" style={transition && transition.style}>
+      <div className="container projects">
+        {posts
+          .filter(post => post.node.frontmatter.path.includes('/projects/'))
+          .map(({ node: post }) => {
+            return (
+              <div className="project-thumbnail" key={post.id}>
+                <div className="link-overflow-limit">
+                  <Img
+                    fadeIn={false}
+                    sizes={{
+                      ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                      base64:
+                        post.frontmatter.featuredImage.childImageSharp.sqip
+                          .dataURI
+                    }}
+                  />
+                  <h3>
+                    <Link
+                      className="title project-link"
+                      to={post.frontmatter.link || post.frontmatter.path}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                  </h3>
                 </div>
-              )
-            })}
-        </div>
-      </section>
-    </Layout>
+                <p className="description">{post.frontmatter.intro}</p>
+              </div>
+            )
+          })}
+      </div>
+    </section>
   )
 }
 

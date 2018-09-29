@@ -13,7 +13,7 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
+        <Navbar location={this.props.location} />
         <main className="main">{this.props.children}</main>
       </>
     )

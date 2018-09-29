@@ -10,19 +10,19 @@ const Navbar = props => (
     <div className="navbar">
       <NavbarLink
         to="/"
-        match={new RegExp('^/$|^/about')}
+        isActive={new RegExp('^/$|^/about').test(props.location.pathname)}
         Icon={AboutIcon}
         label="About"
       />
       <NavbarLink
         to="/projects"
-        match={new RegExp('^/projects')}
+        isActive={new RegExp('^/projects').test(props.location.pathname)}
         Icon={ProjectsIcon}
         label="Projects"
       />
       <NavbarLink
         to="/contact"
-        match={new RegExp('^/contact')}
+        isActive={new RegExp('^/contact').test(props.location.pathname)}
         Icon={ContactIcon}
         label="Contact"
       />
