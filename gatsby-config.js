@@ -56,6 +56,13 @@ module.exports = {
     'gatsby-transformer-sqip',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-offline'
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        // Prevent offline fallback for uncached pages. It prevents proper route
+        // matching when combined with gatsby-plugin-layout.
+        navigateFallbackBlacklist: [/./]
+      }
+    }
   ]
 }
