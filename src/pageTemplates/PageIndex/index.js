@@ -17,7 +17,7 @@ const Page = props => {
         <div className="index-me-wrapper">
           <Img
             fadeIn={false}
-            outerWrapperClassName="index-me"
+            className="index-me"
             sizes={{
               ...post.frontmatter.featuredImage.childImageSharp.sizes,
               base64:
