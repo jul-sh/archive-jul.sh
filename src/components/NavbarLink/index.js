@@ -15,12 +15,7 @@ const NavbarLink = props => (
           to={props.to}
         >
           <div className="navbar-item-content">
-            <img
-              className="nav-icon"
-              data-styles={isActive && 'isActive'}
-              alt=""
-              src={props.icon}
-            />
+            <props.Icon className="nav-icon" />
             <span className="nav-caption" data-styles={isActive && 'isActive'}>
               {props.label}
             </span>

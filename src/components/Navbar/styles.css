@@ -32,10 +32,9 @@
 .navbar {
   display: flex;
   height: 100%;
-  max-width: 30em;
+  max-width: 25em;
   align-items: center;
   justify-content: space-around;
-  justify-content: space-evenly;
   flex-grow: 1;
 }
 

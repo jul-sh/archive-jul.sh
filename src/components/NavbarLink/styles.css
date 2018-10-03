@@ -1,11 +1,11 @@
 .navbar-item {
-  transition: all 25ms ease-in-out;
+  transition: all 100ms ease-in-out;
   position: relative;
-  width: 9%;
+  width: 2ch;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   text-align: center;
-  color: var(--lightGray);
+  color: var(--gray);
   font-size: 95%;
   line-height: 1;
   text-decoration: none;
@@ -16,16 +16,17 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  will-change: background-color;
-  background-color: rgba(255, 255, 255, 0);
 
-  & :hover {
-    color: rgb(255, 255, 255);
+  &:hover {
+    color: hsl(0, 0%, 69%);
   }
 
   &[data-styles~='isActive'] {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blue);
+
+    &:hover {
+      filter: brightness(1);
+    }
   }
 
   @media (width <= 700px) {
@@ -43,24 +44,19 @@
 
 .nav-icon {
   display: block;
-  opacity: 0.8;
   width: 1.3em;
   height: 1.3em;
   filter: saturate(95%) opacity(95%);
+  margin-bottom: 0.5rem;
   transition: all 100ms ease-in-out;
 
   & :hover {
     filter: saturate(100%) opacity(100%);
   }
-
-  &[data-styles~='isActive'] {
-    filter: saturate(100%) opacity(100%);
-  }
 }
 
 .nav-caption {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   display: block;
-  margin-top: 0.5em;
 }

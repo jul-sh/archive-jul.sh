@@ -1,8 +1,8 @@
 import React from 'react'
 import NavbarLink from 'components/NavbarLink'
-import meImg from './me.svg'
-import workImg from './work.png'
-import mailImg from './mail.svg'
+import AboutIcon from './AboutIcon'
+import ProjectsIcon from './ProjectsIcon'
+import ContactIcon from './ContactIcon'
 import './styles.css'
 
 const Navbar = props => (
@@ -11,19 +11,19 @@ const Navbar = props => (
       <NavbarLink
         to="/"
         match={new RegExp('^/$|^/about')}
-        icon={meImg}
+        Icon={AboutIcon}
         label="About"
       />
       <NavbarLink
         to="/projects"
         match={new RegExp('^/projects')}
-        icon={workImg}
+        Icon={ProjectsIcon}
         label="Projects"
       />
       <NavbarLink
         to="/contact"
         match={new RegExp('^/contact')}
-        icon={mailImg}
+        Icon={ContactIcon}
         label="Contact"
       />
     </div>
