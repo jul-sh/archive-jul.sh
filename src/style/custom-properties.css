@@ -1,6 +1,7 @@
 :root {
   /* fonts */
   --primaryFont: Juliette, monospace;
+  --sansFont: 'Juliette Sans', sans-serif;
 
   /* colors */
   --background-color: hsl(215, 37%, 10%);

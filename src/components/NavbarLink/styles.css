@@ -60,4 +60,8 @@
   font-size: 0.95rem;
   text-transform: uppercase;
   display: block;
+
+  @media (width <= 700px) {
+    font-size: 0.8rem;
+  }
 }

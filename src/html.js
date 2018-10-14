@@ -2,6 +2,7 @@ import React from 'react'
 
 const regularFont = '/fonts/jregular.woff2'
 const boldFont = '/fonts/jbold.woff2'
+const sansFont = '/fonts/jsans.woff2'
 
 const webFonts = `
 @font-face {
@@ -17,6 +18,15 @@ const webFonts = `
   font-family: 'Juliette';
   src: url('${boldFont}') format('woff2'),
     url('/fonts/jbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Juliette Sans';
+  src: url('${sansFont}') format('woff2'),
+    url('/fonts/jsans.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,6 +48,7 @@ class HTML extends React.Component {
           />
           <link rel="preload" href={regularFont} as="font" />
           <link rel="preload" href={boldFont} as="font" />
+          <link rel="preload" href={sansFont} as="font" />
           <meta name="theme-color" content="#101722" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
