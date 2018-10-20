@@ -69,6 +69,7 @@ module.exports = {
         // matching when combined with gatsby-plugin-layout.
         navigateFallbackBlacklist: [/./]
       }
-    }
+    },
+    'gatsby-plugin-netlify' // place as last in the array
   ]
 }
