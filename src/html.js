@@ -1,14 +1,15 @@
 import React from 'react'
 
-const regularFont = '/fonts/jregular.woff2'
-const boldFont = '/fonts/jbold.woff2'
-const sansFont = '/fonts/jsans.woff2'
+const FONTS = {
+  regular: '/fonts/jregular.woff2',
+  bold: '/fonts/jbold.woff2',
+  sans: '/fonts/jsans.woff2'
+}
 
 const webFonts = `
 @font-face {
   font-family: 'Juliette';
-  src: url('${regularFont}') format('woff2'),
-    url('/fonts/jregular.woff') format('woff');
+  src: url('${FONTS.regular}') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,8 +17,7 @@ const webFonts = `
 
 @font-face {
   font-family: 'Juliette';
-  src: url('${boldFont}') format('woff2'),
-    url('/fonts/jbold.woff') format('woff');
+  src: url('${FONTS.bold}') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -25,8 +25,7 @@ const webFonts = `
 
 @font-face {
   font-family: 'Juliette Sans';
-  src: url('${sansFont}') format('woff2'),
-    url('/fonts/jsans.woff') format('woff');
+  src: url('${FONTS.sans}') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -46,9 +45,27 @@ class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
           />
-          <link rel="preload" href={regularFont} as="font" />
-          <link rel="preload" href={boldFont} as="font" />
-          <link rel="preload" href={sansFont} as="font" />
+          <link
+            rel="preload"
+            href={FONTS.regular}
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href={FONTS.bold}
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href={FONTS.sans}
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <meta name="theme-color" content="#101722" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
