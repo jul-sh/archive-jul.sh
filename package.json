@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Juliette Pretot",
   "dependencies": {
-    "cssnano": "4.1.4",
+    "cssnano": "4.1.7",
     "gatsby": "2.0.38",
     "gatsby-image": "2.0.19",
     "gatsby-plugin-catch-links": "2.0.6",
