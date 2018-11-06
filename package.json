@@ -26,7 +26,7 @@
     "gatsby-transformer-remark": "2.1.11",
     "gatsby-transformer-sharp": "2.1.7",
     "gatsby-transformer-sqip": "2.0.6",
-    "postcss-preset-env": "6.1.1",
+    "postcss-preset-env": "6.4.0",
     "prettier": "1.14.3",
     "prismjs": "1.15.0",
     "prop-types": "15.6.2",
