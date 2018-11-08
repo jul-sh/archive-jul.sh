@@ -6,9 +6,9 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name's **_Juliette Pretot_**. I'm a **frontend engineer** with a **product background**.
+My name's **_Juliette Pretot_**. I'm a **JavaScript engineer** (Web & NodeJs). My passion is writing maintainable code at scale.
 
-My team at [N26](https://n26.com) builds the web app. Our stack is isomorphic React, Redux, GraphQL & Express.
+At [N26](https://n26.com) my team builds the web app. Our stack is isomorphic React, Redux, GraphQL & Express.
 
 <span class="compact">
 

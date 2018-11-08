@@ -6,7 +6,7 @@ backLabel: about
 title: Juliette Pretot
 ---
 
-Engineer with a product background.<br>hi@juliette.sh
+JavaScript Engineer (Web & NodeJs).<br>hi@juliette.sh
 
 <br>
 
