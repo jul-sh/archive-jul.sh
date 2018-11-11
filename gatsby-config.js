@@ -32,7 +32,7 @@ module.exports = {
               maxWidth: 1000,
               linkImagesToOriginal: false,
               backgroundColor: 'transparent',
-              wrapperStyle: 'margin-bottom: 1.5rem'
+              wrapperStyle: 'margin-bottom: 1.5rem;'
             }
           },
           {
