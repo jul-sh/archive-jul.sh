@@ -113,8 +113,9 @@ Building N26's web app from the ground up.
 
 ## Selected Side Projects
 
-- [yourtime.zone](https://yourtime.zone/), a react based webapp which translates the time of an event into the visitor's local time. Seen on the front pages of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
-- [Tweet 280](https://juliette.sh/280), a bookmarklet hack to tweet using longer tweets before twitter rolled out the feature. Seen in [TechCrunch](https://techcrunch.com/gallery/how-to-enable-280-characters-on-twitter-right-now/slide/1/), [Mashable](http://mashable.com/2017/09/27/how-to-give-yourself-280-character-tweets/#ZpUyt3xR5EqU), [How To Geek](https://www.howtogeek.com/327555/how-to-get-twitters-new-280-character-limit-now/)
-- [Envisioning the Future of File Systems](https://interplayed.xyz/envisioning-the-future-of-file-systems-86ad6385c88a#.fkatfucrq), an article on how tags & search should replace the file system, featured on [TheTechBlock](http://thetechblock.com/envisioning-future-file-systems/?comments=1)
+- [co-commit](https://github.com/juliettepretot/npx-co-commit), a NodeJs tool to co-author commits on GitHub when pair programming. Seen on the frontpage of [Product Hunt](https://www.producthunt.com/posts/co-commit).
+- [yourtime.zone](https://yourtime.zone/), a React based webapp which translates the time of an event into the visitor's local time. Seen on the front pages of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
+- [Lucy VSCode theme](https://github.com/juliettepretot/lucy-vscode-theme) a VSCode theme & theme generator. Built with NodeJs, 100k+ installs.
+- Tweet 280, a bookmarklet hack to tweet using longer tweets before twitter rolled out the feature. Seen in [TechCrunch](https://techcrunch.com/gallery/how-to-enable-280-characters-on-twitter-right-now/slide/1/), [Mashable](http://mashable.com/2017/09/27/how-to-give-yourself-280-character-tweets/#ZpUyt3xR5EqU), [How To Geek](https://www.howtogeek.com/327555/how-to-get-twitters-new-280-character-limit-now/)
 
  <br>

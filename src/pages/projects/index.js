@@ -36,6 +36,8 @@ const IndexPage = props => {
                     </Link>
                   </h3>
                 </div>
+                {console.log(post.frontmatter.tools)}
+                <span className="tools">{post.frontmatter.tools}</span>
                 <p className="description">{post.frontmatter.intro}</p>
               </div>
             )
@@ -55,8 +57,8 @@ export const projectQuery = graphql`
           id
           frontmatter {
             title
+            tools
             templateKey
-            date(formatString: "MMMM DD, YYYY")
             path
             intro
             link

@@ -1,9 +1,10 @@
 ---
 templateKey: TemplateProject
 path: /projects/n26
-title: N26 App
-date: 2018-00-07
-intro: 'Engineering N26’s new react based app.'
+title: N26 Web App
+tools: React with SSR, GraphQL, Express
+date: 2018-07-07
+intro: "Rebuilding the webapp of Europe's largest modern bank."
 featuredImage: ./cover.jpg
 ---
 
