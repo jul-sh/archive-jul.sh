@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import './styles.css'
 
 const Page = props => {
-  // console.log(props.location)
   const { data, transition } = props
   const { markdownRemark: post } = data
 
