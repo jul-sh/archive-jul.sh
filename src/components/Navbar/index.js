@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarLink from 'components/NavbarLink'
+import NavbarLink from '~/components/NavbarLink'
 import AboutIcon from './AboutIcon'
 import ProjectsIcon from './ProjectsIcon'
 import ContactIcon from './ContactIcon'

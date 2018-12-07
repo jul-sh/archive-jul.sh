@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import BackToPrevious from 'components/BackToPrevious'
+import BackToPrevious from '~/components/BackToPrevious'
 import './styles.css'
 
 const TemplateBasic = props => {

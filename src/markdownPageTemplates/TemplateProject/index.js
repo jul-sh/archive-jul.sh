@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import BackToPrevious from 'components/BackToPrevious'
+import BackToPrevious from '~/components/BackToPrevious'
 
 const ProjectPage = props => {
   const { transition, data } = props

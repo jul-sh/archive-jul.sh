@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Juliette Pretot",
   "dependencies": {
+    "babel-plugin-root-import": "^6.1.0",
     "cssnano": "^4.1.7",
     "gatsby": "^2.0.55",
     "gatsby-image": "^2.0.20",
