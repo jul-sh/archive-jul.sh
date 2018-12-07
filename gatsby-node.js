@@ -36,7 +36,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: path.resolve(
-          `src/pageTemplates/${String(node.frontmatter.templateKey)}/index.js`
+          `src/markdownPageTemplates/${String(
+            node.frontmatter.templateKey
+          )}/index.js`
         ),
         context: {}
       })

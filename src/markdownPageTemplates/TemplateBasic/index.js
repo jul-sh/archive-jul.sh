@@ -11,8 +11,9 @@ const TemplateBasic = props => {
   return (
     <>
       <div className="page" style={transition ? transition.style : undefined}>
-        {!!backTo &&
-          backLabel && <BackToPrevious to={backTo} label={backLabel} />}
+        {!!backTo && backLabel && (
+          <BackToPrevious to={backTo} label={backLabel} />
+        )}
         <div>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
