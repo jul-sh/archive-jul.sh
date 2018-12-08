@@ -9,8 +9,10 @@ My name's **_Juliette Pretot_**. I'm a **JavaScript engineer** (Web & NodeJs). M
 
 At [N26](https://n26.com) my team builds the web app. Our stack is isomorphic React, Redux, GraphQL & Express.
 
-<span class="compact">
+<span class="secondary-text">
 
-<span class="grey">[Ré­sumé](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.</span>
+[Ré­sumé](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.
 
-<span class="grey">Global citizen in Berlin.</span> </span>
+Global citizen in Berlin.
+
+</span>
