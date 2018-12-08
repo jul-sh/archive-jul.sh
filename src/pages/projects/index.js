@@ -1,48 +1,50 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import Layout from '~/components/Layout'
 import Link from '~/components/Link'
 import './styles.css'
 
 const IndexPage = props => {
   const { data } = props
-  const { transition } = props
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <section className="page" style={transition && transition.style}>
-      <div className="container projects">
-        {posts
-          .filter(post => post.node.fields.slug.startsWith('/projects/'))
-          .map(({ node: post }) => {
-            return (
-              <div className="project-thumbnail" key={post.id}>
-                <div className="link-overflow-limit">
-                  <Img
-                    fadeIn={false}
-                    sizes={{
-                      ...post.frontmatter.featuredImage.childImageSharp.sizes,
-                      base64:
-                        post.frontmatter.featuredImage.childImageSharp.sqip
-                          .dataURI
-                    }}
-                  />
-                  <h3>
-                    <Link
-                      className="title project-link"
-                      to={post.frontmatter.link || post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                  </h3>
+    <Layout pathname={props.location.pathname}>
+      <section className="page">
+        <div className="container projects">
+          {posts
+            .filter(post => post.node.fields.slug.startsWith('/projects/'))
+            .map(({ node: post }) => {
+              return (
+                <div className="project-thumbnail" key={post.id}>
+                  <div className="link-overflow-limit">
+                    <Img
+                      fadeIn={false}
+                      sizes={{
+                        ...post.frontmatter.featuredImage.childImageSharp.sizes,
+                        base64:
+                          post.frontmatter.featuredImage.childImageSharp.sqip
+                            .dataURI
+                      }}
+                    />
+                    <h3>
+                      <Link
+                        className="title project-link"
+                        to={post.frontmatter.link || post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                    </h3>
+                  </div>
+                  <span className="tools">{post.frontmatter.tools}</span>
+                  <p className="description">{post.frontmatter.intro}</p>
                 </div>
-                <span className="tools">{post.frontmatter.tools}</span>
-                <p className="description">{post.frontmatter.intro}</p>
-              </div>
-            )
-          })}
-      </div>
-    </section>
+              )
+            })}
+        </div>
+      </section>
+    </Layout>
   )
 }
 

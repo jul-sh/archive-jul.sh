@@ -1,18 +1,16 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import Layout from '~/components/Layout'
 import './styles.css'
 
 const Page = props => {
-  const { data, transition } = props
+  const { data } = props
   const { markdownRemark: post } = data
 
   return (
-    <>
-      <div
-        className="page index"
-        style={transition ? transition.style : undefined}
-      >
+    <Layout pathname={props.location.pathname}>
+      <div className="page index">
         <div className="index-me-wrapper">
           <Img
             fadeIn={false}
@@ -29,7 +27,7 @@ const Page = props => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

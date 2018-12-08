@@ -10,12 +10,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-remove-trailing-slashes',
     {
-      resolve: 'gatsby-plugin-layout',
-      options: {
-        component: require.resolve('./src/components/Layout')
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
@@ -62,14 +56,7 @@ module.exports = {
     'gatsby-transformer-sqip',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        // Prevent offline fallback for uncached pages. It prevents proper route
-        // matching when combined with gatsby-plugin-layout.
-        navigateFallbackBlacklist: [/./]
-      }
-    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-netlify' // place as last in the array
   ]
 }
