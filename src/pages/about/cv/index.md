@@ -38,7 +38,7 @@ Building N26's web app from the ground up.
 - Pair programming
 - Strong agile setup
 
-### Frontend Engineer & Co-Founder at Language Academy 2016 - 18
+### Frontend Engineer at Language Academy 2016 - 18
 
 **Technical:**
 
@@ -49,8 +49,7 @@ Building N26's web app from the ground up.
 **Organization:**
 
 - Bootstrapped a sustainable business
-- Identified & successfully pursued opportunities in the space
-- Organized the company's web workflow
+- Architected the company's web workflow.
 
 **Product & Research:**
 
