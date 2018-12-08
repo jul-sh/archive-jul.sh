@@ -1,6 +1,5 @@
 ---
 templateKey: TemplateProject
-path: /projects/n26
 title: N26 Web App
 tools: React with SSR, GraphQL, Express
 date: 2018-07-07

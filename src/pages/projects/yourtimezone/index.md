@@ -1,6 +1,5 @@
 ---
 templateKey: TemplateProject
-path: /projects/yourtimezone
 title: yourtime.zone
 tools: TypeScript, React
 date: 2018-08-01

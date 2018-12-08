@@ -13,7 +13,7 @@ const IndexPage = props => {
     <section className="page" style={transition && transition.style}>
       <div className="container projects">
         {posts
-          .filter(post => post.node.frontmatter.path.includes('/projects/'))
+          .filter(post => post.node.fields.slug.startsWith('/projects/'))
           .map(({ node: post }) => {
             return (
               <div className="project-thumbnail" key={post.id}>
@@ -30,13 +30,12 @@ const IndexPage = props => {
                   <h3>
                     <Link
                       className="title project-link"
-                      to={post.frontmatter.link || post.frontmatter.path}
+                      to={post.frontmatter.link || post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                   </h3>
                 </div>
-                {console.log(post.frontmatter.tools)}
                 <span className="tools">{post.frontmatter.tools}</span>
                 <p className="description">{post.frontmatter.intro}</p>
               </div>
@@ -55,11 +54,13 @@ export const projectQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             tools
             templateKey
-            path
             intro
             link
             featuredImage {
