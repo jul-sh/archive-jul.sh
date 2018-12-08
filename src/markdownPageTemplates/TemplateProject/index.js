@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '~/components/Layout'
 import BackToPrevious from '~/components/BackToPrevious'
+import './styles.css'
 
 const ProjectPage = props => {
   const { data } = props
@@ -15,7 +16,10 @@ const ProjectPage = props => {
         {post.frontmatter.intro && (
           <span className="intro">{post.frontmatter.intro}</span>
         )}
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className="markdown-wrapper"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )

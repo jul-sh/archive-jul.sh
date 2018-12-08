@@ -62,10 +62,6 @@ main {
   max-width: 32.5em;
 }
 
-.article {
-  padding-top: 1rem;
-}
-
 .page > h1:first-child,
 .page > h2:first-child,
 .page > h3:first-child,
@@ -157,11 +153,11 @@ main a:hover {
   border-bottom: var(--green) 2px solid;
 }
 
-.grey a {
+.secondary-text a {
   border-bottom: var(--translucentGray) 2px solid;
 }
 
-.grey a:hover {
+.secondary-text a:hover {
   border-bottom: var(--gray) 2px solid;
 }
 
@@ -195,12 +191,16 @@ h4:hover a {
   border-bottom: none;
 }
 
-.grey,
-.grey a {
+.secondary-text p {
+  margin: 13px 0;
+}
+
+.secondary-text,
+.secondary-text a {
   color: var(--gray);
 }
 
-.grey a {
+.secondary-text a {
   border-bottom: 2px solid var(--translucentGray);
 }
 
@@ -254,10 +254,6 @@ blockquote {
   color: var(--orange);
 }
 
-span.compact p {
-  margin: 13px 0;
-}
-
 .title1 {
   font-size: 3rem;
   color: var(--pink);
@@ -302,6 +298,18 @@ li p {
 ul li ul {
   margin-bottom: 0.25rem;
   margin-top: 0.15rem;
+}
+
+.markdown-wrapper h2 {
+  margin: 1.75em 0 0.75em 0;
+}
+
+.markdown-wrapper h3 {
+  margin: 2.5em 0 1em 0;
+}
+
+.markdown-wrapper h2 + h3 {
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 700px) {
