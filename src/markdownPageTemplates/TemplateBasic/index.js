@@ -26,11 +26,13 @@ const TemplateBasic = props => {
 export default TemplateBasic
 
 export const TemplateBasicQuery = graphql`
-  query TemplateBasic($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query TemplateBasic($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
-        path
         title
         backTo
         backLabel

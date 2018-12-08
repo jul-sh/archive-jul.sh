@@ -1,6 +1,5 @@
 ---
 templateKey: TemplateBasic
-path: /about/cv
 backTo: /
 backLabel: about
 title: Juliette Pretot

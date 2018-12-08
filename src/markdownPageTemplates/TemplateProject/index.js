@@ -21,12 +21,14 @@ const ProjectPage = props => {
 export default ProjectPage
 
 export const projectQuery = graphql`
-  query ProjectByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ProjectByslug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         intro
-        path
         title
         backTo
         backLabel

@@ -36,11 +36,13 @@ const Page = props => {
 export default Page
 
 export const PageQuery = graphql`
-  query Page($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query Page($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
-        path
         title
         featuredImage {
           childImageSharp {

@@ -1,6 +1,5 @@
 ---
 templateKey: TemplateProject
-path: /projects/co-commit
 title: co-commit
 tools: NodeJs
 date: 2018-10-01
