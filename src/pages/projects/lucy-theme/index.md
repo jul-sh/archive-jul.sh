@@ -1,5 +1,4 @@
 ---
-templateKey: TemplateBasic
 title: Lucy Theme
 tools: NodeJs
 date: 2018-06-01

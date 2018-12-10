@@ -39,15 +39,17 @@ exports.createPages = async ({ graphql, actions }) => {
     throw new Error(allMarkdown.errors)
   }
 
-  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) =>
-    actions.createPage({
-      path: node.fields.slug,
-      component: path.resolve(
-        `${MARKDOWN_PAGE_TEMPLATES_FOLDER}/${String(
-          node.frontmatter.templateKey
-        )}/index.js`
-      ),
-      context: { slug: node.fields.slug }
-    })
-  )
+  allMarkdown.data.allMarkdownRemark.edges
+    .filter(({ node }) => !!node.frontmatter.templateKey)
+    .forEach(({ node }) =>
+      actions.createPage({
+        path: node.fields.slug,
+        component: path.resolve(
+          `${MARKDOWN_PAGE_TEMPLATES_FOLDER}/${String(
+            node.frontmatter.templateKey
+          )}/index.js`
+        ),
+        context: { slug: node.fields.slug }
+      })
+    )
 }
