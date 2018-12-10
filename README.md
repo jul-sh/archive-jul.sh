@@ -10,7 +10,7 @@ Content is stored in markdown files and queried using **GraphQL**.
 
 ##### Styling
 
-Styling is done using CSS stylehsheets processed with `postcss-preset-env` to take adavantage of new & proposed CSS standards.
+Styling is done using Styled Components.
 
 ##### Linting & Formatting
 

@@ -1,9 +1,77 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import Layout from '~/components/Layout'
 import Link from '~/components/Link'
-import './styles.css'
+
+const Projects = styled.div`
+  column-count: 2;
+  column-gap: 1em;
+
+  @media (max-width: 700px) {
+    column-count: 1;
+    column-gap: 0;
+  }
+`
+
+const ProjectWrapper = styled.div`
+  margin: 0 0 2em;
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+`
+
+// By using positon: relative we define the limit of the overflowing link
+const ImageTitleWrapper = styled.div`
+  position: relative;
+`
+
+// To maintain a solid a11y tree the link only contains the title, but overflows
+// to make the image clickable as well.
+const OverflowingLink = styled(Link)`
+  ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  margin: 0.5em 0 0.1em 0;
+  display: inline-block;
+  color: var(--pink);
+  border-bottom: none;
+  font-size: 1.75rem;
+  font-weight: bold;
+  word-spacing: -0.3ch;
+
+  :hover {
+    border-bottom: none;
+  }
+
+  @media print {
+    word-spacing: initial;
+  }
+`
+
+const Title = styled.h3`
+  margin: 0;
+`
+
+const Description = styled.p`
+  font-size: smaller;
+  margin: 0;
+`
+
+const ToolsUsed = styled.span`
+  color: var(--gray);
+  font-size: smaller;
+  display: inline-block;
+  margin-bottom: 1rem;
+`
 
 const IndexPage = props => {
   const { data } = props
@@ -12,13 +80,13 @@ const IndexPage = props => {
   return (
     <Layout pathname={props.location.pathname}>
       <section className="page">
-        <div className="container projects">
+        <Projects>
           {posts
             .filter(post => post.node.fields.slug.startsWith('/projects/'))
             .map(({ node: post }) => {
               return (
-                <div className="project-thumbnail" key={post.id}>
-                  <div className="link-overflow-limit">
+                <ProjectWrapper key={post.id}>
+                  <ImageTitleWrapper>
                     <Img
                       fadeIn={false}
                       sizes={{
@@ -28,21 +96,20 @@ const IndexPage = props => {
                             .dataURI
                       }}
                     />
-                    <h3>
-                      <Link
-                        className="title project-link"
+                    <Title>
+                      <OverflowingLink
                         to={post.frontmatter.link || post.fields.slug}
                       >
                         {post.frontmatter.title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <span className="tools">{post.frontmatter.tools}</span>
-                  <p className="description">{post.frontmatter.intro}</p>
-                </div>
+                      </OverflowingLink>
+                    </Title>
+                  </ImageTitleWrapper>
+                  <ToolsUsed>{post.frontmatter.tools}</ToolsUsed>
+                  <Description>{post.frontmatter.intro}</Description>
+                </ProjectWrapper>
               )
             })}
-        </div>
+        </Projects>
       </section>
     </Layout>
   )

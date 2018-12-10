@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: 'juliette.sh'
   },
   plugins: [
-    'gatsby-plugin-postcss',
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
@@ -57,6 +56,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify' // place as last in the array
   ]
 }

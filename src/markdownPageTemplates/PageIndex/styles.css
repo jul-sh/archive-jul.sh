@@ -2,36 +2,10 @@
   display: flex;
   align-items: center;
   max-width: 42.5em;
+}
 
-  @media (width <= 900px) {
+@media (max-width: 900px) {
+  .index.page {
     display: block;
-  }
-}
-
-.index-me-wrapper {
-  width: 32.5%;
-  flex: none;
-  margin-right: 1.5em;
-
-  @media (width <= 900px) {
-    float: left;
-    width: 40%;
-  }
-
-  @media (width <= 550px) {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 0 2rem 0;
-    float: none;
-    right: 0;
-  }
-}
-
-.index-me {
-  max-width: 100%;
-
-  @media (width <= 550px) {
-    margin: -10% 0 -30%;
   }
 }

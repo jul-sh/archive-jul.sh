@@ -22,23 +22,11 @@ body {
   font-size: 24px;
   word-spacing: -0.25ch;
   line-height: 1.4;
-
-  &[data-is-app='true'] {
-    /* force full height on iOS */
-    min-height: 100vh;
-  }
-
-  @media print {
-    background: none;
-    color: rgb(0, 0, 0);
-    font-size: 11pt;
-    line-height: 1.1;
-    word-spacing: initial;
-  }
 }
 
-@page {
-  margin: 2.5cm;
+body[data-is-app='true'] {
+  /* force full height on iOS */
+  min-height: 100vh;
 }
 
 main {
@@ -52,10 +40,6 @@ main {
     4rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
   );
   padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
-
-  @media print {
-    max-width: 100%;
-  }
 }
 
 .page {
@@ -71,37 +55,6 @@ main > h2:first-child,
 main > h3:first-child,
 main > h4:first-child {
   margin-top: 0;
-}
-
-span,
-p,
-i,
-b,
-em,
-strong,
-li,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @media print {
-    filter: brightness(0.5) saturate(3);
-    page-break-inside: avoid;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @media print {
-    page-break-after: avoid;
-  }
 }
 
 i,
@@ -143,8 +96,7 @@ main a {
 }
 
 main p a,
-main li a,
-.title {
+main li a {
   color: var(--green);
   border-bottom: var(--translucentGreen) 2px solid;
 }
@@ -180,17 +132,6 @@ h4:hover a {
   border-bottom: var(--orange) 2px solid;
 }
 
-.title {
-  color: var(--pink);
-  border-bottom: none;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
-.title:hover {
-  border-bottom: none;
-}
-
 .secondary-text p {
   margin: 13px 0;
 }
@@ -212,10 +153,6 @@ h1 {
 h1,
 h1 a {
   color: var(--pink);
-
-  @media print {
-    font-size: 42pt;
-  }
 }
 
 h2 {
@@ -239,25 +176,14 @@ h3 a {
 h1,
 h2,
 h3,
-.title,
-.title1 {
+.title {
   word-spacing: -0.3ch;
-
-  @media print {
-    word-spacing: initial;
-  }
 }
 
 blockquote {
   font-size: 1.5em;
   line-height: 1.5;
   color: var(--orange);
-}
-
-.title1 {
-  font-size: 3rem;
-  color: var(--pink);
-  margin: 2rem 0;
 }
 
 .button-parent {
@@ -300,18 +226,6 @@ ul li ul {
   margin-top: 0.15rem;
 }
 
-.markdown-wrapper h2 {
-  margin: 1.75em 0 0.75em 0;
-}
-
-.markdown-wrapper h3 {
-  margin: 2.5em 0 1em 0;
-}
-
-.markdown-wrapper h2 + h3 {
-  margin-top: 0;
-}
-
 @media only screen and (max-width: 700px) {
   body {
     font-size: 20px;
@@ -344,5 +258,64 @@ ul li ul {
 
   .button:hover {
     transform: none;
+  }
+}
+
+@page {
+  margin: 2.5cm;
+}
+
+@media print {
+  body {
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 11pt;
+    line-height: 1.1;
+    word-spacing: initial;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  span,
+  p,
+  i,
+  b,
+  em,
+  strong,
+  li,
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    filter: brightness(0.5) saturate(3);
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+
+  h1,
+  h1 a {
+    font-size: 42pt;
+  }
+
+  h1,
+  h2,
+  h3,
+  .title {
+    word-spacing: -0.3ch;
+
+    word-spacing: initial;
   }
 }

@@ -1,8 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import Layout from '~/components/Layout'
+import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
-import './styles.css'
+
+const Title = styled.h3`
+  font-size: 3rem;
+  color: var(--pink);
+  margin: 2rem 0;
+`
 
 const ProjectPage = props => {
   const { data } = props
@@ -10,16 +17,11 @@ const ProjectPage = props => {
 
   return (
     <Layout pathname={props.location.pathname}>
-      <div className="page article">
+      <div className="page">
         <BackToPrevious to="/projects" label="projects" />
-        <h1 className="title1 under-back">{post.frontmatter.title}</h1>
-        {post.frontmatter.intro && (
-          <span className="intro">{post.frontmatter.intro}</span>
-        )}
-        <div
-          className="markdown-wrapper"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <Title>{post.frontmatter.title}</Title>
+        {post.frontmatter.intro && <span>{post.frontmatter.intro}</span>}
+        <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )
