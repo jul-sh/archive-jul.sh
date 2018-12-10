@@ -1,8 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import Layout from '~/components/Layout'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
+
+const Title = styled.h1`
+  font-size: 3rem;
+  color: var(--pink);
+  margin: 2rem 0;
+`
 
 const TemplateBasic = props => {
   const { data } = props
@@ -16,7 +23,7 @@ const TemplateBasic = props => {
           <BackToPrevious to={backTo} label={backLabel} />
         )}
         <div>
-          <h1>{post.frontmatter.title}</h1>
+          <Title>{post.frontmatter.title}</Title>
           <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>

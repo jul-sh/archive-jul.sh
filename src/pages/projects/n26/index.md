@@ -1,10 +1,12 @@
 ---
-templateKey: TemplateProject
+templateKey: TemplateBasic
 title: N26 Web App
 tools: React with SSR, GraphQL, Express
 date: 2018-07-07
 intro: "Rebuilding the webapp of Europe's largest modern bank."
 featuredImage: ./cover.jpg
+backTo: /projects
+backLabel: projects
 ---
 
 I'm proud to be part of the team that built the [N26](https://n26.com/en-de/) web app.
