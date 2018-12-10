@@ -6,11 +6,11 @@ Using **[GatsbyJs](https://github.com/gatsbyjs/gatsby)** the website's **[React]
 
 ##### Data
 
-Content is stored in markdown files and queried using **GraphQL**.
+Content is stored in markdown files and queried using [**GraphQL**](https://graphql.org/).
 
 ##### Styling
 
-Styling is done using Styled Components.
+Styling is done using [**Styled Components**](https://www.styled-components.com).
 
 ##### Linting & Formatting
 
