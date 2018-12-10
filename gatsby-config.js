@@ -57,6 +57,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify' // place as last in the array
   ]
 }

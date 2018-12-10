@@ -143,8 +143,7 @@ main a {
 }
 
 main p a,
-main li a,
-.title {
+main li a {
   color: var(--green);
   border-bottom: var(--translucentGreen) 2px solid;
 }
@@ -178,17 +177,6 @@ h4 a {
 
 h4:hover a {
   border-bottom: var(--orange) 2px solid;
-}
-
-.title {
-  color: var(--pink);
-  border-bottom: none;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
-.title:hover {
-  border-bottom: none;
 }
 
 .secondary-text p {
@@ -239,8 +227,7 @@ h3 a {
 h1,
 h2,
 h3,
-.title,
-.title1 {
+.title {
   word-spacing: -0.3ch;
 
   @media print {
@@ -252,12 +239,6 @@ blockquote {
   font-size: 1.5em;
   line-height: 1.5;
   color: var(--orange);
-}
-
-.title1 {
-  font-size: 3rem;
-  color: var(--pink);
-  margin: 2rem 0;
 }
 
 .button-parent {
@@ -298,18 +279,6 @@ li p {
 ul li ul {
   margin-bottom: 0.25rem;
   margin-top: 0.15rem;
-}
-
-.markdown-wrapper h2 {
-  margin: 1.75em 0 0.75em 0;
-}
-
-.markdown-wrapper h3 {
-  margin: 2.5em 0 1em 0;
-}
-
-.markdown-wrapper h2 + h3 {
-  margin-top: 0;
 }
 
 @media only screen and (max-width: 700px) {

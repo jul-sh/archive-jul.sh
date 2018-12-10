@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '~/components/Layout'
+import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
-import './styles.css'
 
 const TemplateBasic = props => {
   const { data } = props
@@ -17,10 +17,7 @@ const TemplateBasic = props => {
         )}
         <div>
           <h1>{post.frontmatter.title}</h1>
-          <div
-            className="markdown-wrapper"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
     </Layout>

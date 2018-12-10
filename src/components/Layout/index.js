@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '~/components/Navbar'
-import '~/style/custom-properties.css'
 import '~/style/index.css'
+import '~/style/custom-properties.css'
 
 class Layout extends React.Component {
   componentDidMount() {
