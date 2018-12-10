@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   max-width: 42.5em;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .index.page {
     display: block;
   }
 }

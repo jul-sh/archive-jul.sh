@@ -6,7 +6,6 @@
   "dependencies": {
     "babel-plugin-root-import": "^6.1.0",
     "babel-plugin-styled-components": "^1.9.2",
-    "cssnano": "^4.1.7",
     "gatsby": "^2.0.55",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-catch-links": "^2.0.8",
@@ -14,7 +13,6 @@
     "gatsby-plugin-netlify-cache": "^1.0.0",
     "gatsby-plugin-nprogress": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.17",
-    "gatsby-plugin-postcss": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-remove-trailing-slashes": "^2.0.5",
     "gatsby-plugin-sharp": "^2.0.13",
@@ -35,7 +33,6 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.5.0",
     "styled-components": "^4.1.2"
   },
   "keywords": [
