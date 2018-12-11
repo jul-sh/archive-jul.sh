@@ -7,7 +7,6 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -24,12 +23,8 @@ module.exports = {
             options: {
               maxWidth: 1000,
               linkImagesToOriginal: false,
-              backgroundColor: 'transparent',
-              wrapperStyle: 'margin-bottom: 1.5rem;'
+              backgroundColor: 'transparent'
             }
-          },
-          {
-            resolve: 'gatsby-remark-responsive-iframe'
           },
           'gatsby-remark-copy-linked-files',
           {
