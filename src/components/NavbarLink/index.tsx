@@ -2,6 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 
+interface NavLinkStyleProps {
+  isActive: Boolean
+}
+
 const StyledLink = styled(Link)`
   transition: all 100ms ease-in-out;
   position: relative;
@@ -27,7 +31,7 @@ const StyledLink = styled(Link)`
     color: hsl(0, 0%, 69%);
   }
 
-  ${props =>
+  ${(props: NavLinkStyleProps) =>
     props.isActive &&
     css`
       color: var(--blue);
@@ -60,7 +64,14 @@ const Caption = styled.span`
   }
 `
 
-const NavbarLink = props => (
+interface NavLinkComponentProps {
+  isActive: Boolean
+  to: string
+  label: string
+  Icon: (props: any) => JSX.Element
+}
+
+const NavbarLink: React.FunctionComponent<NavLinkComponentProps> = props => (
   <StyledLink isActive={props.isActive} to={props.to}>
     <InnerWrapper>
       <props.Icon />

@@ -1,0 +1,20 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": [
+    "tslint-config-blvd/react",
+    "tslint-config-prettier",
+    "tslint-config-standard"
+  ],
+  "rules": {
+    "prettier": true,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "no-string-literal": false,
+    "space-before-function-paren": false
+  }
+}

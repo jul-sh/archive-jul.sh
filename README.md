@@ -2,7 +2,7 @@
 
 ##### Foundation
 
-Using **[GatsbyJs](https://github.com/gatsbyjs/gatsby)** the website's **[React](https://github.com/facebook/react)** based JavaScript code gets rendered into static HTML at built time. Once a client visits the page the JavaScript bundle loads asynchronously.
+Using **[GatsbyJs](https://github.com/gatsbyjs/gatsby)** the website's **[React](https://github.com/facebook/react)** based **[TypeScript](https://www.typescriptlang.org/)** code gets rendered into static HTML at built time. Once a client visits the page, a JavaScript bundle is loaded asynchronously.
 
 ##### Data
 
@@ -14,7 +14,7 @@ Styling is done using [**Styled Components**](https://www.styled-components.com)
 
 ##### Linting & Formatting
 
-The code is formatted and linted with **[Prettier](https://github.com/prettier/prettier)** & **[ESLint](https://github.com/eslint/eslint)** using commit hooks.
+The code is type-check, formatted and linted with **[Prettier](https://github.com/prettier/prettier)** & **[TSLint](https://palantir.github.io/tslint/)** using commit hooks.
 
 ---
 

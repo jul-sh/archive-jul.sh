@@ -54,24 +54,28 @@ const InnerNavbarWrapper = styled.div`
   font-family: var(--sansFont);
 `
 
-const Navbar = props => (
+interface NavbarProps {
+  pathname: string
+}
+
+const Navbar: React.FunctionComponent<NavbarProps> = ({ pathname }) => (
   <NavbarWrapper>
     <InnerNavbarWrapper>
       <NavbarLink
         to="/"
-        isActive={new RegExp('^/$|^/about').test(props.pathname)}
+        isActive={new RegExp('^/$|^/about').test(pathname)}
         Icon={AboutIcon}
         label="About"
       />
       <NavbarLink
         to="/projects"
-        isActive={new RegExp('^/projects').test(props.pathname)}
+        isActive={new RegExp('^/projects').test(pathname)}
         Icon={ProjectsIcon}
         label="Projects"
       />
       <NavbarLink
         to="/contact"
-        isActive={new RegExp('^/contact').test(props.pathname)}
+        isActive={new RegExp('^/contact').test(pathname)}
         Icon={ContactIcon}
         label="Contact"
       />

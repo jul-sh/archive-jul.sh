@@ -4,7 +4,7 @@ module.exports = {
     siteUrl: 'juliette.sh'
   },
   plugins: [
-    'gatsby-plugin-eslint',
+    'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {

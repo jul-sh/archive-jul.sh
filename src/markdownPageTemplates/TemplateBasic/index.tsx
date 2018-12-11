@@ -12,7 +12,14 @@ const Title = styled.h1`
   margin: 2rem 0;
 `
 
-const TemplateBasic = props => {
+interface TemplateProps {
+  data: any
+  location: {
+    pathname: string
+  }
+}
+
+const TemplateBasic: React.FunctionComponent<TemplateProps> = props => {
   const { data } = props
   const { markdownRemark: post } = data
   const { backTo, backLabel } = post.frontmatter

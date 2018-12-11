@@ -24,14 +24,19 @@ const BackLink = styled(Link)`
   }
 `
 
-const BackToPrevious = props => (
+interface BackToPreviousProps {
+  to: string
+  label: string
+}
+
+const BackToPrevious: React.FunctionComponent<BackToPreviousProps> = props => (
   <BackLink
     to={props.to}
     className="back"
     aria-label={props.label ? `Back to ${props.label}` : 'Back'}
   >
     <span aria-hidden>{'< '}</span>
-    {`Back ${props.label ? 'to ' + props.label : ''}`}
+    {`Back ${props.label ? `to ${props.label}` : ''}`}
   </BackLink>
 )
 

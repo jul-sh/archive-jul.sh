@@ -47,7 +47,7 @@ exports.createPages = async ({ graphql, actions }) => {
         component: path.resolve(
           `${MARKDOWN_PAGE_TEMPLATES_FOLDER}/${String(
             node.frontmatter.templateKey
-          )}/index.js`
+          )}/index.tsx`
         ),
         context: { slug: node.fields.slug }
       })
