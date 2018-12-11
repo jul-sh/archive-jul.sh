@@ -21,6 +21,7 @@ const StyledLink = styled(Link)`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: hsl(0, 0%, 69%);

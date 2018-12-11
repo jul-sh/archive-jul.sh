@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '~/components/Layout'
+import PageWrapper from '~/components/PageWrapper'
 
 const NotFoundPage = props => (
   <Layout pathname={props.location.pathname}>
-    <section className="page">
+    <PageWrapper>
       <h1>NOT FOUND</h1>
       <p>Something bad happened. But I still love you.</p>
       <div className="button-parent">
@@ -11,7 +12,7 @@ const NotFoundPage = props => (
           Return to the homepage
         </a>
       </div>
-    </section>
+    </PageWrapper>
   </Layout>
 )
 

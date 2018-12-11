@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const BackLink = styled(Link)`
+  text-decoration: none;
   padding: 0.2em 0.5em;
   border-radius: 4px;
   font-size: 1.25rem;
