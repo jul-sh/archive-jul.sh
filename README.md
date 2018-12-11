@@ -18,6 +18,10 @@ The code is type-check, formatted and linted with **[Prettier](https://github.co
 
 ---
 
+## Gatsby Starter
+
+For a skeleton Gatsby starter of this website, see: https://github.com/juliettepretot/gatsby-typescript
+
 ## License 🔓
 
 MIT. :)
