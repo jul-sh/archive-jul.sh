@@ -75,7 +75,14 @@ const ToolsUsed = styled.span`
   margin-bottom: 1rem;
 `
 
-const IndexPage = props => {
+interface IndexPageProps {
+  data: any
+  location: {
+    pathname: string
+  }
+}
+
+const IndexPage: React.FunctionComponent<IndexPageProps> = props => {
   const { data } = props
   const { edges: posts } = data.allMarkdownRemark
 
@@ -84,8 +91,10 @@ const IndexPage = props => {
       <PageWrapper>
         <Projects>
           {posts
-            .filter(post => post.node.fields.slug.startsWith('/projects/'))
-            .map(({ node: post }) => {
+            .filter((post: any) =>
+              post.node.fields.slug.startsWith('/projects/')
+            )
+            .map(({ node: post }: any) => {
               return (
                 <ProjectWrapper key={post.id}>
                   <ImageTitleWrapper>

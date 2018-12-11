@@ -44,7 +44,14 @@ const StyledImage = styled(Img)`
   }
 `
 
-const Page = props => {
+interface TemplateProps {
+  data: any
+  location: {
+    pathname: string
+  }
+}
+
+const Page: React.FunctionComponent<TemplateProps> = props => {
   const { data } = props
   const { markdownRemark: post } = data
 

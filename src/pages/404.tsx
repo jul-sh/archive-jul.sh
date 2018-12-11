@@ -2,7 +2,13 @@ import React from 'react'
 import Layout from '~/components/Layout'
 import PageWrapper from '~/components/PageWrapper'
 
-const NotFoundPage = props => (
+interface NotFoundPageProps {
+  location: {
+    pathname: string
+  }
+}
+
+const NotFoundPage: React.FunctionComponent<NotFoundPageProps> = props => (
   <Layout pathname={props.location.pathname}>
     <PageWrapper>
       <h1>NOT FOUND</h1>

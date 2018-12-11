@@ -4,8 +4,6 @@
   "version": "0.1.0",
   "author": "Juliette Pretot",
   "dependencies": {
-    "babel-plugin-root-import": "^6.1.0",
-    "babel-plugin-styled-components": "^1.9.2",
     "gatsby": "^2.0.55",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-catch-links": "^2.0.8",
@@ -17,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.0.13",
     "gatsby-plugin-sitemap": "^2.0.2",
     "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-plugin-typescript": "^2.0.3",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-images": "^3.0.0",
     "gatsby-remark-smartypants": "^2.0.6",
@@ -24,10 +23,6 @@
     "gatsby-transformer-remark": "^2.1.12",
     "gatsby-transformer-sharp": "^2.1.8",
     "gatsby-transformer-sqip": "^2.0.8",
-    "postcss-preset-env": "^6.4.0",
-    "prettier": "^1.15.2",
-    "prismjs": "^1.15.0",
-    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
@@ -38,17 +33,22 @@
   ],
   "license": "MIT",
   "scripts": {
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "precommit": "lint-staged",
-    "prerewrite": "lint-staged"
+    "lint": "tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && tsc",
+    "type-check": "tsc"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run type-check",
+      "pre-write": "lint-staged && npm run type-check"
+    }
   },
   "lint-staged": {
-    "*.js": [
+    "*.{ts,tsx}": [
       "prettier --write",
       "git add",
-      "eslint --fix",
+      "tslint --fix -p tsconfig.json",
       "git add"
     ],
     "*.{graphql,json,md}": [
@@ -57,20 +57,22 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-react": "^7.0.2",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "gatsby-plugin-eslint": "^2.0.1",
+    "@types/node": "^10.12.12",
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-helmet": "^5.0.7",
+    "@types/styled-components": "^4.1.4",
+    "babel-plugin-root-import": "^6.1.0",
+    "babel-plugin-styled-components": "^1.9.3",
     "husky": "^1.2.0",
-    "lint-staged": "^8.1.0"
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "tslint": "^5.11.0",
+    "tslint-config-blvd": "^1.2.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2"
   },
   "browserslist": "> 1% in US"
 }
