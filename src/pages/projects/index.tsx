@@ -99,6 +99,7 @@ const IndexPage: React.FunctionComponent<IndexPageProps> = props => {
                 <ProjectWrapper key={post.id}>
                   <ImageTitleWrapper>
                     <Img
+                      placeholderStyle={{}}
                       fadeIn={false}
                       sizes={{
                         ...post.frontmatter.featuredImage.childImageSharp.sizes,

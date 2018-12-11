@@ -60,6 +60,7 @@ const Page: React.FunctionComponent<TemplateProps> = props => {
       <StyledPageWrapper>
         <ImageWrapper>
           <StyledImage
+            placeholderStyle={{}}
             fadeIn={false}
             className="index-me"
             sizes={{
