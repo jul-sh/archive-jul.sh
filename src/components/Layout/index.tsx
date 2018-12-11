@@ -35,14 +35,21 @@ export const Main = styled.main`
   }
 `
 
-class Layout extends React.Component {
-  constructor(props) {
+class Layout extends React.Component<
+  {
+    pathname: string
+  },
+  {
+    isApp: Boolean
+  }
+> {
+  constructor(props: any) {
     super(props)
     this.state = { isApp: false }
   }
 
   componentDidMount() {
-    if ('standalone' in window.navigator && window.navigator.standalone) {
+    if ('standalone' in window.navigator && window.navigator['standalone']) {
       this.setState({ isApp: true })
     }
   }

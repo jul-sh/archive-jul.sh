@@ -1,5 +1,9 @@
 import { createGlobalStyle, css } from 'styled-components'
 
+interface GlobalStylesProps {
+  isApp: Boolean
+}
+
 const GlobalStyles = createGlobalStyle`
   :root {
     /* fonts */
@@ -83,7 +87,7 @@ the defacto wrapper of all react content */
     word-spacing: -0.25ch;
     line-height: 1.4;
 
-    ${props =>
+    ${(props: GlobalStylesProps) =>
       props.isApp &&
       css`
         /* force full height on iOS */
