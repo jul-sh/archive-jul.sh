@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '~/components/Layout'
+import PageWrapper from '~/components/PageWrapper'
 import Link from '~/components/Link'
 
 const Projects = styled.div`
@@ -40,7 +41,8 @@ const OverflowingLink = styled(Link)`
     z-index: 3;
   }
 
-  margin: 0.5em 0 0.1em 0;
+  text-decoration: none;
+  margin: 0.5em 0 0.25em 0;
   display: inline-block;
   color: var(--pink);
   border-bottom: none;
@@ -79,7 +81,7 @@ const IndexPage = props => {
 
   return (
     <Layout pathname={props.location.pathname}>
-      <section className="page">
+      <PageWrapper>
         <Projects>
           {posts
             .filter(post => post.node.fields.slug.startsWith('/projects/'))
@@ -110,7 +112,7 @@ const IndexPage = props => {
               )
             })}
         </Projects>
-      </section>
+      </PageWrapper>
     </Layout>
   )
 }

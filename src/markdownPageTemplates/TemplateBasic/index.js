@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '~/components/Layout'
+import PageWrapper from '~/components/PageWrapper'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
 
@@ -18,7 +19,7 @@ const TemplateBasic = props => {
 
   return (
     <Layout pathname={props.location.pathname}>
-      <div className="page">
+      <PageWrapper>
         {!!backTo && backLabel && (
           <BackToPrevious to={backTo} label={backLabel} />
         )}
@@ -26,7 +27,7 @@ const TemplateBasic = props => {
           <Title>{post.frontmatter.title}</Title>
           <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-      </div>
+      </PageWrapper>
     </Layout>
   )
 }

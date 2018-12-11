@@ -2,9 +2,19 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '~/components/Layout'
+import PageWrapper from '~/components/PageWrapper'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
 import styled from 'styled-components'
-import './styles.css'
+
+const StyledPageWrapper = styled(PageWrapper)`
+  display: flex;
+  align-items: center;
+  max-width: 42.5em;
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+`
 
 const ImageWrapper = styled.div`
   width: 32.5%;
@@ -40,7 +50,7 @@ const Page = props => {
 
   return (
     <Layout pathname={props.location.pathname}>
-      <div className="page index">
+      <StyledPageWrapper>
         <ImageWrapper>
           <StyledImage
             fadeIn={false}
@@ -56,7 +66,7 @@ const Page = props => {
           <h1>{post.frontmatter.title}</h1>
           <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-      </div>
+      </StyledPageWrapper>
     </Layout>
   )
 }

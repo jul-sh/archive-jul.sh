@@ -1,20 +1,58 @@
 import React from 'react'
+import styled from 'styled-components'
+import GlobalStyles from '~/components/GlobalStyles'
 import Navbar from '~/components/Navbar'
-import '~/style/index.css'
-import '~/style/custom-properties.css'
+
+export const Main = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: calc(var(--responsive-padding) + var(--safe-area-inset-top));
+  padding-right: calc(var(--responsive-padding) + var(--safe-area-inset-right));
+  padding-bottom: calc(
+    4rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
+  );
+  padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
+
+  @media only screen and (max-width: 700px) {
+    padding: calc(
+      0.5rem + var(--responsive-padding) + var(--safe-area-inset-top)
+    );
+    padding-right: calc(
+      var(--responsive-padding) + var(--safe-area-inset-right)
+    );
+    padding-bottom: calc(
+      0.5rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
+    );
+    padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
+    font-size: 21px;
+    margin-bottom: 3.5rem;
+  }
+
+  @media print {
+    max-width: 100%;
+  }
+`
 
 class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { isApp: false }
+  }
+
   componentDidMount() {
     if ('standalone' in window.navigator && window.navigator.standalone) {
-      document.querySelector('body').setAttribute('data-is-app', 'true')
+      this.setState({ isApp: true })
     }
   }
 
   render() {
     return (
       <>
+        <GlobalStyles isApp={this.state.isApp} />
         <Navbar pathname={this.props.pathname} />
-        <main className="main">{this.props.children}</main>
+        <Main className="main">{this.props.children}</Main>
       </>
     )
   }
