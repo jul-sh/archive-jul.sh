@@ -1,16 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 import Layout from '~/components/Layout'
 import PageWrapper from '~/components/PageWrapper'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
-
-const Title = styled.h1`
-  font-size: 3rem;
-  color: var(--pink);
-  margin: 2rem 0;
-`
 
 interface TemplateProps {
   data: any
@@ -31,7 +24,7 @@ const TemplateBasic: React.FunctionComponent<TemplateProps> = props => {
           <BackToPrevious to={backTo} label={backLabel} />
         )}
         <div>
-          <Title>{post.frontmatter.title}</Title>
+          <h1>{post.frontmatter.title}</h1>
           <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </PageWrapper>
