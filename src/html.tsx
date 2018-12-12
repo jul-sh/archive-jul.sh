@@ -31,6 +31,8 @@ const webFonts = `
   font-display: swap;
 }
 `
+  // strip linebreaks
+  .replace(/[\n\r]+ */g, ' ')
 
 interface HtmlProps {
   htmlAttributes: any
