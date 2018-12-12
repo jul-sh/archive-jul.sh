@@ -6,7 +6,7 @@ const FONTS = {
   sans: '/fonts/jsans.woff2'
 }
 
-const webFonts = `
+const WEBFONTS = `
 @font-face {
   font-family: 'Juliette';
   src: url('${FONTS.regular}') format('woff2');
@@ -33,6 +33,22 @@ const webFonts = `
 `
   // strip linebreaks
   .replace(/[\n\r]+ */g, ' ')
+
+const GREETING = `/*
+
+
+🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
+🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
+🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+
+
+Hey astronaut. You can view the uncompiled soure code at https://github.com/juliettepretot/juliette.sh :)
+
+
+*/`
 
 interface HtmlProps {
   htmlAttributes: any
@@ -96,13 +112,12 @@ const HTML: React.FunctionComponent<HtmlProps> = props => (
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
       <style
         dangerouslySetInnerHTML={{
-          __html: webFonts
+          __html: WEBFONTS
         }}
       />
       <script
         dangerouslySetInnerHTML={{
-          __html:
-            '/*\n \n \n🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴\n🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴\n🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴\n🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴 \n \n \nHey astronaut. You can view the uncompiled soure code at https://github.com/juliettepretot/juliette.sh :) \n \n \n*/'
+          __html: GREETING
         }}
       />
       {props.headComponents}
