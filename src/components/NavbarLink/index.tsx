@@ -37,7 +37,8 @@ const StyledLink = styled(Link)`
       color: var(--blue);
 
       &:hover {
-        filter: brightness(1);
+        color: var(--blue);
+        filter: brightness(1.05);
       }
     `}
 
