@@ -9,7 +9,6 @@ interface NavLinkStyleProps {
 const StyledLink = styled(Link)`
   transition: all 100ms ease-in-out;
   position: relative;
-  width: 2ch;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   text-align: center;
@@ -18,7 +17,7 @@ const StyledLink = styled(Link)`
   font-size: 92.5%;
   line-height: 1;
   text-decoration: none;
-  padding: 0.45rem 1.5rem;
+  padding: 0.45rem 0.9rem;
   margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
@@ -29,6 +28,11 @@ const StyledLink = styled(Link)`
 
   &:hover {
     color: hsl(0, 0%, 69%);
+  }
+
+  @media (max-width: 1100px) {
+    width: 2ch;
+    padding: 0.45rem 1.5rem;
   }
 
   ${(props: NavLinkStyleProps) =>
