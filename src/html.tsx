@@ -1,38 +1,5 @@
 import React from 'react'
-
-const FONTS = {
-  regular: '/fonts/jregular.woff2',
-  bold: '/fonts/jbold.woff2',
-  sans: '/fonts/jsans.woff2'
-}
-
-const WEBFONTS = `
-@font-face {
-  font-family: 'Juliette';
-  src: url('${FONTS.regular}') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Juliette';
-  src: url('${FONTS.bold}') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Juliette Sans';
-  src: url('${FONTS.sans}') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-`
-  // strip linebreaks
-  .replace(/[\n\r]+ */g, ' ')
+import { FONTS_URLS } from '~/constants'
 
 const GREETING = `/*
 
@@ -72,21 +39,21 @@ const HTML: React.FunctionComponent<HtmlProps> = props => (
       />
       <link
         rel="preload"
-        href={FONTS.regular}
+        href={FONTS_URLS.regular}
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
       />
       <link
         rel="preload"
-        href={FONTS.bold}
+        href={FONTS_URLS.bold}
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
       />
       <link
         rel="preload"
-        href={FONTS.sans}
+        href={FONTS_URLS.sans}
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
@@ -110,11 +77,6 @@ const HTML: React.FunctionComponent<HtmlProps> = props => (
         href="/favicons/favicon-32x32.png"
       />
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
-      <style
-        dangerouslySetInnerHTML={{
-          __html: WEBFONTS
-        }}
-      />
       <script
         dangerouslySetInnerHTML={{
           __html: GREETING

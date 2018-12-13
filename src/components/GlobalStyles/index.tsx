@@ -1,12 +1,37 @@
 import { createGlobalStyle, css } from 'styled-components'
+import { FONTS_URLS } from '~/constants'
 
 interface GlobalStylesProps {
   isApp: Boolean
 }
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'Juliette';
+    src: url('${FONTS_URLS.regular}') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Juliette';
+    src: url('${FONTS_URLS.bold}') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: 'Juliette Sans';
+    src: url('${FONTS_URLS.sans}') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+  }
+
   :root {
-    /* fonts */
+    /* FONTS_URLS */
     --primaryFont: Juliette, monospace;
     --sansFont: 'Juliette Sans', sans-serif;
 
