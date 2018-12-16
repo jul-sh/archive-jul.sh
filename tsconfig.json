@@ -16,7 +16,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"]
 }
