@@ -5,9 +5,9 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name's **_Juliette Pretot_**. I'm a **JavaScript engineer** (Web & NodeJs). My passion is writing maintainable code at scale.
+My name's **_Juliette Pretot_** & I'm a **software engineer**. My passion is writing maintainable code at scale.
 
-At [N26](https://n26.com) my team builds the web app. Our stack is isomorphic React, Redux, GraphQL & Express.
+My team at [N26](https://n26.com) builds the web-app platform using isomorphic React, GraphQL & NodeJs.
 
 <span class="secondary-text">
 
