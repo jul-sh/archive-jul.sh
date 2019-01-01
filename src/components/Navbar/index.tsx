@@ -23,6 +23,7 @@ const NavbarWrapper = styled.nav`
     left: 0;
     right: 0;
     bottom: 0;
+    box-shadow: 2px 0 2px black;
     background-color: hsl(221, 25%, 13%);
     padding-left: var(--responsive-padding);
     padding-right: var(--responsive-padding);

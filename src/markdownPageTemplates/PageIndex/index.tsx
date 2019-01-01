@@ -14,6 +14,10 @@ const StyledPageWrapper = styled(PageWrapper)`
   @media (max-width: 900px) {
     display: block;
   }
+
+  @media print {
+    max-width: 100%;
+  }
 `
 
 const ImageWrapper = styled.div`

@@ -9,6 +9,10 @@ const PageWrapper = styled.div`
   > h4:first-child {
     margin-top: 0;
   }
+
+  @media print {
+    max-width: 100%;
+  }
 `
 
 export default PageWrapper

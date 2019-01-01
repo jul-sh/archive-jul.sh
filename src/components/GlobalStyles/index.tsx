@@ -62,6 +62,11 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  ::selection {
+        background: rgba(255, 210, 57, 0.2);
+        text-shadow: black 1px 1px 0px;
+    }
+
   body,
 html,
 #___gatsby,
@@ -167,10 +172,6 @@ the defacto wrapper of all react content */
   }
 
   @media print {
-    @page {
-      margin: 2.5cm;
-    }
-
     body {
       background: none;
       color: rgb(0, 0, 0);
@@ -208,7 +209,7 @@ the defacto wrapper of all react content */
 
     h1,
     h1 a {
-      font-size: 42pt;
+      font-size: 32pt;
     }
 
     h1,

@@ -38,10 +38,6 @@ export const Main = styled.main`
     font-size: 21px;
     margin-bottom: 3.5rem;
   }
-
-  @media print {
-    max-width: 100%;
-  }
 `
 
 class Layout extends React.Component<
