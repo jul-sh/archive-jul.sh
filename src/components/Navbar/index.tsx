@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavbarLink from '~/components/NavbarLink'
-import AboutIcon from './AboutIcon'
-import ProjectsIcon from './ProjectsIcon'
-import ContactIcon from './ContactIcon'
+import AboutIcon from '~/components/Icons/AboutIcon'
+import ProjectsIcon from '~/components/Icons/ProjectsIcon'
+import ContactIcon from '~/components/Icons/ContactIcon'
+import { IconProps } from '~/components/Icons/types'
 
 const NavbarWrapper = styled.nav`
   position: fixed;
@@ -80,19 +81,19 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ pathname }) => (
       <NavbarLink
         to="/"
         isActive={new RegExp('^/$|^/about').test(pathname)}
-        Icon={AboutIcon}
+        Icon={(props: IconProps) => <AboutIcon {...props} />}
         label="About"
       />
       <NavbarLink
         to="/projects"
         isActive={new RegExp('^/projects').test(pathname)}
-        Icon={ProjectsIcon}
+        Icon={(props: IconProps) => <ProjectsIcon {...props} />}
         label="Projects"
       />
       <NavbarLink
         to="/contact"
         isActive={new RegExp('^/contact').test(pathname)}
-        Icon={ContactIcon}
+        Icon={(props: IconProps) => <ContactIcon {...props} />}
         label="Contact"
       />
     </InnerNavbarWrapper>

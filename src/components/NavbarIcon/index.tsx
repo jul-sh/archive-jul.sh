@@ -8,8 +8,8 @@ const NavbarIcon = styled.svg`
   margin-bottom: 0.5rem;
   transition: all 100ms ease-in-out;
 
-  :hover {
-    filter: saturate(100%) opacity(100%);
+  @media (max-width: 700px) {
+    margin-bottom: 0.4rem;
   }
 `
 

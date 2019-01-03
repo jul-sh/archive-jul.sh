@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
+import { IconProps } from '~/components/Icons/types'
 
 interface NavLinkStyleProps {
   isActive: Boolean
@@ -27,7 +28,7 @@ const StyledLink = styled(Link)`
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    color: hsl(0, 0%, 69%);
+    color: var(--blue);
   }
 
   @media (max-width: 1100px) {
@@ -39,11 +40,6 @@ const StyledLink = styled(Link)`
     props.isActive &&
     css`
       color: var(--blue);
-
-      &:hover {
-        color: var(--blue);
-        filter: brightness(1.05);
-      }
     `}
 
   @media (max-width: 700px) {
@@ -70,16 +66,16 @@ const Caption = styled.span`
 `
 
 interface NavLinkComponentProps {
-  isActive: Boolean
+  isActive: boolean
   to: string
   label: string
-  Icon: (props: any) => JSX.Element
+  Icon: (props: IconProps) => JSX.Element
 }
 
 const NavbarLink: React.FunctionComponent<NavLinkComponentProps> = props => (
   <StyledLink isActive={props.isActive} to={props.to}>
     <InnerWrapper>
-      <props.Icon />
+      {props.Icon({ isFilled: props.isActive })}
       <Caption>{props.label}</Caption>
     </InnerWrapper>
   </StyledLink>
