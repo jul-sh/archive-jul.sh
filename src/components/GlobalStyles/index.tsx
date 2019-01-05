@@ -11,19 +11,19 @@ const GlobalStyles = createGlobalStyle`
     --sansFont: 'Juliette Sans', sans-serif;
 
     /* colors */
-    --background-color: hsl(215, 37%, 10%);
-    --pink: hsl(359, 94%, 86%);
-    --lightGray: hsl(0, 0%, 84%);
-    --gray: hsl(0, 0%, 62%);
-    --translucentGray: hsla(0, 0%, 62%, 0.6);
-    --yellow: hsl(46, 82%, 74%);
-    --orange: hsl(30, 89%, 70%);
-    --translucentOrange: hsla(30, 82%, 72%, 0.6);
-    --lowTranslucentOrange: hsla(30, 82%, 72%, 0.2);
-    --blue: hsl(204, 66%, 70%);
-    --lightBlue: hsl(179, 66%, 70%);
-    --green: hsl(155, 47%, 54%);
-    --translucentGreen: hsla(155, 45%, 60%, 0.6);
+    --background-color: rgb(16, 23, 34);
+    --pink: rgb(255, 178, 178);
+    --lightGray: rgb(228, 204, 204);
+    --gray: rgb(168, 152, 152);
+    --translucentGray: rgba(168, 152, 152, 0.6);
+    --yellow: rgb(255, 205, 125);
+    --orange: rgb(255, 170, 105);
+    --translucentOrange: rgba(252, 172, 119, 0.6);
+    --lowTranslucentOrange: rgba(252, 172, 119, 0.2);
+    --blue: rgb(138, 179, 218);
+    --lightBlue: rgb(138, 218, 217);
+    --green: rgb(88, 184, 139);
+    --translucentGreen: rgba(112, 188, 154, 0.6);
 
     /* sizing */
     --responsive-padding: 3.5rem;
