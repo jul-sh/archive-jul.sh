@@ -5,32 +5,32 @@ import PageWrapper from '~/components/PageWrapper'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
 import BackToPrevious from '~/components/BackToPrevious'
 
-interface TemplateProps {
-  data: any
+const TemplateBasic: React.FunctionComponent<{
+  data: any // type checked by GraphQL
   location: {
     pathname: string
   }
-}
-
-const TemplateBasic: React.FunctionComponent<TemplateProps> = props => {
-  const { data } = props
-  const { markdownRemark: post } = data
-  const { backTo, backLabel } = post.frontmatter
-
-  return (
-    <Layout pathname={props.location.pathname}>
-      <PageWrapper>
-        {!!backTo && backLabel && (
-          <BackToPrevious to={backTo} label={backLabel} />
-        )}
-        <div>
-          <h1>{post.frontmatter.title}</h1>
-          <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
-      </PageWrapper>
-    </Layout>
-  )
-}
+}> = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { backTo, backLabel, title },
+      html
+    }
+  },
+  location: { pathname }
+}) => (
+  <Layout pathname={pathname}>
+    <PageWrapper>
+      {!!backTo && backLabel && (
+        <BackToPrevious to={backTo} label={backLabel} />
+      )}
+      <div>
+        <h1>{title}</h1>
+        <MarkdownWrapper dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </PageWrapper>
+  </Layout>
+)
 
 export default TemplateBasic
 

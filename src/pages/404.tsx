@@ -3,12 +3,6 @@ import styled from 'styled-components'
 import Layout from '~/components/Layout'
 import PageWrapper from '~/components/PageWrapper'
 
-interface NotFoundPageProps {
-  location: {
-    pathname: string
-  }
-}
-
 const ButtonWrapper = styled.div`
   display: flex;
   margin: 2.5rem 0;
@@ -42,8 +36,12 @@ const ButtonLink = styled.a`
   }
 `
 
-const NotFoundPage: React.FunctionComponent<NotFoundPageProps> = props => (
-  <Layout pathname={props.location.pathname}>
+const NotFoundPage: React.FunctionComponent<{
+  location: {
+    pathname: string
+  }
+}> = ({ location: { pathname } }) => (
+  <Layout pathname={pathname}>
     <PageWrapper>
       <h1>NOT FOUND</h1>
       <p>Something bad happened. But I still love you.</p>

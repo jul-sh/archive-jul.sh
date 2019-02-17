@@ -48,40 +48,40 @@ const StyledImage = styled(Img)`
   }
 `
 
-interface TemplateProps {
-  data: any
+const Page: React.FunctionComponent<{
+  data: any // type checked by GraphQL
   location: {
     pathname: string
   }
-}
-
-const Page: React.FunctionComponent<TemplateProps> = props => {
-  const { data } = props
-  const { markdownRemark: post } = data
-
-  return (
-    <Layout pathname={props.location.pathname}>
-      <StyledPageWrapper>
-        <ImageWrapper>
-          <StyledImage
-            placeholderStyle={{}}
-            fadeIn={false}
-            className="index-me"
-            sizes={{
-              ...post.frontmatter.featuredImage.childImageSharp.sizes,
-              base64:
-                post.frontmatter.featuredImage.childImageSharp.sqip.dataURI
-            }}
-          />
-        </ImageWrapper>
-        <div>
-          <h1>{post.frontmatter.title}</h1>
-          <MarkdownWrapper dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
-      </StyledPageWrapper>
-    </Layout>
-  )
-}
+}> = ({
+  data: {
+    markdownRemark: {
+      frontmatter: { title, featuredImage },
+      html
+    }
+  },
+  location: { pathname }
+}) => (
+  <Layout pathname={pathname}>
+    <StyledPageWrapper>
+      <ImageWrapper>
+        <StyledImage
+          placeholderStyle={{}}
+          fadeIn={false}
+          className="index-me"
+          sizes={{
+            ...featuredImage.childImageSharp.sizes,
+            base64: featuredImage.childImageSharp.sqip.dataURI
+          }}
+        />
+      </ImageWrapper>
+      <div>
+        <h1>{title}</h1>
+        <MarkdownWrapper dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </StyledPageWrapper>
+  </Layout>
+)
 
 export default Page
 

@@ -71,11 +71,9 @@ const InnerNavbarWrapper = styled.div`
   }
 `
 
-interface NavbarProps {
+const Navbar: React.FunctionComponent<{
   pathname: string
-}
-
-const Navbar: React.FunctionComponent<NavbarProps> = ({ pathname }) => (
+}> = ({ pathname }) => (
   <NavbarWrapper>
     <InnerNavbarWrapper>
       <NavbarLink

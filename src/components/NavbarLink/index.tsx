@@ -3,10 +3,6 @@ import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 import { IconProps } from '~/components/Icons/types'
 
-interface NavLinkStyleProps {
-  isActive: Boolean
-}
-
 const StyledLink = styled(Link)`
   transition: all 100ms ease-in-out;
   position: relative;
@@ -36,8 +32,8 @@ const StyledLink = styled(Link)`
     padding: 0.45rem 1.5rem;
   }
 
-  ${(props: NavLinkStyleProps) =>
-    props.isActive &&
+  ${({ isActive }: { isActive: Boolean }) =>
+    isActive &&
     css`
       color: var(--blue);
     `}
@@ -65,18 +61,16 @@ const Caption = styled.span`
   }
 `
 
-interface NavLinkComponentProps {
+const NavbarLink: React.FunctionComponent<{
   isActive: boolean
   to: string
   label: string
   Icon: (props: IconProps) => JSX.Element
-}
-
-const NavbarLink: React.FunctionComponent<NavLinkComponentProps> = props => (
-  <StyledLink isActive={props.isActive} to={props.to}>
+}> = ({ isActive, to, label, Icon }) => (
+  <StyledLink isActive={isActive} to={to}>
     <InnerWrapper>
-      {props.Icon({ isFilled: props.isActive })}
-      <Caption>{props.label}</Caption>
+      {Icon({ isFilled: isActive })}
+      <Caption>{label}</Caption>
     </InnerWrapper>
   </StyledLink>
 )

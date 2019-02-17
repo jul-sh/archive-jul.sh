@@ -75,52 +75,56 @@ const ToolsUsed = styled.span`
   margin-bottom: 1rem;
 `
 
-interface IndexPageProps {
-  data: any
+const IndexPage: React.FunctionComponent<{
+  data: any // type checked by GraphQL
   location: {
     pathname: string
   }
-}
-
-const IndexPage: React.FunctionComponent<IndexPageProps> = props => {
-  const { data } = props
-  const { edges: posts } = data.allMarkdownRemark
+}> = ({
+  data: {
+    allMarkdownRemark: { edges }
+  },
+  location: { pathname }
+}) => {
+  const relevantPosts = edges.filter((post: any) =>
+    post.node.fields.slug.startsWith('/projects/')
+  )
 
   return (
-    <Layout pathname={props.location.pathname}>
+    <Layout pathname={pathname}>
       <PageWrapper>
         <Projects>
-          {posts
-            .filter((post: any) =>
-              post.node.fields.slug.startsWith('/projects/')
+          {relevantPosts.map((
+            {
+              node: {
+                id,
+                frontmatter: { featuredImage, link, title, tools, intro },
+                fields: { slug }
+              }
+            }: any /* type checked by GraphQL */
+          ) => {
+            return (
+              <ProjectWrapper key={id}>
+                <ImageTitleWrapper>
+                  <Img
+                    placeholderStyle={{}}
+                    fadeIn={false}
+                    sizes={{
+                      ...featuredImage.childImageSharp.sizes,
+                      base64: featuredImage.childImageSharp.sqip.dataURI
+                    }}
+                  />
+                  <Title>
+                    <OverflowingLink to={String(link || slug)}>
+                      {String(title)}
+                    </OverflowingLink>
+                  </Title>
+                </ImageTitleWrapper>
+                <ToolsUsed>{tools}</ToolsUsed>
+                <Description>{intro}</Description>
+              </ProjectWrapper>
             )
-            .map(({ node: post }: any) => {
-              return (
-                <ProjectWrapper key={post.id}>
-                  <ImageTitleWrapper>
-                    <Img
-                      placeholderStyle={{}}
-                      fadeIn={false}
-                      sizes={{
-                        ...post.frontmatter.featuredImage.childImageSharp.sizes,
-                        base64:
-                          post.frontmatter.featuredImage.childImageSharp.sqip
-                            .dataURI
-                      }}
-                    />
-                    <Title>
-                      <OverflowingLink
-                        to={post.frontmatter.link || post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </OverflowingLink>
-                    </Title>
-                  </ImageTitleWrapper>
-                  <ToolsUsed>{post.frontmatter.tools}</ToolsUsed>
-                  <Description>{post.frontmatter.intro}</Description>
-                </ProjectWrapper>
-              )
-            })}
+          })}
         </Projects>
       </PageWrapper>
     </Layout>

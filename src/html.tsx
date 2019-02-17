@@ -50,17 +50,22 @@ You can view the raw soure code at https://github.com/juliettepretot/juliette.sh
 
 */`
 
-interface HtmlProps {
+const HTML: React.FunctionComponent<{
   htmlAttributes: any
   headComponents: any
   preBodyComponents: any
   body: any
   bodyAttributes: any
   postBodyComponents: any
-}
-
-const HTML: React.FunctionComponent<HtmlProps> = props => (
-  <html lang="en" {...props.htmlAttributes}>
+}> = ({
+  htmlAttributes,
+  headComponents,
+  preBodyComponents,
+  body,
+  bodyAttributes,
+  postBodyComponents
+}) => (
+  <html lang="en" {...htmlAttributes}>
     <head>
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -120,16 +125,16 @@ const HTML: React.FunctionComponent<HtmlProps> = props => (
           __html: GREETING
         }}
       />
-      {props.headComponents}
+      {headComponents}
     </head>
-    <body {...props.bodyAttributes}>
-      {props.preBodyComponents}
+    <body {...bodyAttributes}>
+      {preBodyComponents}
       <div
         key={'body'}
         id="___gatsby"
-        dangerouslySetInnerHTML={{ __html: props.body }}
+        dangerouslySetInnerHTML={{ __html: body }}
       />
-      {props.postBodyComponents}
+      {postBodyComponents}
     </body>
   </html>
 )
