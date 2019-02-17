@@ -40,34 +40,25 @@ export const Main = styled.main`
   }
 `
 
-class Layout extends React.Component<
-  {
-    pathname: string
-  },
-  {
-    isApp: Boolean
-  }
-> {
-  constructor(props: any) {
-    super(props)
-    this.state = { isApp: false }
-  }
+const Layout: React.FunctionComponent<{
+  pathname: string
+}> = ({ pathname, children }) => {
+  const [isApp, setIsApp] = React.useState(false)
+  React.useEffect(
+    () =>
+      setIsApp(
+        'standalone' in window.navigator && window.navigator['standalone']
+      ),
+    []
+  )
 
-  componentDidMount() {
-    if ('standalone' in window.navigator && window.navigator['standalone']) {
-      this.setState({ isApp: true })
-    }
-  }
-
-  render() {
-    return (
-      <>
-        <GlobalStyles isApp={this.state.isApp} />
-        <Navbar pathname={this.props.pathname} />
-        <Main className="main">{this.props.children}</Main>
-      </>
-    )
-  }
+  return (
+    <>
+      <GlobalStyles isApp={isApp} />
+      <Navbar pathname={pathname} />
+      <Main className="main">{children}</Main>
+    </>
+  )
 }
 
 export default Layout
