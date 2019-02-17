@@ -39,9 +39,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        // Setting a color is optional.
         color: '#44B284',
-        // Disable the loading spinner.
         showSpinner: false
       }
     },
@@ -52,6 +50,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-netlify' // place as last in the array
+    'gatsby-plugin-netlify' // place as last in the array. ref: https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify#how-to-use
   ]
 }
