@@ -7,19 +7,19 @@ const GlobalStyles = createGlobalStyle`
     --sansFont: 'Juliette Sans', sans-serif;
 
     /* colors */
-    --background-color: rgb(16, 23, 34);
-    --pink: rgb(255, 178, 178);
-    --lightGray: rgb(228, 204, 204);
-    --gray: rgb(168, 152, 152);
-    --translucentGray: rgba(168, 152, 152, 0.6);
-    --yellow: rgb(255, 205, 125);
-    --orange: rgb(255, 170, 105);
-    --translucentOrange: rgba(252, 172, 119, 0.6);
-    --lowTranslucentOrange: rgba(252, 172, 119, 0.2);
-    --blue: rgb(138, 179, 218);
-    --lightBlue: rgb(138, 218, 217);
-    --green: rgb(88, 184, 139);
-    --translucentGreen: rgba(112, 188, 154, 0.6);
+    --background-color: hsl(217, 36%, 10%);
+    --pink: hsl(0, 82%, 85%);
+    --lightGray: hsl(0, 31%, 85%);
+    --gray: hsl(0, 6%, 63%);
+    --translucentGray: hsla(0, 6%, 63%, 0.6);
+    --yellow: hsl(37, 80%, 75%);
+    --orange: hsl(26, 80%, 71%);
+    --translucentOrange: hsla(24, 86%, 73%, 0.6);
+    --lowTranslucentOrange: hsla(24, 86%, 73%, 0.2);
+    --blue: hsl(209, 36%, 70%);
+    --lightBlue: hsl(179, 40%, 70%);
+    --green: hsl(152, 25%, 53%);
+    --translucentGreen: hsla(153, 36%, 59%, 0.6);
 
     /* sizing */
     --responsive-padding: 3.5rem;
@@ -64,11 +64,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
   body,
-html,
-#___gatsby,
-/* target reach router focus wrapper,
-the defacto wrapper of all react content */
-#___gatsby > div[role='group'] {
+  html,
+  #___gatsby,
+  /* target reach router focus wrapper,
+  the defacto wrapper of all react content */
+  #___gatsby > div[role='group'] {
     width: 100%;
     min-height: 100%;
     margin: 0;
