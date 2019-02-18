@@ -56,7 +56,7 @@ const Layout: React.FunctionComponent<{
     <>
       <GlobalStyles isApp={isApp} />
       <Navbar pathname={pathname} />
-      <Main className="main">{children}</Main>
+      <Main>{children}</Main>
     </>
   )
 }

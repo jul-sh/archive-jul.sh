@@ -29,11 +29,7 @@ const BackToPrevious: React.FunctionComponent<{
   to: string
   label: string
 }> = ({ to, label }) => (
-  <BackLink
-    to={to}
-    className="back"
-    aria-label={label ? `Back to ${label}` : 'Back'}
-  >
+  <BackLink to={to}>
     <span aria-hidden>{'< '}</span>
     {`Back ${label ? `to ${label}` : ''}`}
   </BackLink>

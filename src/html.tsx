@@ -129,11 +129,7 @@ const HTML: React.FunctionComponent<{
     </head>
     <body {...bodyAttributes}>
       {preBodyComponents}
-      <div
-        key={'body'}
-        id="___gatsby"
-        dangerouslySetInnerHTML={{ __html: body }}
-      />
+      <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
       {postBodyComponents}
     </body>
   </html>
