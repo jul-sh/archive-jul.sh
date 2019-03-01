@@ -5,13 +5,13 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name's **_Juliette Pretot_** & I'm a **software engineer**. My passion is writing maintainable code at scale.
+My name's **_Juliette Pretot_**. I'm a creative, ambitious and enterprising **software engineer**.
 
-My team at [N26](https://n26.com) builds the web-app platform using isomorphic React, GraphQL & NodeJs.
+My team at N26 builds the web-app platform using isomorphic React, GraphQL & NodeJs.
 
 <span class="secondary-text">
 
-[Ré­sumé](/about/cv): ex [Clue](https://helloclue.com/app.html). Google Scholar.
+[Ré­sumé](/about/cv): prev. Clue, Google Developer Scholarschip.
 
 Global citizen in Berlin.
 
