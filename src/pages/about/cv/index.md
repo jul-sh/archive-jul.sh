@@ -5,17 +5,17 @@ backLabel: about
 title: Juliette Pretot
 ---
 
-_Creative, ambitious and enterprising software engineer. I primarily focus on modern JavaScript, more specifically React, its ecosystem and Node.js._
+_Creative, ambitious and enterprising software engineer. I primarily focus on modern JavaScript, its ecosystem and Node.js._
 
 **hi@juliette.sh**
 
 ## Skills
 
 - JavaScript, GraphQL, Node.js, React
-- Functional Programming
 - Web Performance Optimization
-- Mentoring
-- Agile Methodology
+- Functional Programming
+- UX-Design
+- Mentoring, Agile Methodology
 
 ## Work
 
@@ -37,10 +37,10 @@ Build-time rendered React, HTML, CSS for a language learning platform.
 
 - Bootstrapped a profitable business as a founder
 - Architected the company's web workflow
-- Built & designed conversion oriented web pages, achieving a 10% visitor to email-subscriber rate
 - Achieved a 63% faster time-to-interactive compared to competitors
 - Reduced email automation cost by 82% using open-source software
 - Built a web-based chatbot that evaluated a user's language level
+- Built & designed conversion oriented web pages, achieving a 10% visitor to email-subscriber rate
 - Agile & cross-functional structure
 
 ### Web Developer & Design Researcher at Clue, 2015 - 2016
@@ -70,9 +70,11 @@ JavaScript, HTML, CSS, Python, & Heroku for a health tracking app used by more t
 
 - Fast-tracked curriculum for high-achieving students. Graduated two years younger than the national average
 
-## Selected Side Projects
+## Related Projects
 
-- [co-commit](https://github.com/juliettepretot/npx-co-commit), a Node.js tool to co-author commits on GitHub when pair programming. Seen on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
-- [yourtime.zone](https://yourtime.zone/), a React based web app which translates the time of an event into the visitor's local time. Seen on the front pages of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
-- [Lucy VSCode theme](https://github.com/juliettepretot/lucy-vscode-theme) a VSCode theme & theme generator. Built with Node.js, 100k+ installs.
-- Tweet 280, a bookmarklet hack to tweet using longer tweets before Twitter rolled out the feature. Seen in [TechCrunch](https://techcrunch.com/gallery/how-to-enable-280-characters-on-twitter-right-now/slide/1/), [Mashable](http://mashable.com/2017/09/27/how-to-give-yourself-280-character-tweets/#ZpUyt3xR5EqU), [How To Geek](https://www.howtogeek.com/327555/how-to-get-twitters-new-280-character-limit-now/)
+- [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Seen on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
+- [Clue Connect](https://www.behance.net/gallery/58479525/Clue-Connect): An article about the design process behind Clue's sharing feature.
+- [N26 Dark Mode](https://medium.com/insiden26/building-the-n26-dark-mode-2fc18c2ccdd5): An article about the engineering and design behind N26's new dark mode.
+- [yourtime.zone](https://yourtime.zone/): A React based web app which translates the time of an event into the visitor's local time. Seen on the front pages of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
+- [Lucy VSCode theme](https://github.com/juliettepretot/lucy-vscode-theme): A VSCode theme & theme generator. Built with Node.js, 150k+ installs.
+- Tweet 280: A bookmarklet hack to tweet using longer tweets before Twitter rolled out the feature. Seen in [TechCrunch](https://techcrunch.com/gallery/how-to-enable-280-characters-on-twitter-right-now/slide/1/), [Mashable](http://mashable.com/2017/09/27/how-to-give-yourself-280-character-tweets/#ZpUyt3xR5EqU), [How To Geek](https://www.howtogeek.com/327555/how-to-get-twitters-new-280-character-limit-now/)
