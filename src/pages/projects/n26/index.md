@@ -18,8 +18,4 @@ I'm proud to be part of the team that built the [N26](https://n26.com/en-de/) we
 - Light & dark mode using css custom properties
 - Strong accessibility focus
 
-##Process
-
-- Strong agile setup
-- Pair programming
-- UX work in collaboration with designers
+Alse see my article ["Building the N26 Dark Mode"](https://medium.com/insiden26/building-the-n26-dark-mode-2fc18c2ccdd5) that outlines the engineering and design behind N26's new dark mode.
