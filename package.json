@@ -41,7 +41,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "lint": "tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && tsc",
-    "type-check": "tsc"
+    "type-check": "tsc --project tsconfig.json --noEmit"
   },
   "husky": {
     "hooks": {
