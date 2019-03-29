@@ -54,6 +54,12 @@ JavaScript, HTML, CSS, Python, & Heroku for a health tracking app used by more t
 - Developed and implemented company-wide processes for design research
 - Agile & cross-functional structure
 
+## Community
+
+### Google Developer Expert for Web Technologies
+
+- Member of a global program that recognizes individuals who are experts and thought leaders in one or more Google technologies.
+
 ## Education
 
 ### Google Developer Challenge Scholarship: Mobile Web Specialist

@@ -5,12 +5,12 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name's **_Juliette Pretot_**. I'm a creative, ambitious and enterprising **software engineer**.
+My name's **_Juliette Pretot_**. I'm a creative, ambitious and enterprising software engineer.
 
-I work at N26, where my team builds an online banking web-app using isomorphic React, GraphQL & NodeJs.
+At **N26** I build a banking app using isomorphic React, and GraphQL. I'm also a **Google Developer Expert** for Web Technologies.
 
 <span class="secondary-text">
 
-[Ré­sumé](/about/cv): prev. Clue, Google Developer Scholarschip.
+For more details, see my [ré­sumé](/about/cv).
 
 </span>
