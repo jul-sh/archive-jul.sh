@@ -23,8 +23,8 @@ _Creative, ambitious and enterprising software engineer. I primarily focus on mo
 
 Isomorphic React, GraphQL, & Node.js for an online banking app used by more than one million people.
 
-- Boosted developer productivity by spearheading a component-based design system
-- Reduced code complexity by engineering simple, standardized abstractions for loading states, animations and color-logic
+- Multiplied developer productivity by spearheading a component-based design system
+- Reduced complexity by engineering simple, standardized abstractions for data-flow, animations and color-logic
 - Improved time-to-interactive by one second through component-level code splitting
 - Reduced time-to-first-meaningful-paint by 20% through replacing sprites with improved server-side rendering
 - Doubled the speed of font loading using Unicode-range-splitting and preloading
