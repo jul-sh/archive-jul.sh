@@ -34,7 +34,7 @@ const ImageWrapper = styled.div`
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 0 0 2rem 0;
+    margin: 0;
     float: none;
     right: 0;
   }
