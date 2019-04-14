@@ -1,5 +1,5 @@
 ---
-templateKey: PageIndex
+templateKey: IndexPage
 title: Nice to meet you
 featuredImage: ./me.jpg
 style: index
