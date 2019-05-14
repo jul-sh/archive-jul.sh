@@ -5,7 +5,7 @@ backLabel: about
 title: Juliette Pretot
 ---
 
-_Creative, ambitious and enterprising software engineer. I primarily focus on modern JavaScript, its ecosystem and Node.js._
+_Creative, ambitious, and enterprising software engineer. I primarily focus on modern JavaScript, its ecosystem, and Node.js._
 
 **hi@juliette.sh**
 
@@ -21,7 +21,7 @@ _Creative, ambitious and enterprising software engineer. I primarily focus on mo
 
 ### Frontend Engineer at N26, Jan 2018 - now
 
-Isomorphic React, GraphQL, & Node.js for an online banking app used by more than one million people.
+Isomorphic React, GraphQL, & Node.js for a banking app used by more than one million people. N26 is a fintech unicorn with offices in Berlin, NYC & Barcelona.
 
 - Multiplied developer productivity by spearheading a component-based design system
 - Reduced complexity by engineering simple, standardized abstractions for data-flow, animations and color-logic
