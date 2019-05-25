@@ -5,9 +5,9 @@ featuredImage: ./me.jpg
 style: index
 ---
 
-My name's **_Juliette Pretot_**. I'm a creative, ambitious and enterprising software engineer.
+My name's **_Juliette Pretot_**. I'm a creative, ambitious, and enterprising software engineer.
 
-At **N26** I build a banking app using isomorphic React, and GraphQL. I'm also a **Google Developer Expert** for Web Technologies.
+At **N26** I build a banking app using isomorphic React and GraphQL. I'm also a **Google Developer Expert** for Web Technologies.
 
 <span class="secondary-text">
 
