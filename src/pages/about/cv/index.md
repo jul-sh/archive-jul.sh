@@ -5,7 +5,7 @@ backLabel: about
 title: Juliette Pretot
 ---
 
-_Creative, ambitious, and enterprising software engineer. I primarily focus on modern JavaScript, its ecosystem, and Node.js._
+_Creative, ambitious, and enterprising software engineer._
 
 **hi@juliette.sh**
 
@@ -13,27 +13,26 @@ _Creative, ambitious, and enterprising software engineer. I primarily focus on m
 
 - JavaScript, GraphQL, Node.js, React
 - Web Performance Optimization
-- Functional Programming
 - UX-Design
 - Mentoring, Agile Methodology
 
 ## Work
 
-### Frontend Engineer at N26, Jan 2018 - now
+#### Frontend Engineer at N26, Jan 2018 to now, NYC & Berlin
 
-Isomorphic React, GraphQL, & Node.js for a banking app used by more than one million people. N26 is a fintech unicorn with offices in Berlin, NYC & Barcelona.
+Isomorphic React, GraphQL, & Node.js for a banking app with more than two million users.
 
 - Multiplied developer productivity by spearheading a component-based design system
 - Reduced complexity by engineering simple, standardized abstractions for data-flow, animations and color-logic
 - Improved time-to-interactive by one second through component-level code splitting
 - Reduced time-to-first-meaningful-paint by 20% through replacing sprites with improved server-side rendering
 - Doubled the speed of font loading using Unicode-range-splitting and preloading
-- Strong accessibility focus, built 100% screenreader compatible UI
-- Agile & cross-functional, pair programming
+- Strong accessibility focus, agile, and cross-functional
+- Mentored junior engineers, trained new joiners
 
-### Lead Engineer and Co-Founder at Language Academy 2016 - 18
+#### Lead Engineer & Co-Founder at Language Academy, 2016-18, Berlin
 
-Build-time rendered React, HTML, CSS for a language learning platform.
+JavaScript, statically rendered React, & CSS for a language learning platform.
 
 - Bootstrapped a profitable business as a founder
 - Architected the company's web workflow
@@ -43,9 +42,9 @@ Build-time rendered React, HTML, CSS for a language learning platform.
 - Built & designed conversion oriented web pages, achieving a 10% visitor to email-subscriber rate
 - Agile & cross-functional structure
 
-### Web Developer & Design Researcher at Clue, 2015 - 2016
+#### Web Developer & Design Researcher at Clue, 2015-16, Berlin
 
-JavaScript, HTML, CSS, Python, & Heroku for a health tracking app used by more than five million people.
+JavaScript, HTML, CSS, & Python for a health tracking app with more than five million users.
 
 - Rebuilt the support website, increasing page views by an average of +20%
 - Built in-app surveys & A/B tests using web technologies
@@ -56,25 +55,26 @@ JavaScript, HTML, CSS, Python, & Heroku for a health tracking app used by more t
 
 ## Community
 
-### Google Developer Expert for Web Technologies
+#### Google Developer Expert for Web Technologies
 
-- Member of a global program that recognizes individuals who are experts and thought leaders in one or more Google technologies.
+- Member of a program that recognizes experts and thought leaders in Google technologies
 
 ## Education
 
-### Google Developer Challenge Scholarship: Mobile Web Specialist
+#### Google Developer Challenge Scholarship: Mobile Web Specialist
 
 - One of 1000 scholars selected by Google
 - Offline enabled JavaScript apps using service-workers, ES6
 
-### Law School at Humboldt University Berlin
+#### Law School at Humboldt University Berlin
 
 - Academic processes, theories & principles of law
 - Studied the intersection of law & technology
 
-### High School
+#### High School
 
-- Fast-tracked curriculum for high-achieving students. Graduated two years younger than the national average
+- Fast-tracked curriculum for high-achieving students
+- Graduated two years younger than the national average
 
 ## Related Projects
 
