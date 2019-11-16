@@ -71,7 +71,7 @@ JavaScript, HTML, CSS, & Python for a health tracking app with more than five mi
 - Academic processes, theories & principles of law
 - Studied the intersection of law & technology
 
-#### High School
+#### High School / A Levels
 
 - Fast-tracked curriculum for high-achieving students
 - Graduated two years younger than the national average
