@@ -78,6 +78,7 @@ JavaScript, HTML, CSS, & Python for a health tracking app with more than five mi
 
 ## Related Projects
 
+- [Agnostic Axe](https://github.com/juliettepretot/npx-co-commit): Developer tool that reports accessibility issues to the browser console.
 - [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Seen on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
 - [Clue Connect](https://www.behance.net/gallery/58479525/Clue-Connect): An article about the design process behind Clue's sharing feature.
 - [N26 Dark Mode](https://medium.com/insiden26/building-the-n26-dark-mode-2fc18c2ccdd5): An article about the engineering and design behind N26's new dark mode.
