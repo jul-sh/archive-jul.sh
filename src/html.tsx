@@ -46,7 +46,7 @@ const GREETING = `/*
 
 
 Hey astronaut. This website is built using Gatsby, Styled Components & TypeScript.
-You can view the raw soure code at https://github.com/juliettepretot/juliette.sh :)
+You can view the raw soure code at https://github.com/juliettepretot/jul.sh :)
 
 */`
 
