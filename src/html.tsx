@@ -37,16 +37,17 @@ const WEBFONTS = `
 const GREETING = `/*
 
 
-🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
-🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
-🔵🔵🔵🔵🔵🔴🔴🔴🔴🔴🔴
-🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
-🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
-🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+{\\__/}
+( •.•)
+/ >📜 u want the source code?
 
+{\\__/}
+(•-• )
+📦< \\ the shipped code is bundled, transpiled, & minified
 
-Hey astronaut. This website is built using Gatsby, Styled Components & TypeScript.
-You can view the raw soure code at https://github.com/juliettepretot/jul.sh :)
+{\\__/}
+( •.•)
+/ >🎁 see the git repo for the source code: https://github.com/juliettepretot/jul.sh
 
 */`
 
