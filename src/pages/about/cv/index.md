@@ -18,21 +18,27 @@ _Creative, ambitious, and enterprising software engineer._
 
 ## Work
 
-#### Frontend Engineer at N26, Jan 2018 to now, NYC & Berlin
+#### UX Engineer at Google, starting 2020.4, London
 
-Isomorphic React, GraphQL, & Node.js for a banking app with more than two million users.
+Working on a projected related to the secure transfer, storage and processing of data.
 
-- Multiplied developer productivity by spearheading a component-based design system
-- Reduced complexity by engineering simple, standardized abstractions for data-flow, animations and color-logic
+#### (Senior) Web Engineer at N26, 2018.1 to 2020.3, NYC & Berlin
+
+Isomorphic React, GraphQL, & Node.js for a banking app with five million users.
+
+- Multiplied developer productivity by engineering simple, standardized abstractions for data-flow, animations and color-logic
 - Improved time-to-interactive by one second through component-level code splitting
 - Reduced time-to-first-meaningful-paint by 20% through replacing sprites with improved server-side rendering
 - Doubled the speed of font loading using Unicode-range-splitting and preloading
+- Reduced runtimes errors in prod by 30% via deterministic script loading
+- Led web development of several key features
+- Mentored junior & mid-level engineers
+- Helped scale the web team from 6 to 22 engineers
 - Strong accessibility focus, agile, and cross-functional
-- Mentored junior engineers, trained new joiners
 
-#### Lead Engineer & Co-Founder at Language Academy, 2016-18, Berlin
+#### Lead Engineer & Co-Founder at Language Academy, 2016.8 - 2017.12, Berlin
 
-JavaScript, statically rendered React, & CSS for a language learning platform.
+JavaScript & statically rendered React for a language learning platform.
 
 - Bootstrapped a profitable business as a founder
 - Architected the company's web workflow
@@ -42,22 +48,22 @@ JavaScript, statically rendered React, & CSS for a language learning platform.
 - Built & designed conversion oriented web pages, achieving a 10% visitor to email-subscriber rate
 - Agile & cross-functional structure
 
-#### Web Developer & Design Researcher at Clue, 2015-16, Berlin
+#### Web Developer & Design Researcher at Clue, 2015.9 - 2016.9, Berlin
 
-JavaScript, HTML, CSS, & Python for a health tracking app with more than five million users.
+JavaScript, HTML, CSS, & Python for a health tracking app with five million users.
 
 - Rebuilt the support website, increasing page views by an average of +20%
-- Built in-app surveys & A/B tests using web technologies
+- Built in-app surveys using web technologies
 - Prototyped a chatbot in Python
-- Conducted design research (User interviews, competitor/comparator reviews, A/B tests)
 - Developed and implemented company-wide processes for design research
+- Conducted design research (User interviews, competitor/comparator reviews, A/B tests)
 - Agile & cross-functional structure
 
 ## Community
 
-#### Google Developer Expert for Web Technologies
+#### Google Developer Expert for Web Technologies, 2019.2 - 2020.2
 
-- Member of a program that recognizes experts and thought leaders in Google technologies
+- Member of a program that recognizes experts and thought leaders in Google technologies.
 
 ## Education
 
