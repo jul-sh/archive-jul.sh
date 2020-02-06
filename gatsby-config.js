@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Juliette Pretot',
-    siteUrl: 'juliette.sh'
+    siteUrl: 'https://jul.sh'
   },
   plugins: [
     'gatsby-plugin-typescript',
