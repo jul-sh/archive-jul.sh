@@ -66,9 +66,7 @@ const GlobalStyles = createGlobalStyle`
   body,
   html,
   #___gatsby,
-  /* target reach router focus wrapper,
-  the defacto wrapper of all react content */
-  #___gatsby > div[role='group'] {
+  #gatsby-focus-wrapper {
     width: 100%;
     min-height: 100%;
     margin: 0;
