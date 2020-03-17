@@ -1,7 +1,5 @@
 ---
 templateKey: TemplateBasic
-backTo: /
-backLabel: about
 title: Juliette Pretot
 ---
 
