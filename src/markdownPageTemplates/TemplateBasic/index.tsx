@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '~/components/Layout'
 import PageWrapper from '~/components/PageWrapper'
 import MarkdownWrapper from '~/components/MarkdownWrapper'
-import BackToPrevious from '~/components/BackToPrevious'
 
 const TemplateBasic: React.FunctionComponent<{
   data: any // type checked by GraphQL
@@ -13,7 +12,7 @@ const TemplateBasic: React.FunctionComponent<{
 }> = ({
   data: {
     markdownRemark: {
-      frontmatter: { backTo, backLabel, title },
+      frontmatter: { title },
       html
     }
   },
@@ -21,9 +20,6 @@ const TemplateBasic: React.FunctionComponent<{
 }) => (
   <Layout pathname={pathname}>
     <PageWrapper>
-      {!!backTo && backLabel && (
-        <BackToPrevious to={backTo} label={backLabel} />
-      )}
       <div>
         <h1>{title}</h1>
         <MarkdownWrapper dangerouslySetInnerHTML={{ __html: html }} />
@@ -43,8 +39,6 @@ export const TemplateBasicQuery = graphql`
       }
       frontmatter {
         title
-        backTo
-        backLabel
         featuredImage {
           childImageSharp {
             sqip(numberOfPrimitives: 50, blur: 0, width: 400) {

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import NavbarLink from '~/components/NavbarLink'
 import AboutIcon from '~/components/Icons/AboutIcon'
-import ProjectsIcon from '~/components/Icons/ProjectsIcon'
+import ResumeIcon from '~/components/Icons/ResumeIcon'
 import ContactIcon from '~/components/Icons/ContactIcon'
 import { IconProps } from '~/components/Icons/types'
 
@@ -78,21 +78,21 @@ const Navbar: React.FunctionComponent<{
     <InnerNavbarWrapper>
       <NavbarLink
         to="/"
-        isActive={new RegExp('^/$|^/about').test(pathname)}
+        isActive={new RegExp('^/$').test(pathname)}
         Icon={(props: IconProps) => <AboutIcon {...props} />}
         label="About"
-      />
-      <NavbarLink
-        to="/projects"
-        isActive={new RegExp('^/projects').test(pathname)}
-        Icon={(props: IconProps) => <ProjectsIcon {...props} />}
-        label="Projects"
       />
       <NavbarLink
         to="/contact"
         isActive={new RegExp('^/contact').test(pathname)}
         Icon={(props: IconProps) => <ContactIcon {...props} />}
         label="Contact"
+      />
+      <NavbarLink
+        to="/career"
+        isActive={new RegExp('^/career').test(pathname)}
+        Icon={(props: IconProps) => <ResumeIcon {...props} />}
+        label="Resume"
       />
     </InnerNavbarWrapper>
   </NavbarWrapper>

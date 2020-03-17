@@ -108,27 +108,6 @@ const MarkdownWrapper = styled.div`
     color: var(--green);
     border-bottom: var(--translucentGreen) 2px solid;
   }
-
-  .secondary-text a {
-    border-bottom: var(--translucentGray) 2px solid;
-  }
-
-  .secondary-text a:hover {
-    border-bottom: var(--gray) 2px solid;
-  }
-
-  .secondary-text p {
-    margin: 13px 0;
-  }
-
-  .secondary-text,
-  .secondary-text a {
-    color: var(--gray);
-  }
-
-  .secondary-text a {
-    border-bottom: 2px solid var(--translucentGray);
-  }
 `
 
 export default MarkdownWrapper
