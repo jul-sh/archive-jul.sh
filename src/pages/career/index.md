@@ -7,12 +7,7 @@ _Creative, ambitious, and enterprising software engineer._
 
 **hi@juliette.sh**
 
-## Skills
-
-- JavaScript, React, GraphQL, Node.js
-- Mentoring, Agile Methodology
-
-## Work
+## Experience
 
 #### Engineer at Google, starting 2020.04, London
 
@@ -49,7 +44,7 @@ JavaScript, HTML, & Python for a health tracking app with 5M users.
 - Prototyped a chatbot in Python
 - Created company-wide processes for user research
 
-## Community
+## Recognition
 
 - Google Developer Expert for Web Technologies, 2019 to 2020
 
@@ -58,7 +53,7 @@ JavaScript, HTML, & Python for a health tracking app with 5M users.
 - Google Developer Challenge, Mobile Web Specialist (Scholarship)
 - Law at Humboldt University Berlin
 
-## Related Projects
+## Personal Projects
 
 - [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Featured on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
 - [Agnostic Axe](https://github.com/juliettepretot/agnostic-axe): Developer tool that reports accessibility issues to the browser console.
