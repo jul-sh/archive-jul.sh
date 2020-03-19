@@ -55,5 +55,5 @@ JavaScript, HTML, & Python for a health tracking app with 5M users.
 
 ## Personal Projects
 
+- [agnostic-axe](https://github.com/juliettepretot/agnostic-axe): Developer tool that reports accessibility issues to the browser console. (Now maintained by [Deque Systems](https://en.wikipedia.org/wiki/Deque_Systems))
 - [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Featured on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
-- [Agnostic Axe](https://github.com/juliettepretot/agnostic-axe): Developer tool that reports accessibility issues to the browser console.
