@@ -11,83 +11,56 @@ _Creative, ambitious, and enterprising software engineer._
 
 ## Skills
 
-- JavaScript, GraphQL, Node.js, React
-- Web Performance Optimization
-- UX-Design
+- JavaScript, React, GraphQL, Node.js
 - Mentoring, Agile Methodology
 
 ## Work
 
-#### UX Engineer at Google, starting 2020.4, London
+#### UX Engineer at Google, starting 2020.04, London
 
-Working on a projected related to the secure transfer, storage and processing of data.
+Working on a project related to data security.
 
-#### (Senior) Web Engineer at N26, 2018.1 to 2020.3, NYC & Berlin
+#### Senior Web Engineer at N26, 2018.01 - 2020.03, Berlin & New York City
 
-Isomorphic React, GraphQL, & Node.js for a banking app with five million users.
+Isomorphic React, GraphQL, & Node.js powering the webapp of a challenger bank with 5M users.
 
-- Multiplied developer productivity by engineering simple, standardized abstractions for data-flow, animations and color-logic
-- Improved time-to-interactive by one second through component-level code splitting
-- Reduced time-to-first-meaningful-paint by 20% through replacing sprites with improved server-side rendering
-- Doubled the speed of font loading using Unicode-range-splitting and preloading
-- Reduced runtimes errors in prod by 30% via deterministic script loading
-- Led web development of several key features
-- Mentored junior & mid-level engineers
-- Helped scale the web team from 6 to 22 engineers
-- Strong accessibility focus, agile, and cross-functional
+- Multiplied developer productivity by engineering key abstractions for state and UI
+- Led web development of key features
+- Reduced errors in prod by 30% via deterministic script loading
+- Sped up time-to-first-meaningful-paint by 20% with improved server-side rendering
+- Improved time-to-interactive by 1.4s with code splitting
+- Doubled font loading speed via range-splitting & preloading
+- Mentored junior & mid-level engineers, conducted interviews, took charge of team processes
 
-#### Lead Engineer & Co-Founder at Language Academy, 2016.8 - 2017.12, Berlin
+#### Lead Engineer at Language Academy, 2016.08 - 2017.12, Berlin
 
-JavaScript & statically rendered React for a language learning platform.
+Statically rendered React for a language learning platform.
 
-- Bootstrapped a profitable business as a founder
-- Architected the company's web workflow
+- Created and led development of the web platform
+- Achieved a 10% visitor to subscriber rate on marketing pages
 - Achieved a 63% faster time-to-interactive compared to competitors
-- Reduced email automation cost by 82% using open-source software
-- Built a web-based chatbot that evaluated a user's language level
-- Built & designed conversion oriented web pages, achieving a 10% visitor to email-subscriber rate
-- Agile & cross-functional structure
+- Reduced email automation cost by 82% with open source software
+- Co-founded the company, brought it to profitability
 
-#### Web Developer & Design Researcher at Clue, 2015.9 - 2016.9, Berlin
+#### Web Developer & Design Researcher at Clue, 2015 - 2016, Berlin
 
-JavaScript, HTML, CSS, & Python for a health tracking app with five million users.
+JavaScript, HTML, & Python for a health tracking app with 5M users.
 
-- Rebuilt the support website, increasing page views by an average of +20%
+- Rebuilt the support website, increasing page views by +20%
 - Built in-app surveys using web technologies
 - Prototyped a chatbot in Python
-- Developed and implemented company-wide processes for design research
-- Conducted design research (User interviews, competitor/comparator reviews, A/B tests)
-- Agile & cross-functional structure
+- Created company-wide processes for user research
 
 ## Community
 
-#### Google Developer Expert for Web Technologies, 2019.2 - 2020.2
-
-- Member of a program that recognizes experts and thought leaders in Google technologies.
+- Google Developer Expert for Web Technologies, 2019 to 2020
 
 ## Education
 
-#### Google Developer Challenge Scholarship: Mobile Web Specialist
-
-- One of 1000 scholars selected by Google
-- Offline enabled JavaScript apps using service-workers, ES6
-
-#### Law School at Humboldt University Berlin
-
-- Academic processes, theories & principles of law
-- Studied the intersection of law & technology
-
-#### High School / A Levels
-
-- Fast-tracked curriculum for high-achieving students
-- Graduated two years younger than the national average
+- Google Developer Challenge, Mobile Web Specialist (Scholarship)
+- Law at Humboldt University Berlin
 
 ## Related Projects
 
-- [Agnostic Axe](https://github.com/juliettepretot/npx-co-commit): Developer tool that reports accessibility issues to the browser console.
-- [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Seen on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
-- [Clue Connect](https://www.behance.net/gallery/58479525/Clue-Connect): An article about the design process behind Clue's sharing feature.
-- [N26 Dark Mode](https://medium.com/insiden26/building-the-n26-dark-mode-2fc18c2ccdd5): An article about the engineering and design behind N26's new dark mode.
-- [yourtime.zone](https://yourtime.zone/): A React based web app which translates the time of an event into the visitor's local time. Seen on the front pages of [Web Designer News](http://www.webdesignernews.com/?s=yourtime.zone), [Product Hunt](https://www.producthunt.com/posts/yourtime-zone).
-- [Lucy VSCode theme](https://github.com/juliettepretot/lucy-vscode-theme): A VSCode theme & theme generator. Built with Node.js, 150k+ installs.
-- Tweet 280: A bookmarklet hack to tweet using longer tweets before Twitter rolled out the feature. Seen in [TechCrunch](https://techcrunch.com/gallery/how-to-enable-280-characters-on-twitter-right-now/slide/1/), [Mashable](http://mashable.com/2017/09/27/how-to-give-yourself-280-character-tweets/#ZpUyt3xR5EqU), [How To Geek](https://www.howtogeek.com/327555/how-to-get-twitters-new-280-character-limit-now/)
+- [co-commit](https://github.com/juliettepretot/npx-co-commit): A Node.js tool to co-author commits on GitHub when pair programming. Featured on the front page of [Product Hunt](https://www.producthunt.com/posts/co-commit).
+- [Agnostic Axe](https://github.com/juliettepretot/agnostic-axe): Developer tool that reports accessibility issues to the browser console.
