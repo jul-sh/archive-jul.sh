@@ -120,12 +120,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
+    font-size: 1.5rem;
     margin: 0.4em 0 0.67em 0;
   }
 
   h3,
   h3 a {
-    color: var(--blue);
+    color: var(--orange);
   }
 
   h1,
@@ -136,12 +137,8 @@ const GlobalStyles = createGlobalStyle`
 
   h4,
   h4 a {
-    color: var(--orange);
-  }
-
-  h4,
-  h4 a {
-    color: var(--orange);
+    font-size: 1.4rem;
+    color: var(--blue);
   }
 
   h4 a {
