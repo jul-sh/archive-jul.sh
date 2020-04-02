@@ -11,47 +11,47 @@ _Creative, ambitious, and enterprising software engineer._
 
 #### Engineer at Google, starting 2020.04, London
 
-Working on a project related to data security.
+Working on a project relating to the control of data in distributed systems.
 
 #### Senior Web Engineer at N26, 2018.01 - 2020.03, Berlin & New York City
 
 Isomorphic React, GraphQL, & Node.js powering the webapp of a challenger bank with 5M users.
 
-- Multiplied developer productivity by engineering key abstractions for state and UI
 - Led web development of key features
 - Reduced errors in prod by 30% via deterministic script loading
-- Sped up time-to-first-meaningful-paint by 20% with improved server-side rendering
+- Sped up time-to-first-meaningful-paint by 20% via improved server-side rendering
 - Improved time-to-interactive by 1.4s with code splitting
 - Doubled font loading speed via range-splitting & preloading
+- Multiplied developer productivity by engineering key abstractions
 - Mentored junior & mid-level engineers, conducted interviews, took charge of team processes
 
 #### Lead Engineer at Language Academy, 2016.08 - 2017.12, Berlin
 
-Statically rendered React for a language learning platform.
+Build-time rendered React for a language learning platform.
 
 - Created and led development of the web platform
-- Achieved a 10% visitor to subscriber rate on marketing pages
-- Achieved a 63% faster time-to-interactive compared to competitors
-- Reduced email automation cost by 82% with open source software
+- Accomplished a 10% visitor-to-subscriber rate on marketing pages
+- Achieved a 63% faster time-to-interactive than competitors
+- Reduced email automation costs by 82% using open source software
 - Co-founded the company, brought it to profitability
 
 #### Web Developer & Design Researcher at Clue, 2015 - 2016, Berlin
 
-JavaScript, HTML, & Python for a health tracking app with 5M users.
+JavaScript & Python for a health tracking app with 5M users.
 
-- Rebuilt the support website, increasing page views by +20%
-- Built in-app surveys using web technologies
+- Engineered in-app modals using web technologies
 - Prototyped a chatbot in Python
-- Created company-wide processes for user research
-
-## Recognition
-
-- Google Developer Expert for Web Technologies, 2019 to 2020
+- Rebuilt the support website, increasing page views by +20%
+- Conducted & created company-wide processes for user research
 
 ## Education
 
 - Google Developer Challenge, Mobile Web Specialist (Scholarship)
 - Law at Humboldt University Berlin
+
+## Recognition
+
+- Google Developer Expert for Web Technologies, 2019 to 2020
 
 ## Personal Projects
 
