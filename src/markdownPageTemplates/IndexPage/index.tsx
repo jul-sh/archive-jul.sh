@@ -68,7 +68,6 @@ const Page: React.FunctionComponent<{
         <StyledImage
           placeholderStyle={{}}
           fadeIn={false}
-          className="index-me"
           sizes={{
             ...featuredImage.childImageSharp.sizes,
             base64: featuredImage.childImageSharp.sqip.dataURI
