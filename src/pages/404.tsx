@@ -22,14 +22,14 @@ const ButtonLink = styled.a`
 
   :hover {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 5px 12px -2px var(--green);
-    transform: translateY(-2px) scale(1.005);
+    box-shadow: 0 0.2rem 0.5rem -0.08rem var(--green);
+    transform: translateY(-0.08rem) scale(1.005);
     text-decoration: none;
     border-bottom: none;
   }
 
   @media only screen and (max-width: 700px) {
-    box-shadow: 0 5px 12px -2px var(--green);
+    box-shadow: 0 0.2rem 0.5rem -0.08rem var(--green);
     :hover {
       transform: none;
     }

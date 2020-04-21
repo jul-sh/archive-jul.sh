@@ -20,7 +20,7 @@ const StyledLink = styled(Link)`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0.4rem;
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
