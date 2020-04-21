@@ -62,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
 
   ::selection {
         background: rgba(255, 210, 57, 0.2);
-        text-shadow: black 1px 1px 0px;
+        text-shadow: black 0.05rem 0.05rem 0rem;
     }
 
   body,
@@ -144,11 +144,11 @@ const GlobalStyles = createGlobalStyle`
 
   h4 a {
     color: var(--orange);
-    border-bottom: var(--translucentOrange) 2px solid;
+    border-bottom: var(--translucentOrange) 0.08rem solid;
   }
 
   h4:hover a {
-    border-bottom: var(--orange) 2px solid;
+    border-bottom: var(--orange) 0.08rem solid;
   }
 
   @media only screen and (max-width: 700px) {

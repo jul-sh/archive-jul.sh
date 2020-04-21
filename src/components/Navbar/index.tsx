@@ -24,7 +24,7 @@ const NavbarWrapper = styled.nav`
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: 2px 0 2px black;
+    box-shadow: 0.08rem 0 0.08rem black;
     background-color: hsl(221, 25%, 13%);
     padding-left: var(--responsive-padding);
     padding-right: var(--responsive-padding);
@@ -36,11 +36,11 @@ const NavbarWrapper = styled.nav`
     }
 
     @supports (
-      (-webkit-backdrop-filter: blur(15px)) or (backdrop-filter: blur(15px))
+      (-webkit-backdrop-filter: blur(0.6rem)) or (backdrop-filter: blur(0.6rem))
     ) {
       background-color: hsla(221, 20%, 15%, 0.925);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(0.6rem);
+      -webkit-backdrop-filter: blur(0.6rem);
     }
   }
 
