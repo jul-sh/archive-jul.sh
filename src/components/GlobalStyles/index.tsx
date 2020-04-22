@@ -2,6 +2,8 @@ import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   :root {
+    font-size: 24px;
+
     /* fonts */
     --primaryFont: Juliette, monospace;
     --sansFont: 'Juliette Sans', sans-serif;
@@ -22,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     --translucentGreen: hsla(153, 36%, 59%, 0.6);
 
     /* sizing */
-    --responsive-padding: 3.5rem;
+    --responsive-padding: 2.3rem;
 
     --safe-area-inset-top: 0px;
     --safe-area-inset-right: 0px;
@@ -44,12 +46,12 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: 700px) {
     :root {
-      --responsive-padding: 1.3rem;
+      --responsive-padding: 1.1rem;
     }
   }
 
   @media (max-width: 370px) {
-    --responsive-padding: 0.7rem;
+    --responsive-padding: 0.625rem;
   }
 
   @media print {
@@ -82,7 +84,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: var(--primaryFont);
     font-feature-settings: 'calt' 1;
     font-variant-ligatures: contextual;
-    font-size: 24px;
     word-spacing: -0.25ch;
     line-height: 1.4;
 
@@ -120,7 +121,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 0.95rem;
     margin: 0.4em 0 0.67em 0;
   }
 
@@ -137,7 +138,7 @@ const GlobalStyles = createGlobalStyle`
 
   h4,
   h4 a {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     color: var(--blue);
   }
 
@@ -151,8 +152,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media only screen and (max-width: 700px) {
-    body {
+    :root {
       font-size: 20px;
+    }
+
+    body {
       line-height: 1.3;
     }
 

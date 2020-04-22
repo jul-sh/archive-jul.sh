@@ -59,8 +59,8 @@ const InnerNavbarWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 40rem;
-  max-height: 15rem;
+  max-width: 24rem;
+  max-height: 10rem;
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;

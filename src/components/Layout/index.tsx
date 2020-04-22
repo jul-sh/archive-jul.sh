@@ -14,25 +14,25 @@ export const Main = styled.main`
     var(--responsive-padding) + var(--safe-area-inset-bottom)
   );
   padding-left: calc(
-    var(--responsive-padding) + 3.75rem + var(--safe-area-inset-left)
+    var(--responsive-padding) + 2.5rem + var(--safe-area-inset-left)
   );
 
   @media only screen and (max-width: 1100px) {
     padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
     padding-bottom: calc(
-      4rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
+      2.6rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
     );
   }
 
   @media only screen and (max-width: 700px) {
     padding: calc(
-      0.5rem + var(--responsive-padding) + var(--safe-area-inset-top)
+      0.33rem + var(--responsive-padding) + var(--safe-area-inset-top)
     );
     padding-right: calc(
       var(--responsive-padding) + var(--safe-area-inset-right)
     );
     padding-bottom: calc(
-      0.5rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
+      0.33rem + var(--responsive-padding) + var(--safe-area-inset-bottom)
     );
     padding-left: calc(var(--responsive-padding) + var(--safe-area-inset-left));
     font-size: 21px;
