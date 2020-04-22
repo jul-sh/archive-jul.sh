@@ -5,14 +5,14 @@ import PageWrapper from '~/components/PageWrapper'
 
 const ButtonWrapper = styled.div`
   display: flex;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 `
 
 const ButtonLink = styled.a`
   padding: 0.8em 1em;
   color: rgb(0, 0, 0);
   background-color: rgb(250, 250, 250);
-  border-radius: 0.3rem;
+  border-radius: 0.18rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;

@@ -14,7 +14,7 @@ const StyledLink = styled(Link)`
   font-size: 92.5%;
   line-height: 1;
   text-decoration: none;
-  padding: 0.45rem 0.9rem;
+  padding: 0.27rem 0.55rem;
   margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ const StyledLink = styled(Link)`
 
   @media (max-width: 1100px) {
     width: 2ch;
-    padding: 0.45rem 1.5rem;
+    padding: 0.27rem 1.5rem;
   }
 
   ${({ isActive }: { isActive: Boolean }) =>
@@ -39,8 +39,8 @@ const StyledLink = styled(Link)`
     `}
 
   @media (max-width: 700px) {
-    padding: 0.35rem 1.5rem;
-    margin: 0.3rem 0;
+    padding: 0.28rem 1.3rem;
+    margin: 0.25rem 0;
   }
 `
 
@@ -52,12 +52,12 @@ const InnerWrapper = styled.div`
 `
 
 const Caption = styled.span`
-  font-size: 0.95rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   display: block;
 
   @media (max-width: 700px) {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
   }
 `
 

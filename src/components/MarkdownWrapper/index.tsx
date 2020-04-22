@@ -19,14 +19,14 @@ const MarkdownWrapper = styled.div`
 
   .button-parent {
     display: flex;
-    margin: 2.5rem 0;
+    margin: 1.7rem 0;
   }
 
   .button {
     padding: 0.8em 1em;
     color: rgb(0, 0, 0);
     background-color: rgb(250, 250, 250);
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -60,8 +60,8 @@ const MarkdownWrapper = styled.div`
   }
 
   ul li ul {
-    margin-bottom: 0.25rem;
-    margin-top: 0.15rem;
+    margin-bottom: 0.17rem;
+    margin-top: 0.6rem;
   }
 
   i,
