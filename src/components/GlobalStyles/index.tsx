@@ -103,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 2em; /* normalize across browsers */
-    margin: 0.4em 0 0.67em 0;
+    margin: 0.2em 0 0.67em 0;
   }
 
   h1,
@@ -112,7 +112,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    margin: 0.4em 0 0.67em 0;
+    margin: 0.2em 0 0.67em 0;
   }
 
   h2,
@@ -122,7 +122,7 @@ const GlobalStyles = createGlobalStyle`
 
   h3 {
     font-size: 0.95rem;
-    margin: 0.4em 0 0.67em 0;
+    margin: 0.2em 0 0.67em 0;
   }
 
   h3,
