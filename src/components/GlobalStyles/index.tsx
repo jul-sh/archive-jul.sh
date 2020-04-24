@@ -88,8 +88,8 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
 
     ${({ isApp }: { isApp: Boolean }) =>
-      isApp &&
-      css`
+    isApp &&
+    css`
         /* force full height on iOS */
         min-height: 100vh;
       `}
@@ -151,6 +151,18 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: var(--orange) 0.08rem solid;
   }
 
+  @media only screen and (min-width: 1500px) {
+    :root {
+      font-size: 26px;
+    }
+  }
+
+  @media only screen and (min-width: 1700px) {
+    :root {
+      font-size: 28px;
+    }
+  }
+
   @media only screen and (max-width: 700px) {
     :root {
       font-size: 20px;
@@ -167,10 +179,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media print {
+    :root {
+      font-size: 11pt;
+    }
+
     body {
       background: none;
       color: rgb(0, 0, 0);
-      font-size: 11pt;
       line-height: 1.1;
       word-spacing: initial;
     }
