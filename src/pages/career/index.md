@@ -42,11 +42,10 @@ JavaScript & Python for a health tracking app with 5M users.
 - Engineered in-app modals using web technologies
 - Prototyped a chatbot in Python
 - Rebuilt the support website, increasing page views by +20%
-- Conducted & created company-wide processes for user research
+- Executed & created company-wide processes for user research
 
 ## Education
 
-- Google Developer Challenge, Mobile Web Specialist (Scholarship)
 - Law at Humboldt University Berlin
 
 ## Recognition
