@@ -7,4 +7,4 @@ title: I'm always happy to hear from you.
 
 - [Twitter](https://twitter.com/juliettepretot)
 - [GitHub](https://github.com/juliettepretot)
-- [LinkedIn](https://www.linkedin.com/in/juliette-prétot-2a9530a5/)
+- [LinkedIn](https://www.linkedin.com/in/juliette-pretot-2a9530a5/)
