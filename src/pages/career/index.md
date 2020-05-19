@@ -11,7 +11,7 @@ _Creative, ambitious, and enterprising software engineer. — I strive in teams 
 
 ### UX Engineer [Engineering] at Google, 2020.04 - present, London
 
-Working on a project relating to the control of data in distributed systems.
+Working on a research project enabling meaningful control of data in distributed systems.
 
 ### Senior Web Engineer at N26, 2018.01 - 2020.03, Berlin & New York City
 
