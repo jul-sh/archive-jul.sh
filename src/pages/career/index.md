@@ -3,7 +3,7 @@ templateKey: TemplateBasic
 title: Juliette Pretot
 ---
 
-_Creative, ambitious, and enterprising software engineer._
+_Creative, ambitious, and enterprising software engineer. — I strive in teams with strong engineering cultures and meaningful cross-functional collaboration._
 
 **hi@juliette.sh**
 
@@ -46,7 +46,7 @@ JavaScript & Python for a health tracking app with 5M users.
 
 ## Education
 
-- Law at Humboldt University Berlin
+- Law School at Humboldt University Berlin
 
 ## Recognition
 
