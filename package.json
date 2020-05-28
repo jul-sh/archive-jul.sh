@@ -78,5 +78,8 @@
     "tslint-plugin-prettier": "^2.3.0",
     "typescript": "^3.9.3"
   },
-  "browserslist": "> 1% in US"
+  "browserslist": "> 1% in US",
+  "engines": {
+    "node": ">=12.16.3"
+  }
 }
