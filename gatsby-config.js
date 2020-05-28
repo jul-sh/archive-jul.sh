@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Juliette Pretot',
-    siteUrl: 'https://jul.sh'
+    siteUrl: 'https://jul.sh',
   },
   plugins: [
+    'gatsby-plugin-preact',
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
@@ -11,8 +12,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -23,25 +24,25 @@ module.exports = {
             options: {
               maxWidth: 1000,
               linkImagesToOriginal: false,
-              backgroundColor: 'transparent'
-            }
+              backgroundColor: 'transparent',
+            },
           },
           'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-smartypants',
             options: {
-              dashes: 'oldschool'
-            }
-          }
-        ]
-      }
+              dashes: 'oldschool',
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         color: '#44B284',
-        showSpinner: false
-      }
+        showSpinner: false,
+      },
     },
     'gatsby-plugin-webpack-bundle-analyser-v2',
     'gatsby-plugin-catch-links',
@@ -51,6 +52,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-netlify' // place as last in the array. ref: https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify#how-to-use
-  ]
+    'gatsby-plugin-netlify', // place as last in the array. ref: https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify#how-to-use
+  ],
 }
