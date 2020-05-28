@@ -64,6 +64,7 @@
   "devDependencies": {
     "babel-plugin-root-import": "^6.4.1",
     "babel-plugin-styled-components": "^1.10.7",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",

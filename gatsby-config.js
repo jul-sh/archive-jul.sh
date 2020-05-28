@@ -43,6 +43,7 @@ module.exports = {
         showSpinner: false
       }
     },
+    'gatsby-plugin-webpack-bundle-analyser-v2',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-netlify-cache',
     'gatsby-transformer-sqip',
