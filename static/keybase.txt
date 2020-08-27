@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/julsh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://juliette.sh
+  * I am julsh (https://keybase.io/julsh) on keybase.
+  * I have a public key ASCrf6x-EPPgpQBkXusyDW9hdVYuw3PbjbR8ZJqsTylVAQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ab7fac7e10f3e0a500645eeb320d6f6175562ec373db8db47c649aac4f2955010a",
+      "host": "keybase.io",
+      "kid": "0120ab7fac7e10f3e0a500645eeb320d6f6175562ec373db8db47c649aac4f2955010a",
+      "uid": "6cfc2155e996364d331b47efdcb5c519",
+      "username": "julsh"
+    },
+    "merkle_root": {
+      "ctime": 1598557824,
+      "hash": "c85c29ab58913156dc2bf91df6a297b252ce75f6dd4ce30fba55988852bae6e08292604dcc0af799cc0466c469b0f3bfd9940c6feac3c843c96d108e483bd9a0",
+      "hash_meta": "71d11444659a7ae6c7da534778684ededfebb540e1798ae3825bee85b8e3a1f8",
+      "seqno": 17400042
+    },
+    "service": {
+      "entropy": "ZDm/MifE0IiQkamSNBjOC4WE",
+      "hostname": "juliette.sh",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1598557833,
+  "expire_in": 504576000,
+  "prev": "9b53b21f6745f663392b3530c9eddf1e17ffa85d1dabfed8686abfb259e76b4a",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgq3+sfhDz4KUAZF7rMg1vYXVWLsNz2420fGSarE8pVQEKp3BheWxvYWTESpcCCsQgm1OyH2dF9mM5KzUwye3fHhf/qF0dq/7YaGq/slnna0rEIAJ4ivu5XRCR1LJKjb3c1e9h716MKS/Y/EJ6BphDaOEqAgHCo3NpZ8RANc39H4L3L9KNH5Lt8vHMKrIG6tW+Cc4SzK9sRY9iWslLCVWJSA8W60vGYrjjjSk2kHx18UhrEbMqzaYekR2oAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAs2QegKxpI15YqFYM6w4OmtuAIf0xeIZZrUftcq6aRgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/julsh
+
+==================================================================
