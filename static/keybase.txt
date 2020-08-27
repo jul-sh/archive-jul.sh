@@ -54,3 +54,60 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/julsh
 
 ==================================================================
+
+==================================================================
+https://keybase.io/julsh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jul.sh
+  * I am julsh (https://keybase.io/julsh) on keybase.
+  * I have a public key ASBxQ3g6qAI9rqBzkPtt_A_LytdP7W_PZjp-QCanYsRgewo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ab7fac7e10f3e0a500645eeb320d6f6175562ec373db8db47c649aac4f2955010a",
+      "host": "keybase.io",
+      "kid": "01207143783aa8023daea07390fb6dfc0fcbcad74fed6fcf663a7e4026a762c4607b0a",
+      "uid": "6cfc2155e996364d331b47efdcb5c519",
+      "username": "julsh"
+    },
+    "merkle_root": {
+      "ctime": 1598558331,
+      "hash": "d3b53992fffca04c15eb253cde188647850be445d01ff627c0426c5d68fa0071209d2553e436501d47b420e9ad5fb18c8081f114286920eeeb9f1f182c9593b7",
+      "hash_meta": "83dd293e2d05430973c23d6137f4ad647e093e4cdb9df5e0ad4a2d2133f5d13e",
+      "seqno": 17400158
+    },
+    "service": {
+      "entropy": "Y3gyUosm4ipah8Q200LHHd+H",
+      "hostname": "jul.sh",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1598558344,
+  "expire_in": 504576000,
+  "prev": "046eddee2da8ddb0871d21c5748f14894b214c8d1bd8dd70d591f07209b00bd0",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgcUN4OqgCPa6gc5D7bfwPy8rXT+1vz2Y6fkAmp2LEYHsKp3BheWxvYWTESpcCD8QgBG7d7i2o3bCHHSHFdI8UiUshTI0b2N1w1ZHwcgmwC9DEINZV/SzBtFisqMhcWVJGJSpjeDtBFSDuje1aN1sbvncQAgHCo3NpZ8RAmMTSpUGPalJBRdLYkLQEeZVluwlBR9265WQtQWvm68ach+xrbBRFpkh28ASzOWFAP5XFSdZOcegqsyOG0yX/BKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGok8n+SMQXwIv9pG7m6t/hNVRcjCNpeFRJjjpOt2AEHo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/julsh
+
+==================================================================
