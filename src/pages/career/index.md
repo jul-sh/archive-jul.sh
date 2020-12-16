@@ -42,7 +42,7 @@ JavaScript & Python for a health tracking app with 5M users.
 - Engineered in-app modals using web technologies
 - Prototyped a chatbot in Python
 - Rebuilt the support website, increasing page views by +20%
-- Executed & created company-wide processes for user research
+- Created & executed company-wide processes for user research
 
 ## Education
 
@@ -50,7 +50,7 @@ JavaScript & Python for a health tracking app with 5M users.
 
 ## Recognition
 
-- Google Developer Expert for Web Technologies, 2019 to 2020
+- Google Developer Expert for Web Technologies, 2019 to 2020 (after which I joined Google)
 
 ## Personal Projects
 
