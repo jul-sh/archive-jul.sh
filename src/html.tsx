@@ -126,7 +126,7 @@ const HTML: React.FunctionComponent<{
               __html: WEBFONTS
             }}
           />
-          <script
+          <script defer
             dangerouslySetInnerHTML={{
               __html: GREETING
             }}
@@ -138,8 +138,8 @@ const HTML: React.FunctionComponent<{
           <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
           {postBodyComponents}
         </body>
-        <script dangerouslySetInnerHTML={{ __html: CONSOLE_GREETING }} />
-      </html>
+        <script defer dangerouslySetInnerHTML={{ __html: CONSOLE_GREETING }} />
+      </html >
     )
 
 export default HTML
