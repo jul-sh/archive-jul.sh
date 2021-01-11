@@ -46,11 +46,11 @@ JavaScript & Python for a health tracking app with 5M users.
 
 ## Education
 
-- Law School at Humboldt University Berlin
+- Law School at Humboldt University Berlin, 2013 - 2016
 
 ## Recognition
 
-- Google Developer Expert for Web Technologies, 2019 to 2020 (after which I joined Google)
+- Google Developer Expert for Web Technologies, 2019 - 2020 (after which I joined Google)
 
 ## Personal Projects
 
