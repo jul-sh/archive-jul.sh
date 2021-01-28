@@ -9,11 +9,11 @@ _Creative, ambitious, and enterprising software engineer._
 
 ## Experience
 
-#### Engineer at Google, starting 2020.04, London
+### Engineer at Google, starting 2020.04, London
 
 Working on a project relating to the control of data in distributed systems.
 
-#### Senior Web Engineer at N26, 2018.01 - 2020.03, Berlin & New York City
+### Senior Web Engineer at N26, 2018.01 - 2020.03, Berlin & New York City
 
 Isomorphic React, GraphQL, & Node.js powering the webapp of a challenger bank with 5M users.
 
@@ -25,7 +25,7 @@ Isomorphic React, GraphQL, & Node.js powering the webapp of a challenger bank wi
 - Multiplied developer productivity by engineering key abstractions
 - Mentored junior & mid-level engineers, conducted interviews, took charge of team processes
 
-#### Lead Engineer at Language Academy, 2016.08 - 2017.12, Berlin
+### Lead Engineer at Language Academy, 2016.08 - 2017.12, Berlin
 
 Build-time rendered React for a language learning platform.
 
@@ -35,7 +35,7 @@ Build-time rendered React for a language learning platform.
 - Reduced email automation costs by 82% using open source software
 - Co-founded the company, brought it to profitability
 
-#### Web Developer & Design Researcher at Clue, 2015 - 2016, Berlin
+### Web Developer & Design Researcher at Clue, 2015 - 2016, Berlin
 
 JavaScript & Python for a health tracking app with 5M users.
 
