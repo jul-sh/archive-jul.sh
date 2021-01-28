@@ -9,7 +9,7 @@ _Creative, ambitious, and enterprising software engineer._
 
 ## Experience
 
-### Engineer at Google, starting 2020.04, London
+### Engineer at Google, 2020.04 - present, London
 
 Working on a project relating to the control of data in distributed systems.
 
